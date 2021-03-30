@@ -9,7 +9,7 @@ bin-release/
 proj-01-space.pdf
 .vscode/
 .DS_Store
-desktop.ini
+.ini
 
 # Executables
 *.swf
