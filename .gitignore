@@ -8,6 +8,7 @@ bin-release/
 .settings/
 proj-01-space.pdf
 .vscode/
+.DS_Store
 
 # Executables
 *.swf
