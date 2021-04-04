@@ -22,6 +22,17 @@
           <li><a href="#">About Us</a></li>
         </ul>
       </div>
+      <div class="menu" onclick="Change(this)">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </div>
+
+    <script>
+      function Change(x) {
+        x.classList.toggle('change');
+      }
+    </script>
   </body>
 </html>
