@@ -22,16 +22,24 @@
           <li><a href="#">About Us</a></li>
         </ul>
       </div>
-      <div class="menu" onclick="Change(this)">
+      <div class="menu" id="menu" onclick="toggleNav(this)">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
     </div>
+    <div id="main"></div>
 
     <script>
       function Change(x) {
         x.classList.toggle('change');
+      }
+
+      // Da fixare
+      function toggleNav(x) {
+        Change(x);
+        let sidenav = document.getElementById('menu');
+        let main = document.getElementById('main');
       }
     </script>
   </body>
