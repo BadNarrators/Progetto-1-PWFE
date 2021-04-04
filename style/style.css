@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #0ff;
     margin: 0;
 }
 
@@ -9,7 +9,7 @@ body {
 
 #logo {
     max-width: 5%;
-    max-height: auto;
+    max-height: 5%;
     margin-left: 20px;
     float: left;
 }
@@ -17,15 +17,7 @@ body {
   opacity: 0.8;
 }
 
-@media (min-width: 768px) {
-    #sidebar, 
-    #sidebar-button {
-        display: none;
-    }
-    #logo {
-        max-width: 15%; 
-    }
-}
+
 #logo {
   display: inline;
 }
@@ -40,26 +32,55 @@ body {
 }
 
 #sidebar-button {
-    float: right;
+    float: left;
+    width: 10vw;
+    height: 10vw;
 }
 
 #sidebar {
     float: right;
 }
-#sidebar ul {
-    /*display: none;*/
+#sidebar-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+    height: 100%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #000000;
 }
 
 .sidebar {
     padding: 0;
     margin: 0;
     float: right;
-    width: 60%;
-    height: 100%;
-    background-color: #000000;
+    width: 80vw;
+    height: 100vw;
     transition: 0.7s;
-    float: right;
-  }
-  .sidebar.is-closed {
-    transform: translateX(100%);
-  }
+}
+.sidebar.is-closed {
+    transform: translateX(70vw);
+}
+
+
+@media (min-width: 768px) {
+    #sidebar-button, 
+    #sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logo {
+        max-width: 15%; 
+        max-height: 15%; 
+    }
+    #navbar ul {
+        display: none;
+    }
+    #bar {
+        position: relative;
+    }
+}
