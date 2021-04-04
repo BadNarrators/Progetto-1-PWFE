@@ -1,20 +1,15 @@
 #logo {
-  max-width: 20%;
-  max-height: 40%;
-  margin-left: 20px;
-  float: left;
+    max-width: 5%;
+    max-height: auto;
+    margin-left: 20px;
+    float: left;
 }
-
-#logoImg {
-  max-width: 5%;
-  max-height: auto;
-}
-#logoImg:hover {
+#logo:hover {
   opacity: 0.8;
 }
 
 @media (min-width: 768px) {
-    #sidebar_button {
+    #sidebar-button {
         display: none;
     }
 }
@@ -30,3 +25,11 @@
   display: inline-block;
   vertical-align: top;
 }
+
+#sidebar {
+    float: right;
+}
+#sidebar ul {
+    display: none;
+}
+

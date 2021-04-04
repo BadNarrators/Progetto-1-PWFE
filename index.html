@@ -7,20 +7,25 @@
     <meta name="authors" content="Andrea Atzei, Alessandro Carabetta, Eugenio Di Paola, Simone Guglielmi" />
     <meta name="description" content="add a description here" />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="script/sidebar.js"></script>
     <title>StarDust</title>
   </head>
   <body>
     <header>
       <div id="bar">
         <div id="navbar">
-          <img id="logoImg" src="assets/logo.png" alt="Logo" />
+          <img id="logo-img" src="assets/logo.png" alt="Logo" />
           <ul>
             <li><a href="#">News</a></li>
             <li><a href="#">Ciao</a></li>
           </ul>
-        </div>
-        <div id="sidebar">
-
+          <div id="sidebar">
+            <button onclick="sidebar_open()">Open</button>
+            <ul id="sidebar-content">
+              <li><a href="#">News</a></li>
+              <li><a href="#">Ciao</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
