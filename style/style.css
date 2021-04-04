@@ -1,9 +1,18 @@
 #logo {
-  max-width: 1%;
-  max-height: 1%;
   margin-left: 20px;
-  border: 1px solid black;
+  float: left;
 }
-#logo:hover {
+
+#logoImg {
+  max-width: 10%;
+  max-height: auto;
+}
+#logoImg:hover {
   opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+    #sidebar_button {
+        display: none;
+    }
 }
