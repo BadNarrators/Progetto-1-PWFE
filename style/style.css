@@ -1,3 +1,12 @@
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+#bar {
+    margin-top: 8px;
+}
+
 #logo {
     max-width: 5%;
     max-height: auto;
@@ -9,8 +18,12 @@
 }
 
 @media (min-width: 768px) {
+    #sidebar, 
     #sidebar-button {
         display: none;
+    }
+    #logo {
+        max-width: 15%; 
     }
 }
 #logo {
@@ -26,10 +39,27 @@
   vertical-align: top;
 }
 
+#sidebar-button {
+    float: right;
+}
+
 #sidebar {
     float: right;
 }
 #sidebar ul {
-    display: none;
+    /*display: none;*/
 }
 
+.sidebar {
+    padding: 0;
+    margin: 0;
+    float: right;
+    width: 60%;
+    height: 100%;
+    background-color: #000000;
+    transition: 0.7s;
+    float: right;
+  }
+  .sidebar.is-closed {
+    transform: translateX(100%);
+  }
