@@ -6,7 +6,7 @@ function Change(x) {
   x.classList.toggle('change');
 }
 
-// Da fixare
+// FIXME: ordinare e ripulire
 function sidebarToggle(x) {
   Change(x);
   let sidenav_button = document.getElementById('menu');
