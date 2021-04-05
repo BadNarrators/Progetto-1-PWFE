@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="authors" content="Andrea Atzei, Alessandro Carabetta, Eugenio Di Paola, Simone Guglielmi" />
     <meta name="description" content="add a description here" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" />
     <script src="script/sidebar.js"></script>
     <title>StarDust</title>
@@ -21,11 +22,19 @@
           </ul>
         </div>
         <div id="sidebar" class="sidebar">
+          <div class="menu" id="sidebar-button" onclick="sidebarToggle(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <!--
           <input type="image" id="sidebar-button" onclick="sidebar_push()" src="assets/sidebar_menu.png" alt="menu"></input>
-          <div id="sidebar-content">
-            <ul>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Ciao</a></li>
+          -->
+          <div class="sidebar-content">
+            <ul id="sidebar-content" class="sidebar-list">
+              <li class="sidebar-container"><a class="sidebar-element" href="#">News</a></li>
+              <li class="sidebar-container"><a class="sidebar-element" href="#">Ciao</a></li>
+              <li class="sidebar-container"></li>
             </ul>
           </div>
         </div>
