@@ -46,7 +46,6 @@ body {
     transition: 0.7s;
     margin-right: -70vw;
     margin-top: -8px;
-    overflow: hidden;
 }
 .sidebar.change {
     transform: translateX(-70vw);
@@ -121,7 +120,7 @@ li.sidebar-container {
   overflow: hidden;
 }
 div.sidebar-empty {
-  height: 29vh;
+  height: 22.5vh;
   width: 70vw;
   padding-bottom:5px;
   background: rgb(255,255,255);
@@ -175,4 +174,11 @@ a.sidebar-element:hover {
         position: relative;
     }
     
+}
+
+
+main {
+  padding: 1vh 2vw;
+  color: white;
+  position: relative;
 }
