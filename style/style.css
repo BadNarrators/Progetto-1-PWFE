@@ -33,48 +33,23 @@ body {
 }
 
 
-.menu {
-  cursor: pointer;
-  margin-left: auto;
-  order: 2;
-  padding-top: 20px;
-  transition: 0.7s;
-}
-.menu.change {
-  transform: translateX(15vw);
-}
-.line1,
-.line2,
-.line3 {
-  width: 35px;
-  height: 5px;
-  background-color: #EEE;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.change .line1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-  background-color: #000;
-}
-.change .line2 {
-  opacity: 0;
-}
-.change .line3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-  background-color: #000;
-}
-#sidebar-button {
-    float: left;
-    width: 10vw;
-    height: 10vw;
-}
 
-
-#sidebar { /*TODO: ripulire e ordinare tutto il codice della sidebar*/
+.sidebar {
     float: right;
+    padding: 0;
+    margin: 0;
+    float: right;
+    width: 80vw;
+    height: 100%;
+    transition: 0.7s;
+    margin-right: -70vw;
+    margin-top: -8px;
+    overflow: hidden;
 }
+.sidebar.change {
+    transform: translateX(-70vw);
+}
+
 .sidebar-content {
     list-style-type: none;
     margin: 0;
@@ -87,19 +62,42 @@ body {
     /*background-color: #000000;*/
 }
 
-.sidebar {
-    padding: 0;
-    margin: 0;
-    float: right;
-    width: 80vw;
-    height: 100%;
-    transition: 0.7s;
-    margin-right: -70vw;
-    margin-top: -8px;
-    overflow: hidden;
+.sidebar-button {
+  cursor: pointer;
+  margin-left: auto;
+  order: 2;
+  padding-top: 20px;
+  transition: 0.7s;
 }
-.sidebar.is-closed {
-    transform: translateX(-70vw);
+.sidebar-button.change {
+  transform: translateX(15vw);
+}
+.button-line1,
+.button-line2,
+.button-line3 {
+  width: 35px;
+  height: 5px;
+  background-color: #EEE;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .button-line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: #000;
+}
+.change .button-line2 {
+  opacity: 0;
+}
+.change .button-line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: #000;
+}
+.sidebar-button {
+    float: left;
+    width: 10vw;
+    height: 10vw;
 }
 
 .sidebar-logo {
@@ -117,17 +115,8 @@ li.sidebar-container {
   height: 10vw;
   width: 70vw;
   padding-bottom:5px;
+  background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%);
-  background:
-    linear-gradient(
-      to left, 
-      rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%
-    )
-    left 
-    bottom
-    linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%)
-    no-repeat; 
-  background-size:100% 5px ;
   overflow: hidden;
 }
 div.sidebar-empty {
@@ -141,17 +130,8 @@ div.sidebar-border {
   height: 10vw;
   width: 70vw;
   padding-bottom:3px;
+  background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%);
-  background:
-    linear-gradient(
-      to left, 
-      rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%
-    )
-    left 
-    bottom
-    linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%)  
-    no-repeat; 
-  background-size:100% 3px ;
 }
 a.sidebar-element {
   font-family: "Raleway", sans-serif;
