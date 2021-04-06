@@ -10,6 +10,8 @@
   flex-wrap: wrap;
   align-items: center;
   overflow: hidden;
+  padding-bottom: 2%;
+  border: 1px solid black;
 }
 
 .container .logo {
@@ -19,11 +21,11 @@
   border: 1px solid black;
 }
 
-/* .container .logo {
+.container .logo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-} */
+}
 
 .container .logo img {
   max-width: 100%;
