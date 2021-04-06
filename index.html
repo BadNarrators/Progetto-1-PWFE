@@ -42,28 +42,11 @@
         x.classList.toggle('change');
       }
 
-      function openNav() {
-        let sidebar = document.getElementById('sidebar-container');
-        sidebar.style.width = '250px';
-      }
-
-      function closeNav() {
-        let sidebar = document.getElementById('sidebar-container');
-        sidebar.style.width = '0';
-      }
-
       // Da fixare
       function toggleNav(x) {
         Change(x);
-        let closed = false;
-
-        if (closed) {
-          openNav();
-          closed = false;
-        } else {
-          closeNav();
-          closed = true;
-        }
+        let sidebar = document.getElementById('sidebar-container');
+        sidebar.classList.toggle('change');
       }
     </script>
   </body>

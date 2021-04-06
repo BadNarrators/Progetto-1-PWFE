@@ -49,8 +49,17 @@
 }
 
 .sidebar-container {
+  margin: 0;
   margin-left: auto;
   order: 2;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-container .change {
+  margin-right: 20vw;
+  width: 20vw;
 }
 
 .sidebar-container span {
