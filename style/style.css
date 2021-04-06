@@ -6,6 +6,7 @@ body {
     background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,50,1));
     margin: 0;
     height: 100vh; /*TODO: rimuovere poi quando si ha il contenuto vero e proprio*/
+    scroll-behavior: smooth;
 }
 
 #bar {
