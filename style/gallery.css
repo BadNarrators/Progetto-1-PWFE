@@ -6,12 +6,11 @@ body {
   margin:0;
 }
 .mySlides {
-  display: none
+  display: none;
 }
 img {
   vertical-align: middle;
-  width: 100%;
-  object-fit: contain;
+  width:100%;
 }
 
 /* Slideshow container */
@@ -19,6 +18,7 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  
 }
 
 /* Next & previous buttons */
