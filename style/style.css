@@ -19,11 +19,11 @@
   border: 1px solid black;
 }
 
-.container .logo a {
+/* .container .logo {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
+} */
 
 .container .logo img {
   max-width: 100%;
@@ -48,11 +48,15 @@
   padding: 0 10px;
 }
 
-.menu {
-  cursor: pointer;
+.sidebar-container {
   margin-left: auto;
   order: 2;
 }
+
+.sidebar-container span {
+  cursor: pointer;
+}
+
 .line1,
 .line2,
 .line3 {
@@ -75,4 +79,8 @@
 .change .line3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sidebar-content ul {
+  list-style-type: none;
 }

@@ -22,10 +22,17 @@
           <li><a href="#">About Us</a></li>
         </ul>
       </div>
-      <div class="menu" id="menu" onclick="toggleNav(this)">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="sidebar-container" id="sidebar-container">
+        <span onclick="toggleNav(this)">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </span>
+        <div class="sidebar-content">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div id="main"></div>
@@ -35,11 +42,28 @@
         x.classList.toggle('change');
       }
 
+      function openNav() {
+        let sidebar = document.getElementById('sidebar-container');
+        sidebar.style.width = '250px';
+      }
+
+      function closeNav() {
+        let sidebar = document.getElementById('sidebar-container');
+        sidebar.style.width = '0';
+      }
+
       // Da fixare
       function toggleNav(x) {
         Change(x);
-        let sidenav = document.getElementById('menu');
-        let main = document.getElementById('main');
+        let closed = false;
+
+        if (closed) {
+          openNav();
+          closed = false;
+        } else {
+          closeNav();
+          closed = true;
+        }
       }
     </script>
   </body>
