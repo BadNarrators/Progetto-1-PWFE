@@ -46,6 +46,7 @@ body {
     transition: 0.7s;
     margin-right: -70vw;
     margin-top: -8px;
+    z-index: 9;
 }
 .sidebar.change {
     transform: translateX(-70vw);
@@ -179,6 +180,7 @@ a.sidebar-element:hover {
 
 main {
   padding: 1vh 2vw;
-  color: white;
+  color: grey;
   position: relative;
+  z-index: -1;
 }
