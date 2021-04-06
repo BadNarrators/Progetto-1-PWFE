@@ -1,9 +1,10 @@
-function sidebar_push() {
-    if(document.getElementById("sidebar-content").style.display == "none"){
-        document.getElementById("sidebar-content").style.width = "100%";
-        document.getElementById("sidebar-content").style.display = "block";
-    }else{
-        document.getElementById("sidebar-content").style.display = "none";
-    }
+function sidebarPush(x) {
+  x.classList.toggle('change');
 }
 
+function sidebarToggle() {
+  let sidenav_button = document.getElementById('sidebar-button');
+  let sidenav = document.getElementById('sidebar');
+  sidebarPush(sidenav_button);
+  sidebarPush(sidenav);
+}

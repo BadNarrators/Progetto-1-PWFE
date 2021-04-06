@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="authors" content="Andrea Atzei, Alessandro Carabetta, Eugenio Di Paola, Simone Guglielmi" />
     <meta name="description" content="add a description here" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" />
     <script src="script/sidebar.js"></script>
     <title>StarDust</title>
@@ -14,20 +15,38 @@
     <header>
       <div id="bar">
         <div id="navbar">
-          <img id="logo-img" src="assets/logo.png" alt="Logo" />
+          <img id="logo" src="assets/logo_mini.png" alt="Logo" />
           <ul>
             <li><a href="#">News</a></li>
             <li><a href="#">Ciao</a></li>
           </ul>
-          <div id="sidebar">
-            <button onclick="sidebar_open()">Open</button>
-            <ul id="sidebar-content">
-              <li><a href="#">News</a></li>
-              <li><a href="#">Ciao</a></li>
+        </div>
+        <div id="sidebar" class="sidebar">
+          <div class="sidebar-button" id="sidebar-button" onclick="sidebarToggle()">
+            <div class="button-line1"></div>
+            <div class="button-line2"></div>
+            <div class="button-line3"></div>
+          </div>
+          <div class="sidebar-content" id="sidebar-content">
+            <ul class="sidebar-list">
+              <div class="sidebar-empty sidebar-border"></div>
+              <div class="sidebar-empty">
+                <img class="sidebar-logo" src="assets/logo.png" alt="Logo" />
+              </div>
+              <li class="sidebar-container"><a class="sidebar-element" href="#">News</a></li>
+              <li class="sidebar-container"><a class="sidebar-element" href="#">Missions</a></li>
+              <li class="sidebar-container"><a class="sidebar-element" href="#">Astronauts</a></li>
+              <li class="sidebar-container"><a class="sidebar-element" href="#">Join Us</a></li>
+              <li class="sidebar-container"><a class="sidebar-element" href="#">Gallery</a></li>
+              <li class="sidebar-container"><a class="sidebar-element" href="#">About</a></li>
+              <div class="sidebar-empty"></div>
             </ul>
           </div>
         </div>
       </div>
     </header>
+    <main>
+      test test test<br>test
+    </main>
   </body>
 </html>
