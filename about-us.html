@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>about-us</title>
+    <meta name="description" content="about-us-section" />
+    <meta name="author" content="group-3" />
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js">
+        </script>
+    <![endif]-->
+    <style>
+        
+        /*--------------- setting border box model for all elements -------------*/
+        html {
+            box-sizing: border-box;
+        }
+             
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        /*--------------- body -------------*/
+        body {
+            /*setto tutti i margini e padding a 0 per poterli poi modificare dove mi serve*/
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        main,
+        footer {
+            width: 100%;
+        }
+
+        /*--------------- header -------------*/
+        header {
+            background-color: cornflowerblue;
+        }
+
+        /*--------------- article -------------*/
+        article {
+            width: 80%;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        article h1 {
+            margin: 0;
+        }
+
+        /*--------------- main -------------*/
+        /*--------------- company mission section -------------*/
+        #company_mission_section {
+            background-color: rgb(144, 175, 195);
+            margin: auto;
+        }
+
+            #company_mission_section h1{
+                text-align: center;
+                padding-top: 5%;
+                padding-bottom: 2%;
+            }
+
+            #company_mission_section p {
+                text-align: center;
+                padding-bottom: 5%;
+                margin: 0;
+            }
+
+        /*--------------- team mission section -------------*/
+        #team_section {
+            background-color: bisque;
+        }
+
+        #team_section p{
+            text-align:justify;
+            text-justify: inter-word;
+        }
+
+            /*--------------- leadership article -------------*/
+            #leadership_article, #management_article{
+                margin-bottom: 5%;
+            }
+
+            #leadership_article h1, #management_article h1{
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+                /*--------------- founder figure -------------*/ 
+                #leadership_article .founder_figure, #management_article .founder_figure{ 
+                    width: 20%; 
+                    float: left;
+                    padding: 0;
+                    margin: 0;
+                }
+                    #leadership_article .founder_figure img, #management_article .founder_figure img{
+                    width: 100%;
+                    }
+
+                #leadership_article .founder_figure:nth-child(-n+4), #management_article .founder_figure:nth-child(-n+4){
+                    margin-right: calc(20%/3);
+                    /*padding-right: calc(20%/3);*/
+                }
+
+            /*--------------- management article -------------*/
+            #management_article .founder_figure a img{ 
+                width: 10%;
+                border: 0;
+                margin: 0;
+            }
+
+        /*--------------- about section -------------*/
+        #about {
+            background-color: cadetblue;
+            padding-top: 10%
+        }
+
+            #about article {
+                width: 80%;
+            }
+
+                #about article h1 {
+                    width: 100%;
+                }
+
+                #about article p {
+                    margin: 0;
+                    float: left;
+                    width: 45%;
+                    text-align:justify;
+                    text-justify: inter-word;
+                    margin-top: 10%;      
+            
+                }
+
+                #about article figure {
+                    float: right;
+                    width: 50%;
+                    margin: 0;
+                }
+
+                    #about article figure img {
+                        width: 100%;
+                    }
+
+        /*--------------- footer -------------*/
+        footer {
+            clear: both;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        header comune a tutte le pagine
+    </header>
+    <main>
+        <section id="company_mission_section">
+            <article>
+                <h1>
+                    We're paving the way to the stars, one mission at a time.
+                </h1>
+                <p>
+                    Tellus pellentesque eu tincidunt tortor aliquam. In fermentum et
+                    sollicitudin ac. Lectus vestibulum mattis ullamcorper velit. Egestas
+                    erat imperdiet sed euismod nisi porta.<br>
+                    Laoreet sit amet cursus sit amet dictum sit amet. A arcu cursus vitae congue mauris rhoncus aenean
+                    vel. Mauris sit amet massa vitae tortor condimentum.<br> 
+                    Vitae suscipit tellus mauris a diam maecenas sed enim ut. A cras semper auctor neque
+                    vitae. Proin nibh nisl condimentum id venenatis a condimentum. <br>
+                    At varius vel pharetra vel turpis nunc eget lorem. Augue ut lectus arcu
+                    bibendum at. Quis vel eros donec ac odio tempor orci dapibus ultrices.
+                </p>
+            </article>
+        </section>
+        <section id="team_section">
+            <article id="leadership_article">
+                <h1>
+                    LEADERSHIP
+                </h1>
+                <figure class="founder_figure">
+                    <img src="img/profile-pic-andrew-atzaee.jpg" /><br />
+                    <figcaption>
+                        <strong>
+                            Dr. Andrew Atzaee
+                        </strong><br />
+                        <em>
+                            CTO/Founder
+                        </em><br />
+                        <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel=""
+                            href="https://www.linkedin.com/in/andrew-atzaee">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                        </a>
+                        <hr />
+                        <br />
+                        <p>
+                            Dignissim enim sit amet venenatis urna cursus. Ultrices vitae
+                            auctor eu augue ut lectus. Nec sagittis aliquam malesuada bibendum
+                            arcu. Cras pulvinar mattis nunc sed blandit libero. Id volutpat
+                            lacus laoreet non curabitur gravida. Feugiat pretium nibh ipsum
+                            consequat nisl vel pretium lectus. Suspendisse in est ante in nibh
+                            mauris cursus mattis. Scelerisque mauris pellentesque pulvinar
+                            pellentesque habitant morbi. Donec adipiscing tristique risus nec
+                            feugiat in. Nec sagittis aliquam malesuada bibendum arcu vitae
+                            elementum. Purus in massa tempor nec feugiat nisl pretium fusce.
+                            Risus in hendrerit gravida rutrum quisque non tellus orci.
+                            Sagittis eu volutpat odio facilisis mauris sit.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="founder_figure">
+                    <img src="img/profile-pic-alex-karabeta.jpg" />
+                    <figcaption>
+                        <strong>
+                            Alex Karabeta
+                        </strong><br />
+                        <em>
+                            CEO/Founder
+                        </em>
+                        <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel="" href="https://www.linkedin.com/in/andrew-atzaee">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                        </a><br />
+                        <hr /><br>
+                        <p>
+                            Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Aliquam
+                            vestibulum morbi blandit cursus risus at ultrices. Sed faucibus
+                            turpis in eu. Erat pellentesque adipiscing commodo elit at. Vitae
+                            congue eu consequat ac felis donec et odio pellentesque. Commodo
+                            sed egestas egestas fringilla phasellus faucibus. Varius duis at
+                            consectetur lorem donec massa sapien faucibus. Congue nisi vitae
+                            suscipit tellus. Sit amet cursus sit amet. Tincidunt ornare massa
+                            eget egestas purus viverra accumsan in nisl. Ac feugiat sed lectus
+                            vestibulum mattis ullamcorper velit sed. A iaculis at erat
+                            pellentesque adipiscing commodo elit at imperdiet. Arcu non
+                            sodales neque sodales ut etiam. Suspendisse potenti nullam ac
+                            tortor vitae purus faucibus. Nulla aliquet porttitor lacus luctus
+                            accumsan tortor posuere ac ut. Nam aliquam sem et tortor consequat
+                            id.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="founder_figure">
+                    <figcaption>
+                        <img src="img/profile-pic-simon-williams.png" />
+                        <strong>
+                            Simon Williams
+                        </strong><br />
+                        <em>
+                            CTO/Founder
+                        </em>
+                        <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel="" href="https://www.linkedin.com/in/andrew-atzaee">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                        </a><br />
+                        <hr /><br>
+                        <p>
+                            Semper viverra nam libero justo laoreet sit amet cursus. Quisque
+                            sagittis purus sit amet volutpat consequat mauris nunc. Duis at
+                            tellus at urna condimentum mattis. Neque ornare aenean euismod
+                            elementum nisi quis eleifend quam adipiscing. Facilisis mauris sit
+                            amet massa vitae tortor condimentum. Pellentesque id nibh tortor
+                            id aliquet lectus proin nibh nisl. Eget velit aliquet sagittis id
+                            consectetur purus ut. Egestas sed tempus urna et pharetra
+                            pharetra. Tempus egestas sed sed risus pretium quam vulputate
+                            dignissim. Tempus quam pellentesque nec nam aliquam sem et. Eget
+                            mi proin sed libero enim. Turpis egestas maecenas pharetra
+                            convallis posuere morbi leo urna molestie. Eget dolor morbi non
+                            arcu.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="founder_figure">
+                    <img src="img/profile-pic-eugene-von-paula.png" />
+                    <figcaption>
+                        <strong>Eugene Von Paula</strong><br />
+                        <em>CEO/Founder</em>
+                        <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel="" href="https://www.linkedin.com/in/andrew-atzaee">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                        </a><br>
+                        <hr /><br>
+                        <p>
+                            Id semper risus in hendrerit gravida rutrum. Penatibus et magnis
+                            dis parturient montes nascetur ridiculus. Ultrices gravida dictum
+                            fusce ut placerat orci. Risus feugiat in ante metus dictum at.
+                            Adipiscing enim eu turpis egestas pretium aenean pharetra magna.
+                            Neque laoreet suspendisse interdum consectetur libero. Sit amet
+                            luctus venenatis lectus magna fringilla urna porttitor rhoncus. Et
+                            netus et malesuada fames ac. Euismod elementum nisi quis eleifend.
+                            Aenean et tortor at risus viverra adipiscing at. Sed lectus
+                            vestibulum mattis ullamcorper velit sed ullamcorper. Commodo quis
+                            imperdiet massa tincidunt. Consectetur purus ut faucibus pulvinar
+                            elementum integer enim neque. Pulvinar sapien et ligula
+                            ullamcorper malesuada proin. Mauris pharetra et ultrices neque
+                            ornare aenean. Vel facilisis volutpat est velit egestas.
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+            
+            <article id="management_article">
+                <h1>
+                    MANAGEMENT
+                </h1>
+                <figure class="founder_figure">
+                    <img src="img/profile-pic-andrew-atzaee.jpg" /><br />
+                    <figcaption>
+                        <strong>
+                            Dr. Andrew Atzaee
+                        </strong><br />
+                        <em>
+                            CTO/Founder
+                        </em><br />
+                        <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel="" href="https://www.linkedin.com/in/andrew-atzaee">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                        </a>
+                        <hr />
+                        <br />
+                        <p>
+                            Dignissim enim sit amet venenatis urna cursus. Ultrices vitae
+                            auctor eu augue ut lectus. Nec sagittis aliquam malesuada bibendum
+                            arcu. Cras pulvinar mattis nunc sed blandit libero. Id volutpat
+                            lacus laoreet non curabitur gravida. Feugiat pretium nibh ipsum
+                            consequat nisl vel pretium lectus. Suspendisse in est ante in nibh
+                            mauris cursus mattis. Scelerisque mauris pellentesque pulvinar
+                            pellentesque habitant morbi. Donec adipiscing tristique risus nec
+                            feugiat in. Nec sagittis aliquam malesuada bibendum arcu vitae
+                            elementum. Purus in massa tempor nec feugiat nisl pretium fusce.
+                            Risus in hendrerit gravida rutrum quisque non tellus orci.
+                            Sagittis eu volutpat odio facilisis mauris sit.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="founder_figure">
+                    <img src="img/profile-pic-alex-karabeta.jpg" />
+                    <figcaption>
+                        <strong>
+                            Alex Karabeta
+                        </strong><br />
+                        <em>
+                            CEO/Founder
+                        </em>
+                        <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel="" href="https://www.linkedin.com/in/andrew-atzaee">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                        </a><br />
+                        <hr /><br>
+                        <p>
+                            Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Aliquam
+                            vestibulum morbi blandit cursus risus at ultrices. Sed faucibus
+                            turpis in eu. Erat pellentesque adipiscing commodo elit at. Vitae
+                            congue eu consequat ac felis donec et odio pellentesque. Commodo
+                            sed egestas egestas fringilla phasellus faucibus. Varius duis at
+                            consectetur lorem donec massa sapien faucibus. Congue nisi vitae
+                            suscipit tellus. Sit amet cursus sit amet. Tincidunt ornare massa
+                            eget egestas purus viverra accumsan in nisl. Ac feugiat sed lectus
+                            vestibulum mattis ullamcorper velit sed. A iaculis at erat
+                            pellentesque adipiscing commodo elit at imperdiet. Arcu non
+                            sodales neque sodales ut etiam. Suspendisse potenti nullam ac
+                            tortor vitae purus faucibus. Nulla aliquet porttitor lacus luctus
+                            accumsan tortor posuere ac ut. Nam aliquam sem et tortor consequat
+                            id.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="founder_figure">
+                    <figcaption>
+                        <img src="img/profile-pic-simon-williams.png" />
+                        <strong>
+                            Simon Williams
+                        </strong><br />
+                        <em>
+                            CTO/Founder
+                        </em>
+                        <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel="" href="https://www.linkedin.com/in/andrew-atzaee">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                        </a><br />
+                        <hr /><br>
+                        <p>
+                            Semper viverra nam libero justo laoreet sit amet cursus. Quisque
+                            sagittis purus sit amet volutpat consequat mauris nunc. Duis at
+                            tellus at urna condimentum mattis. Neque ornare aenean euismod
+                            elementum nisi quis eleifend quam adipiscing. Facilisis mauris sit
+                            amet massa vitae tortor condimentum. Pellentesque id nibh tortor
+                            id aliquet lectus proin nibh nisl. Eget velit aliquet sagittis id
+                            consectetur purus ut. Egestas sed tempus urna et pharetra
+                            pharetra. Tempus egestas sed sed risus pretium quam vulputate
+                            dignissim. Tempus quam pellentesque nec nam aliquam sem et. Eget
+                            mi proin sed libero enim. Turpis egestas maecenas pharetra
+                            convallis posuere morbi leo urna molestie. Eget dolor morbi non
+                            arcu.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="founder_figure">
+                    <img src="img/profile-pic-eugene-von-paula.png" />
+                    <figcaption>
+                        <strong>Eugene Von Paula</strong><br />
+                        <em>CEO/Founder</em><br>
+                        <a class="envelope-anchor"  target="_blank" rel="" href="mailto:contact@starlinesmail.com">
+                            <img src="img/email-icon.svg">
+                        </a>
+                        <a class="linkedin-anchor" target="_blank" rel="" href="https://www.linkedin.com/in/andrew-atzaee">
+                            <img src="img/linkedin-icon.svg">
+                        </a>
+                        <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
+                            <img src="img/twitter-icon.svg">
+                        </a><br>
+                        <hr /><br>
+                        <p>
+                            Id semper risus in hendrerit gravida rutrum. Penatibus et magnis
+                            dis parturient montes nascetur ridiculus. Ultrices gravida dictum
+                            fusce ut placerat orci. Risus feugiat in ante metus dictum at.
+                            Adipiscing enim eu turpis egestas pretium aenean pharetra magna.
+                            Neque laoreet suspendisse interdum consectetur libero. Sit amet
+                            luctus venenatis lectus magna fringilla urna porttitor rhoncus. Et
+                            netus et malesuada fames ac. Euismod elementum nisi quis eleifend.
+                            Aenean et tortor at risus viverra adipiscing at. Sed lectus
+                            vestibulum mattis ullamcorper velit sed ullamcorper. Commodo quis
+                            imperdiet massa tincidunt. Consectetur purus ut faucibus pulvinar
+                            elementum integer enim neque. Pulvinar sapien et ligula
+                            ullamcorper malesuada proin. Mauris pharetra et ultrices neque
+                            ornare aenean. Vel facilisis volutpat est velit egestas.
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+            </section>
+        <section id="about">
+            <article>
+                
+                <p>
+                        Four ex SpaceX employees, disgruntled with the awful work culture
+                        created by Elon Musk, went on to found their own aerospace company.
+                        Many other joined and now we are a big reality that can work both
+                        with national space agencies and on its own.
+                </p>
+                <figure>
+                    <img src="img/starlines-headquarters.jpg" />
+                    <figcaption>
+                        Starlines Headquarters in Vergate sul Membro, Italy.
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Footer comune a tutte le pagine
+    </footer>
+</body>
+
+</html>
