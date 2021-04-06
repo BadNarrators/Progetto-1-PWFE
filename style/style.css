@@ -12,6 +12,7 @@
   overflow: hidden;
   padding-bottom: 2%;
   border: 1px solid black;
+  background: url('assets/space.jpg');
 }
 
 .container .logo {
@@ -94,4 +95,15 @@
 
 .sidebar-content ul {
   list-style-type: none;
+}
+
+.big-logo {
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 25%;
+  overflow: hidden;
+}
+
+.big-logo img {
+  width: 100%;
 }
