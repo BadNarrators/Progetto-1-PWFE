@@ -82,7 +82,7 @@
 }
 
 .sidebar-container span {
-  visibility: hidden;
+  display: none;
   cursor: pointer;
 }
 
@@ -130,13 +130,22 @@
   line-height: 3.5vh;
 }
 
+.sidebar-content ul li::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: 10px 75px;
+  background-color: white;
+}
+
 .sidebar-content ul a {
   text-decoration: none;
   color: white;
 }
 
-.sidebar-content ul a:hover {
-  /* Some Content Here */
+.sidebar-content ul li:hover {
+  background-color: #5c4887;
 }
 
 .big-logo {
@@ -166,7 +175,7 @@
   }
 
   .sidebar-container span {
-    visibility: visible;
+    display: inline;
   }
 
   body {
