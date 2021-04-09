@@ -4,7 +4,7 @@ function Change(x) {
 
 function openNav() {
   let sidebar = document.getElementById('sidebar-content');
-  sidebar.style.width = '22%';
+  sidebar.style.width = '35%';
 }
 
 function closeNav() {
