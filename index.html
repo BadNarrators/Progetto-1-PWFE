@@ -12,7 +12,9 @@
   <body>
     <div class="container">
       <div class="logo">
-        <img src="assets/logo.png" alt="logo" />
+        <a href="index.html">
+          <img src="assets/logo.png" alt="logo" />
+        </a>
       </div>
       <div class="navbar">
         <ul>
@@ -22,15 +24,18 @@
           <li><a href="#">About Us</a></li>
         </ul>
       </div>
-      <div class="sidebar-container" id="sidebar-container">
-        <span onclick="toggleNav(this)">
+      <div class="sidebar-container">
+        <span id="button" onclick="toggleNav(this)">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
         </span>
-        <div class="sidebar-content">
+        <div class="sidebar-content" id="sidebar-content">
           <ul>
-            <li></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">About Us</a></li>
           </ul>
         </div>
       </div>
@@ -38,18 +43,8 @@
     <div class="big-logo">
       <img src="assets/logo.png" alt="logo-big" />
     </div>
-
-    <script>
-      function Change(x) {
-        x.classList.toggle('change');
-      }
-
-      // Da fixare
-      function toggleNav(x) {
-        Change(x);
-        let sidebar = document.getElementById('sidebar-container');
-        sidebar.classList.toggle('change');
-      }
-    </script>
+    <!-- Scripts -->
+    <script src="script/main.js"></script>
+    <!-- End of Scripts -->
   </body>
 </html>
