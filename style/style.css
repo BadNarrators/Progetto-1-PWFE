@@ -74,12 +74,12 @@
   order: 2;
   overflow: hidden;
   z-index: 2;
-  margin-right: 1.5em;
+  margin-right: 4vw;
   position: relative;
 }
 
 .sidebar-container .change {
-  margin-right: 25vw;
+  margin-right: 30vw;
   width: 20vw;
   transition: 0.5s;
 }
@@ -150,13 +150,13 @@
   background-color: white;
 } */
 
-.sidebar-content ul a {
+.sidebar-content ul li a {
   text-decoration: none;
   color: #684cbe;
 }
 
 .sidebar-content ul .sidebar-item:hover {
-  background-color: #5c4887;
+  background-color: #c33764;
 }
 
 .big-logo {
@@ -186,7 +186,7 @@
   }
 
   .sidebar-container .change {
-    margin-right: 24vw;
+    margin-right: 25vw;
   }
 
   .sidebar-container span {
