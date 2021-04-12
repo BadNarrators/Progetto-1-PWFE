@@ -63,10 +63,9 @@
   padding: 0 5px;
 }
 
-.container .navbar ul li a:hover {
+.container .navbar ul li:hover {
   cursor: pointer;
-  font-size: 18px;
-  -webkit-text-stroke: 1px #684cbe;
+  background-color: #684cbe;
 }
 
 .sidebar-container {
@@ -134,6 +133,7 @@
 }
 
 .sidebar-content ul {
+  padding-left: 4vw;
   list-style-type: none;
   /* margin: 25px 0; */
   text-align: justify;
@@ -141,14 +141,14 @@
   font-size: 16px;
 }
 
-.sidebar-content ul .sidebar-item::after {
+/* .sidebar-content ul .sidebar-item::after {
   content: '';
   display: block;
   height: 1px;
   width: 40%;
   margin-bottom: 5px;
   background-color: white;
-}
+} */
 
 .sidebar-content ul a {
   text-decoration: none;
@@ -198,8 +198,8 @@
   }
 
   .sidebar-content ul {
-    margin: 20px 0;
-    line-height: 4.5vh;
+    margin: 15px 0;
+    line-height: 6.5vh;
   }
 
   .sidebar-content {
