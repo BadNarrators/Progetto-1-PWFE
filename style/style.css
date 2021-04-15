@@ -185,7 +185,7 @@
   margin-left: auto;
   order: 2;
   height: 100%;
-  width: 40%;
+  width: 60%;
 }
 
 .news-container .news:nth-child(even) {
@@ -209,11 +209,12 @@
 
 .news-container .news .news-img {
   height: 100%;
-  width: 60%;
+  width: 40%;
 }
 
 .news-container .news .news-img img {
-  width: inherit;
+  width: 100%;
+  height: inherit;
   align-items: center;
   margin-left: 15px;
 }
