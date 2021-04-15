@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #c33764, #a62a6f, #822675, #572676, #1d2671);
+  border: none;
+}
+
+.container .logo {
+  max-width: 6em;
+  margin-top: 5px;
+  padding: 0 10px;
+  overflow: hidden;
+  border: none;
+}
+
+.container .logo:hover {
+  opacity: 0.8;
+}
+
+.container .logo a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .logo img {
+  max-width: 100%;
+  max-height: 2.5%;
+}
+
+.container .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.container .navbar ul li {
+  border-right: 1px solid white;
+}
+
+.container .navbar ul li:first-child {
+  border-left: 1px solid white;
+}
+
+.container .navbar ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 5px;
+}
+
+.container .navbar ul li:hover {
+  cursor: pointer;
+  background-color: #684cbe;
+}
+
+.sidebar-container {
+  margin: 0;
+  margin-left: auto;
+  order: 2;
+  overflow: hidden;
+  z-index: 2;
+  margin-right: 4vw;
+  position: relative;
+}
+
+.sidebar-container .change {
+  margin-right: 30vw;
+  width: 20vw;
+  transition: 0.5s;
+}
+
+.sidebar-container span {
+  display: none;
+  cursor: pointer; /* Just for testing  in desktp mode */
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 35px;
+  height: 5px;
+  background-color: #684cbe;
+  margin: 6px 0;
+  transition: 0.5s;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sidebar-content {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 8px;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(207, 207, 207, 1) 100%);
+  overflow-x: hidden;
+  padding-top: 15px;
+  transition: 0.5s;
+}
+
+.sidebar-container .logo {
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+.sidebar-content ul {
+  padding-left: 4vw;
+  list-style-type: none;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.sidebar-content ul .sidebar-item {
+  width: fit-content;
+}
+.sidebar-content ul .sidebar-item a {
+  text-decoration: none;
+  color: #684cbe;
+}
+
+.sidebar-content ul .sidebar-item:hover {
+  background-color: #c33764;
+}
+
+.big-logo {
+  margin: 0 auto;
+  width: 25%;
+  overflow: hidden;
+}
+
+.big-logo img {
+  width: 100%;
+}
+
+.news-container {
+  max-width: 100%;
+  max-height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.news-container .news {
+  width: 45vw;
+  height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 7px 7px 7px 7px;
+  overflow: hidden;
+  /* justify-content: stretch; */
+}
+
+.news-container .news .news-text {
+  margin-left: auto;
+  order: 2;
+  height: 100%;
+  width: 60%;
+}
+
+.news-container .news:nth-child(even) {
+  margin-left: auto;
+}
+
+.news-container .news .news-text p {
+  white-space: pre;
+  text-overflow: ellipsis;
+  text-align: justify;
+  margin: 0;
+}
+
+.news .news-text {
+  width: inherit;
+}
+
+.news .news-text p {
+  width: inherit;
+}
+
+.news-container .news .news-img {
+  height: 100%;
+  width: 40%;
+}
+
+.news-container .news .news-img img {
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  margin-left: 15px;
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    justify-content: space-between;
+  }
+  .container .logo {
+    flex: 1;
+  }
+
+  .container .navbar {
+    flex: 0;
+  }
+
+  .container .navbar ul {
+    display: none;
+  }
+
+  .sidebar-container .change {
+    margin-right: 25vw;
+  }
+
+  .sidebar-container span {
+    display: inline;
+  }
+
+  .sidebar-container .logo {
+    margin-top: 10vh;
+  }
+
+  .sidebar-content ul {
+    margin: 15px 0;
+    line-height: 6.5vh;
+  }
+
+  .sidebar-content {
+    top: 10px;
+  }
+
+  body {
+    margin: 0 auto;
+    padding: 10px;
+  }
+}

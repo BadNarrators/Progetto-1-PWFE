@@ -5,49 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="authors" content="Andrea Atzei, Alessandro Carabetta, Eugenio Di Paola, Simone Guglielmi" />
-    <meta name="description" content="add a description here" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet" />
+    <meta name="description" content="Homepage" />
     <link rel="stylesheet" href="style/style.css" />
     <title>StarDust</title>
   </head>
   <body>
-    <!-- <header>
-      <div id="bar">
-        <div id="navbar">
-          <img id="logo" src="assets/logo_mini.png" alt="Logo" />
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/logo_mini.png" alt="logo" />
+        </a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Astronauts</a></li>
+          <li><a href="#">Missions</a></li>
+          <li><a href="#">Join Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-container">
+        <span id="button" onclick="toggleNav(this)">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </span>
+        <div class="sidebar-content" id="sidebar-content">
+          <div class="logo">
+            <img src="assets/logo.png" alt="Logo" />
+          </div>
           <ul>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Ciao</a></li>
+            <li class="sidebar-item"><a href="#">Home</a></li>
+            <li class="sidebar-item"><a href="#">News</a></li>
+            <li class="sidebar-item"><a href="#">Astronauts</a></li>
+            <li class="sidebar-item"><a href="#">Missions</a></li>
+            <li class="sidebar-item"><a href="#">Join Us</a></li>
+            <li class="sidebar-item"><a href="#">About Us</a></li>
           </ul>
         </div>
-        <div id="sidebar" class="sidebar">
-          <div class="sidebar-button" id="sidebar-button" onclick="sidebarToggle()">
-            <div class="button-line1"></div>
-            <div class="button-line2"></div>
-            <div class="button-line3"></div>
-          </div>
-          <div class="sidebar-content" id="sidebar-content">
-            <ul class="sidebar-list">
-              <div class="sidebar-empty sidebar-border"></div>
-              <div class="sidebar-empty">
-                <img class="sidebar-logo" src="assets/logo.png" alt="Logo" />
-              </div>
-              <li class="sidebar-container"><a class="sidebar-element" href="#">News</a></li>
-              <li class="sidebar-container"><a class="sidebar-element" href="#">Missions</a></li>
-              <li class="sidebar-container"><a class="sidebar-element" href="#">Astronauts</a></li>
-              <li class="sidebar-container"><a class="sidebar-element" href="#">Join Us</a></li>
-              <li class="sidebar-container"><a class="sidebar-element" href="#">Gallery</a></li>
-              <li class="sidebar-container"><a class="sidebar-element" href="#">About</a></li>
-              <div class="sidebar-empty"></div>
-            </ul>
-          </div>
+      </div>
+    </div>
+    <div class="big-logo">
+      <img src="assets/logo.png" alt="logo-big" />
+    </div>
+    <!-- News -->
+    <div class="news-container">
+      <div class="news">
+        <div class="news-img">
+          <img src="assets/logo_mini.png" alt="Immagine x" />
+        </div>
+        <div class="news-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, magna non scelerisque dictum, urna mi
+            iaculis sapien, ac venenatis metus urna ut orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            tempor nulla at arcu semper rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae; Phasellus consectetur egestas sollicitudin. Nullam sem velit, molestie vitae pellentesque id,
+            suscipit ac arcu. Nunc porttitor urna magna, ac malesuada ligula placerat sed. Curabitur ornare arcu ut turpis
+            faucibus tristique. Vivamus ornare enim at sagittis condimentum. Praesent fringilla efficitur erat et interdum.
+            Proin scelerisque purus eu venenatis lacinia.
+          </p>
         </div>
       </div>
-    </header>
-    <main>
-      <div>
-        test test test test test test test test test test test test test test test test test<br>test
+      <div class="news">
+        <div class="news-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, magna non scelerisque dictum, urna mi
+            iaculis sapien, ac venenatis metus urna ut orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            tempor nulla at arcu semper rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae; Phasellus consectetur egestas sollicitudin. Nullam sem velit, molestie vitae pellentesque id,
+            suscipit ac arcu. Nunc porttitor urna magna, ac malesuada ligula placerat sed. Curabitur ornare arcu ut turpis
+            faucibus tristique. Vivamus ornare enim at sagittis condimentum. Praesent fringilla efficitur erat et interdum.
+            Proin scelerisque purus eu venenatis lacinia.
+          </p>
+        </div>
       </div>
-    </main> -->
+      <div class="news">
+        <div class="news-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, magna non scelerisque dictum, urna mi
+            iaculis sapien, ac venenatis metus urna ut orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            tempor nulla at arcu semper rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae; Phasellus consectetur egestas sollicitudin. Nullam sem velit, molestie vitae pellentesque id,
+            suscipit ac arcu. Nunc porttitor urna magna, ac malesuada ligula placerat sed. Curabitur ornare arcu ut turpis
+            faucibus tristique. Vivamus ornare enim at sagittis condimentum. Praesent fringilla efficitur erat et interdum.
+            Proin scelerisque purus eu venenatis lacinia.
+          </p>
+        </div>
+      </div>
+      <div class="news">
+        <div class="news-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus, magna non scelerisque dictum, urna mi
+            iaculis sapien, ac venenatis metus urna ut orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            tempor nulla at arcu semper rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae; Phasellus consectetur egestas sollicitudin. Nullam sem velit, molestie vitae pellentesque id,
+            suscipit ac arcu. Nunc porttitor urna magna, ac malesuada ligula placerat sed. Curabitur ornare arcu ut turpis
+            faucibus tristique. Vivamus ornare enim at sagittis condimentum. Praesent fringilla efficitur erat et interdum.
+            Proin scelerisque purus eu venenatis lacinia.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of News-->
+    <!-- Scripts -->
+    <script src="script/main.js"></script>
+    <!-- End of Scripts -->
   </body>
 </html>
