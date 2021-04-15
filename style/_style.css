@@ -1,25 +1,24 @@
 body {
-    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,50,1));
-    margin: 0;
-    height: 100vh; /*TODO: rimuovere poi quando si ha il contenuto vero e proprio*/
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 50, 1));
+  margin: 0;
+  height: 100vh; /*TODO: rimuovere poi quando si ha il contenuto vero e proprio*/
 }
 
 #bar {
-    margin-top: 8px;
-    width: 100%;
-    height: 10vh;
+  margin-top: 8px;
+  width: 100%;
+  height: 10vh;
 }
 
 #logo {
-    max-width: 5%;
-    max-height: 5%;
-    margin-left: 20px;
-    float: left;
+  max-width: 5%;
+  max-height: 5%;
+  margin-left: 20px;
+  float: left;
 }
 #logo:hover {
   opacity: 0.8;
 }
-
 
 #logo {
   display: inline;
@@ -34,34 +33,32 @@ body {
   vertical-align: top;
 }
 
-
-
 .sidebar {
-    float: right;
-    padding: 0;
-    margin: 0;
-    float: right;
-    width: 80vw;
-    height: 100%;
-    transition: 0.7s;
-    margin-right: -70vw;
-    margin-top: -8px;
-    z-index: 9;
+  float: right;
+  padding: 0;
+  margin: 0;
+  float: right;
+  width: 80vw;
+  height: 100%;
+  transition: 0.7s;
+  margin-right: -70vw;
+  margin-top: -8px;
+  z-index: 9;
 }
 .sidebar.change {
-    transform: translateX(-70vw);
+  transform: translateX(-70vw);
 }
 
 .sidebar-content {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 70vw;
-    height: 100vh;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-    /*background-color: #000000;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 70vw;
+  height: 100vh;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  /*background-color: #000000;*/
 }
 
 .sidebar-button {
@@ -82,7 +79,7 @@ body {
 .button-line3 {
   width: 35px;
   height: 5px;
-  background-color: #EEE;
+  background-color: #eee;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -115,27 +112,27 @@ ul.sidebar-list {
 li.sidebar-container {
   height: 7vh;
   width: 70vw;
-  padding-bottom:5px;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%);
+  padding-bottom: 5px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(207, 207, 207, 1) 100%);
   overflow: hidden;
 }
 div.sidebar-empty {
   height: 22.5vh;
   width: 70vw;
-  padding-bottom:5px;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%);
+  padding-bottom: 5px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(207, 207, 207, 1) 100%);
 }
 div.sidebar-border {
   height: 7vh;
   width: 70vw;
-  padding-bottom:3px;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(207,207,207,1) 100%);
+  padding-bottom: 3px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(207, 207, 207, 1) 100%);
 }
 a.sidebar-element {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   display: block;
   line-height: 7vh;
   text-decoration: none;
@@ -153,30 +150,29 @@ a.sidebar-element:hover {
 }
 
 @media (min-width: 768px) {
-    #sidebar-button, 
-    #sidebar {
-        display: none;
-    }
+  #sidebar-button,
+  #sidebar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    html, body {
-      max-width: 100%;
-      overflow-x: hidden;
-    }  
-    #logo {
-        max-width: 15%; 
-        max-height: 15%; 
-    }
-    #navbar ul {
-        display: none;
-    }
-    #bar {
-        position: relative;
-    }
-    
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  #logo {
+    max-width: 15%;
+    max-height: 15%;
+  }
+  #navbar ul {
+    display: none;
+  }
+  #bar {
+    position: relative;
+  }
 }
-
 
 main {
   padding: 1vh 2vw;
