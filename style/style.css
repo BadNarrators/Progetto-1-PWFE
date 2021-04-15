@@ -167,6 +167,21 @@
   flex-wrap: wrap;
   flex-direction: row;
   border: 1px solid red;
+  background-image: radial-gradient(
+    circle,
+    #524b4b,
+    #665f61,
+    #7a7378,
+    #8e8990,
+    #a1a0a8,
+    #a1a0a8,
+    #a1a0a8,
+    #a1a0a8,
+    #8e8990,
+    #7a7378,
+    #665f61,
+    #524b4b
+  );
 }
 
 .news-container .news {
@@ -178,6 +193,7 @@
   border: 1px solid black;
   border-radius: 7px 7px 7px 7px;
   overflow: hidden;
+  background-color: white;
   /* justify-content: stretch; */
 }
 
@@ -252,7 +268,7 @@
   }
 
   .sidebar-content {
-    top: 10px;
+    top: 8px;
   }
 
   body {
