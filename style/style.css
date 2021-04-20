@@ -28,6 +28,8 @@ body {
   overflow: hidden;
   /*background-image: linear-gradient(#FFFFFF, #b6e2ff);*/
   border: none;
+  position: absolute;
+  z-index: 100;
 }
 
 .container .logo {
