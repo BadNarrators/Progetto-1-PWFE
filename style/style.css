@@ -10,12 +10,28 @@ html {
   -webkit-box-sizing: inherit;
 }
 
+body {
+  margin: 0 auto;
+  padding: 10px;
+  background-image: linear-gradient(#b6e2ff, #FFFFFF);
+}
+
+.top-image {
+  background-image: url("../img/blue-planet.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: calc(100%+20px);
+  margin: -10px;
+}
+
 .container {
+  width: calc(100%+20px);
+  margin: -10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   overflow: hidden;
-  background-image: linear-gradient(to right bottom, #c33764, #a62a6f, #822675, #572676, #1d2671);
+  /*background-image: linear-gradient(#FFFFFF, #b6e2ff);*/
   border: none;
 }
 
@@ -97,7 +113,7 @@ html {
 .line3 {
   width: 35px;
   height: 5px;
-  background-color: #684cbe;
+  background-color: #FFFFFF;
   margin: 6px 0;
   transition: 0.5s;
 }
@@ -244,6 +260,11 @@ html {
   margin-left: 15px;
 }
 @media only screen and (max-width: 650px) {
+  
+  .top-image {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
   .container {
     justify-content: space-between;
   }
@@ -285,8 +306,4 @@ html {
     top: 8px;
   }
 
-  body {
-    margin: 0 auto;
-    padding: 10px;
-  }
 }
