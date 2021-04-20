@@ -4,7 +4,8 @@ function Change(x) {
 
 function openNav() {
   let sidebar = document.getElementById('sidebar-content');
-  sidebar.style.width = '35%';
+  sidebar.style.width = '100%';
+  sidebar.style.opacity = '0.9';
 }
 
 function closeNav() {
@@ -23,3 +24,12 @@ function toggleNav(x) {
     opened = false;
   }
 }
+
+// let prevScroll = window.pageYOffset;
+// window.onscroll = function () {
+//   let currentScroll = window.pageXOffset;
+//   if (prevScroll > currentScroll) {
+//     closeNav();
+//   }
+//   prevScroll = currentScroll;
+// };

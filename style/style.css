@@ -1,8 +1,13 @@
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
 }
 
 .container {
@@ -79,8 +84,6 @@
 }
 
 .sidebar-container .change {
-  margin-right: 30vw;
-  width: 20vw;
   transition: 0.5s;
 }
 
@@ -124,6 +127,8 @@
   overflow-x: hidden;
   padding-top: 15px;
   transition: 0.5s;
+  overscroll-behavior: contain; /* This is useful to prevent from users scrolling down */
+  /* TODO: block scrolling completely */
 }
 
 .sidebar-container .logo {
@@ -185,7 +190,7 @@
 }
 
 .news-container .news {
-  width: 45vw;
+  width: 48vw;
   height: 25vh;
   display: flex;
   flex-wrap: wrap;
@@ -195,6 +200,10 @@
   overflow: hidden;
   background-color: white;
   /* justify-content: stretch; */
+}
+
+.news-container .news:nth-child(-n + 2) {
+  margin-top: 10px;
 }
 
 .news-container .news .news-text {
@@ -209,7 +218,7 @@
 }
 
 .news-container .news .news-text p {
-  white-space: pre;
+  white-space: nowrap;
   text-overflow: ellipsis;
   text-align: justify;
   margin: 0;
@@ -250,9 +259,9 @@
     display: none;
   }
 
-  .sidebar-container .change {
+  /* .sidebar-container .change {
     margin-right: 25vw;
-  }
+  } */
 
   .sidebar-container span {
     display: inline;
@@ -265,6 +274,11 @@
   .sidebar-content ul {
     margin: 15px 0;
     line-height: 6.5vh;
+  }
+
+  .sidebar-content .logo {
+    max-width: 25%;
+    max-height: 25%;
   }
 
   .sidebar-content {
