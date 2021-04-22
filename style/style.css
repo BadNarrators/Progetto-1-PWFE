@@ -15,8 +15,6 @@ body {
   padding: 10px;
   background-color: #b6e2ff;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 .top-image {
@@ -248,7 +246,7 @@ body {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #023c63;
 }
 
 .footer {
