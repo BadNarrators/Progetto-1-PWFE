@@ -5,12 +5,13 @@ function Change(x) {
 function openNav() {
   let sidebar = document.getElementById('sidebar-content');
   sidebar.style.width = '100%';
-  sidebar.style.opacity = '0.9';
+  sidebar.style.opacity = '1';
 }
 
 function closeNav() {
   let sidebar = document.getElementById('sidebar-content');
   sidebar.style.width = '0';
+  sidebar.style.opacity = '0';
 }
 
 let opened = false;
@@ -24,12 +25,3 @@ function toggleNav(x) {
     opened = false;
   }
 }
-
-// let prevScroll = window.pageYOffset;
-// window.onscroll = function () {
-//   let currentScroll = window.pageXOffset;
-//   if (prevScroll > currentScroll) {
-//     closeNav();
-//   }
-//   prevScroll = currentScroll;
-// };

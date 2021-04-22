@@ -13,25 +13,24 @@ html {
 body {
   margin: 0 auto;
   padding: 10px;
-  background-image: linear-gradient(#b6e2ff, #FFFFFF);
+  background-image: linear-gradient(#b6e2ff, #ffffff);
+  overflow-x: hidden;
 }
 
 .top-image {
-  background-image: url("../img/blue-planet.jpg");
-  background-repeat: no-repeat;
+  background: url('../img/blue-planet.jpg') no-repeat #023c63;
   background-size: auto;
   width: calc(100%+20px);
   margin: -10px;
 }
 
 .container {
-  width: calc(100%+20px);
+  width: 100%;
   margin: -10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   overflow: hidden;
-  /*background-image: linear-gradient(#FFFFFF, #b6e2ff);*/
   border: none;
 }
 
@@ -113,9 +112,10 @@ body {
 .line3 {
   width: 35px;
   height: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 6px 0;
   transition: 0.5s;
+  z-index: 2;
 }
 
 .change .line1 {
@@ -137,7 +137,7 @@ body {
   height: 100%;
   position: fixed;
   z-index: -1;
-  top: 8px;
+  top: 0;
   right: 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(207, 207, 207, 1) 100%);
   overflow-x: hidden;
@@ -150,10 +150,11 @@ body {
 .sidebar-container .logo {
   max-width: 55%;
   margin: 0 auto;
+  margin-bottom: 3vh;
 }
 
 .sidebar-content ul {
-  padding-left: 4vw;
+  padding: 0;
   list-style-type: none;
   text-align: justify;
   font-size: 16px;
@@ -181,86 +182,46 @@ body {
   width: 100%;
 }
 
-.news-container {
-  max-width: 100%;
-  max-height: 40%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  border: 1px solid red;
-  background-image: radial-gradient(
-    circle,
-    #524b4b,
-    #665f61,
-    #7a7378,
-    #8e8990,
-    #a1a0a8,
-    #a1a0a8,
-    #a1a0a8,
-    #a1a0a8,
-    #8e8990,
-    #7a7378,
-    #665f61,
-    #524b4b
-  );
+.title {
+  padding: 3%;
+  font-size: 1.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
 }
 
-.news-container .news {
-  width: 48vw;
-  height: 25vh;
+.news {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  padding: 2%;
+  background: transparent;
+}
+
+.astronauts {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  background-image: linear-gradient(#023c63, #b6e2ff);
+}
+
+.card {
+  padding: 2%;
+  flex: 1 16%;
   border: 1px solid black;
-  border-radius: 7px 7px 7px 7px;
-  overflow: hidden;
   background-color: white;
-  /* justify-content: stretch; */
 }
 
-.news-container .news:nth-child(-n + 2) {
-  margin-top: 10px;
+.card img {
+  max-width: 100%;
 }
 
-.news-container .news .news-text {
-  margin-left: auto;
-  order: 2;
-  height: 100%;
-  width: 60%;
-}
-
-.news-container .news:nth-child(even) {
-  margin-left: auto;
-}
-
-.news-container .news .news-text p {
-  white-space: nowrap;
+.info-container {
+  margin-top: auto;
+  text-align: center;
+  border: 1px solid black;
   text-overflow: ellipsis;
-  text-align: justify;
-  margin: 0;
 }
 
-.news .news-text {
-  width: inherit;
-}
-
-.news .news-text p {
-  width: inherit;
-}
-
-.news-container .news .news-img {
-  height: 100%;
-  width: 40%;
-}
-
-.news-container .news .news-img img {
-  width: 100%;
-  height: inherit;
-  align-items: center;
-  margin-left: 15px;
-}
-@media only screen and (max-width: 650px) {
-  
+@media only screen and (max-width: 920px) {
   .top-image {
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -280,10 +241,6 @@ body {
     display: none;
   }
 
-  /* .sidebar-container .change {
-    margin-right: 25vw;
-  } */
-
   .sidebar-container span {
     display: inline;
   }
@@ -293,8 +250,9 @@ body {
   }
 
   .sidebar-content ul {
-    margin: 15px 0;
-    line-height: 6.5vh;
+    margin: 0 auto;
+    line-height: 5vh;
+    width: fit-content;
   }
 
   .sidebar-content .logo {
@@ -302,8 +260,27 @@ body {
     max-height: 25%;
   }
 
-  .sidebar-content {
-    top: 8px;
+  .news-container .news {
+    width: fit-content;
+    flex-direction: column;
+    height: 8%;
   }
 
+  .card {
+    flex: 1 45%;
+  }
+
+  .card:nth-child(5n + 4),
+  .card:nth-child(5n) {
+    display: none;
+  }
 }
+/* @media only screen and (max-width: 1366px) {
+  .card {
+    flex: 1 30%;
+  }
+
+  .container .navbar ul li a {
+    font-size: 22px;
+  }
+} */
