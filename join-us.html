@@ -63,51 +63,65 @@
           </div>
           <div class="form-group">
             <label for="Missions">Mission:</label>
-              <select name="missions" id="missions" required>
-                <option value="" selected hidden disabled>Scegli una missione...</option>
-                <optgroup label="Earth">
-                  <option value="Asthros">Asthros</option>
-                  <option value="Surface Water and Ocean Topography">Surface Water and Ocean Topography</option>
-                  <option value="NASA-ISRO Synthetic Aperture Radar">NASA-ISRO Synthetic Aperture Radar</option>
-                  <option value="Multi-Angle Imager for Aerosols">Multi-Angle Imager for Aerosols</option>
-                </optgroup>
-                <optgroup label="Mars" disabled>
-                  <option value="">No Missions Available</option>
-                </optgroup>
-                <optgroup label="Moon">
-                  <option value="Lunar Flashlight">Lunar Flashlight</option>
-                </optgroup>
-                <optgroup label="Stars and Galaxies">
-                  <option value="SPHEREx">SPHEREx</option>
-                  <option value="Mid-Infrared Instrument">Mid-Infrared Instrument</option>
-                </optgroup>
-                <optgroup label="Asteroid and Comets">
-                  <option value="Near Earth Asteroid Scout">Near Earth Asteroid Scout</option>
-                </optgroup>
-                <optgroup label="Venus" disabled>
-                  <option value="">No Missions Available</option>
-                </optgroup>
-                <optgroup label="Exoplanets">
-                  <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
-                </optgroup>
-                <optgroup label="Europa">
-                  <option value="Europa Clipper">Europa Clipper</option>
-                </optgroup>
-                <optgroup label="Galaxies">
-                  <option value="SPHEREx">SPHEREx</option>
-                  <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
-                </optgroup>
-                <optgroup label="Interstellar Space" disabled>
-                  <option value="">No Mission Available</option>
-                </optgroup>
-              </select>
+            <select name="missions" id="missions" required>
+              <option value="" selected hidden disabled>Select a mission</option>
+              <optgroup label="Earth">
+                <option value="Asthros">Asthros</option>
+                <option value="Surface Water and Ocean Topography">Surface Water and Ocean Topography</option>
+                <option value="NASA-ISRO Synthetic Aperture Radar">NASA-ISRO Synthetic Aperture Radar</option>
+                <option value="Multi-Angle Imager for Aerosols">Multi-Angle Imager for Aerosols</option>
+              </optgroup>
+              <optgroup label="Mars" disabled>
+                <option value="">No Missions Available</option>
+              </optgroup>
+              <optgroup label="Moon">
+                <option value="Lunar Flashlight">Lunar Flashlight</option>
+              </optgroup>
+              <optgroup label="Stars and Galaxies">
+                <option value="SPHEREx">SPHEREx</option>
+                <option value="Mid-Infrared Instrument">Mid-Infrared Instrument</option>
+              </optgroup>
+              <optgroup label="Asteroid and Comets">
+                <option value="Near Earth Asteroid Scout">Near Earth Asteroid Scout</option>
+              </optgroup>
+              <optgroup label="Venus" disabled>
+                <option value="">No Missions Available</option>
+              </optgroup>
+              <optgroup label="Exoplanets">
+                <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
+              </optgroup>
+              <optgroup label="Europa">
+                <option value="Europa Clipper">Europa Clipper</option>
+              </optgroup>
+              <optgroup label="Galaxies">
+                <option value="SPHEREx">SPHEREx</option>
+                <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
+              </optgroup>
+              <optgroup label="Interstellar Space" disabled>
+                <option value="">No Mission Available</option>
+              </optgroup>
+            </select>
           </div>
           <div class="form-group">
-              <label for="age">Age:</label>
-              <input type="number" name="age" id="age" min="18" max="65" />
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="18" max="65" />
+            <select name="gender" id="gender" required>
+              <option value="" selected hidden disabled>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Non Binary">Non-Binary</option>
+            </select>
+            <select name="eye-color" id="eye-color">
+              <option value="" selected hidden disabled>Select an eye color</option>
+              <option value="brown">Brown</option>
+              <option value="blue">Blue</option>
+              <option value="grey">Grey</option>
+              <option value="green">Green</option>
+              <option value="red">Red</option>
+              <option value="black">Black</option>
+            </select>
           </div>
-            </label>
-          </div>
+          <div class="form-group"></div>
         </fieldset>
       </form>
     </section>
