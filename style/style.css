@@ -13,7 +13,7 @@ html {
 body {
   margin: 0 auto;
   padding: 10px;
-  background-image: linear-gradient(#b6e2ff, #ffffff);
+  background-color: #b6e2ff;
   overflow-x: hidden;
 }
 
@@ -22,6 +22,7 @@ body {
   background-size: auto;
   width: calc(100%+20px);
   margin: -10px;
+  z-index: -1;
 }
 
 .container {
@@ -144,7 +145,6 @@ body {
   padding-top: 15px;
   transition: 0.5s;
   overscroll-behavior: contain; /* This is useful to prevent from users scrolling down */
-  /* TODO: block scrolling completely */
 }
 
 .sidebar-container .logo {
@@ -203,6 +203,13 @@ body {
   background-image: linear-gradient(#023c63, #b6e2ff);
 }
 
+.missions {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+  background-color: #b6e2ff;
+}
+
 .card {
   padding: 2%;
   flex: 1 16%;
@@ -219,6 +226,27 @@ body {
   text-align: center;
   border: 1px solid black;
   text-overflow: ellipsis;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 50;
+  border: none;
+  outline: none;
+  background-color: #c33764;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
 
 @media only screen and (max-width: 920px) {
