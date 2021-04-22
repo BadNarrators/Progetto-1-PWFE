@@ -15,10 +15,12 @@ body {
   padding: 10px;
   background-color: #b6e2ff;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-image {
-  background: url('../img/blue-planet.jpg') no-repeat #023c63;
+  background: url('../img/blue-planet.jpg') no-repeat;
   background-size: auto;
   width: calc(100%+20px);
   margin: -10px;
@@ -249,6 +251,14 @@ body {
   background-color: #555;
 }
 
+.footer {
+  margin-top: auto;
+  background-color: #555;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 920px) {
   .top-image {
     background-repeat: no-repeat;
@@ -302,13 +312,8 @@ body {
   .card:nth-child(5n) {
     display: none;
   }
-}
-/* @media only screen and (max-width: 1366px) {
-  .card {
-    flex: 1 30%;
-  }
 
-  .container .navbar ul li a {
-    font-size: 22px;
+  #myBtn {
+    padding: 15px;
   }
-} */
+}
