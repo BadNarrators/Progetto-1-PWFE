@@ -7,21 +7,20 @@
     <title>about-us</title>
     <meta name="description" content="about-us-site-section" />
     <meta name="author" content="group-3" />
-    <link rel="stylesheet" href="style/gallery.css" />
-    <link rel="stylesheet" href="style/style.css" />  
+    <link rel="stylesheet" href="style/style.css" />
     <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js">
-        </script>
-    <![endif]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js">
+    </script>
+<![endif]-->
     <style>
         html {
             box-sizing: border-box;
             --header_background_color: chartreuse;
-            --company_mission_section_background_color: cornflowerblue;
-            --team_section_background_color: rgb(101, 3, 144);
-            --card_background_color: blueviolet;
-            --about_section_background_color: cornflowerblue;
-            --footer_background_color: chartreuse;
+            --company_mission_section_background_color: #c23764;
+            --team_section_background_color: #202671;
+            --card_background_color: #8c2773;
+            --about_section_background_color: #c23764;
+            --footer_background_color: #752675;
         }
 
         *,
@@ -32,24 +31,64 @@
             margin: 0;
         }
 
-        body {
-            background-color: ;
-        }
-
         .justified {
             text-align: justify;
             text-justify: inter-word;
         }
 
-        .centered {
+        .horizontally_centered {
             text-align: center;
+        }
+
+        .vertically_centered {
+            position: absolute;
+            top: 45%;
+        }
+
+        .increased_line_height {
+            line-height: 1.2;
+        }
+
+        .black_text {
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
         }
 
         header,
         main,
         footer {
             width: 100%;
+            color: antiquewhite;
         }
+
+        a:link {
+            color: antiquewhite;
+        }
+
+        /* visited link */
+        a:visited {
+            color: #c23764;
+        }
+
+        /* moused over */
+        a:hover {
+            color: orange;
+        }
+
+        /* selected with keyboard*/
+        a:focus {
+            color: bisque;
+        }
+
+        /* activated link */
+        a:active {
+            color: rgb(255, 0, 157);
+        }
+
+
 
         section {
             overflow: hidden;
@@ -57,14 +96,23 @@
         }
 
         article {
+            position: relative;
             width: 80%;
-            padding: 1%;
+            padding: 2%;
             margin-left: auto;
             margin-right: auto;
             margin-top: 2%;
             margin-bottom: 2%;
             overflow: hidden;
         }
+
+        /*
+                article:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                */
 
         article .card {
             background-color: var(--card_background_color);
@@ -76,29 +124,14 @@
             box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.7);
         }
 
-
-        /*Responsive columns */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
-
-        /*----------HEADER------------*/
         header {
             background-color: var(--header_background_color);
         }
 
-        /*----------MAIN------------*/
-        main {}
-
-        /*----------SECTION 1------------*/
-        #company_mission_section {
+        */ #company_mission_section {
             background-color: var(--company_mission_section_background_color);
         }
 
-        /*----------SECTION 2------------*/
         #team_section {
             background-color: var(--team_section_background_color);
         }
@@ -107,9 +140,6 @@
             text-align: justify;
             text-justify: inter-word;
         }
-
-        #team_section #leadership_article,
-        #team_section #management_article {}
 
         #team_section #leadership_article h1,
         #team_section #management_article h1 {
@@ -139,16 +169,19 @@
             width: 100%;
         }
 
-        #team_section #management_article .card a img {
+        #team_section #management_article .column .card a img {
             width: 10%;
         }
 
-        /*----------SECTION 3------------*/
         #about_section {
             background-color: var(--about_section_background_color);
         }
 
-        #about_section #about_article {}
+        /*
+                #about_section {
+                    width: 50%;
+                }
+                */
 
         #about_section #about_article h1 {
             width: 100%;
@@ -168,66 +201,104 @@
             width: 100%;
         }
 
-        /*----------FOOTER------------*/
         footer {
-            clear: both;
+            /*clear: both;*/
             background-color: var(--footer_background_color);
+        }
+
+        footer .column {
+            width: calc(100%/4);
+            float: left;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            #team_section #leadership_article .column,
+            #team_section #management_article .column,
+            #about_section #about_article .column,
+            footer #footer_article .column {
+                width: 100%;
+                clear: both;
+                display: block;
+            }
         }
     </style>
 </head>
 
 <body>
+    <!--
     <header>
         header comune a tutte le pagine
     </header>
+-->
     <nav>
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Astronauts</a></li>
-                <li><a href="#">Missions</a></li>
-                <li><a href="#">Join Us</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </div>
-        <div class="sidebar-container">
-            <span id="button" onclick="toggleNav(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </span>
-            <div class="sidebar-content" id="sidebar-content">
-                <div class="logo">
-                    <img src="assets/logo.png" alt="Logo" />
-                </div>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/definitive_mini_logo.png" alt="logo" />
+                </a>
+            </div>
+            <div class="navbar">
                 <ul>
-                    <li class="sidebar-item"><a href="#">Home</a></li>
-                    <li class="sidebar-item"><a href="#">News</a></li>
-                    <li class="sidebar-item"><a href="#">Astronauts</a></li>
-                    <li class="sidebar-item"><a href="#">Missions</a></li>
-                    <li class="sidebar-item"><a href="#">Join Us</a></li>
-                    <li class="sidebar-item"><a href="#">About Us</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Astronauts</a></li>
+                    <li><a href="#">Missions</a></li>
+                    <li><a href="#">Join Us</a></li>
+                    <li><a href="#">About Us</a></li>
                 </ul>
+            </div>
+            <div class="sidebar-container">
+                <span id="button" onclick="toggleNav(this)">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </span>
+                <div class="sidebar-content" id="sidebar-content">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Logo" />
+                    </div>
+                    <ul>
+                        <li class="sidebar-item"><a href="#">Home</a></li>
+                        <li class="sidebar-item"><a href="#">News</a></li>
+                        <li class="sidebar-item"><a href="#">Astronauts</a></li>
+                        <li class="sidebar-item"><a href="#">Missions</a></li>
+                        <li class="sidebar-item"><a href="#">Join Us</a></li>
+                        <li class="sidebar-item"><a href="#">About Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
     <main>
-        <section id="company_mission_section">
-            <article>
-                <h1 class="centered">
+        <section id="company_mission_section" style="background-color: #c23764">
+            <article class="horizontally_centered increased_line_height">
+                <h1>
                     We're paving the way to the stars, one mission at a time.
                 </h1>
-                <p class="centered">
-                    Tellus pellentesque eu tincidunt tortor aliquam. In fermentum et
-                    sollicitudin ac. Lectus vestibulum mattis ullamcorper velit. Egestas
-                    erat imperdiet sed euismod nisi porta.<br>
-                    Laoreet sit amet cursus sit amet dictum sit amet. A arcu cursus vitae congue mauris rhoncus aenean
-                    vel. Mauris sit amet massa vitae tortor condimentum.<br>
-                    Vitae suscipit tellus mauris a diam maecenas sed enim ut. A cras semper auctor neque
-                    vitae. Proin nibh nisl condimentum id venenatis a condimentum. <br>
-                    At varius vel pharetra vel turpis nunc eget lorem. Augue ut lectus arcu
-                    bibendum at. Quis vel eros donec ac odio tempor orci dapibus ultrices.
+                <p>
+                    The name of our company derives from Icarus, a legendary figure of Greek mithology.
+                </p>
+                <p>
+                    Trapped in the Labyrinth designed by his ow father Daedalus for angering the King of Crete, he built
+                    wings made out of
+                    wood, feathers and wax and flew away from his inprisonment.
+                </p>
+                <p>
+                    His father warned him not to defy the Gods, he did not listen and blinded by the joy of flight he
+                    drew too close to the
+                    sun, the burning rays melted the wax and he fell into the Aegean Sea.
+                </p>
+                <p>
+                    The legend is a metaphor of the limits of human nature and the terrible consequences tha derive from
+                    surpassing them.
+                </p>
+                <p>
+                    As Daedalus did we want to reach new heights, defeat the limits of human nature and get where no man
+                    as aver been before.
+                </p>
+                <p>
+                    Unlike him, thanks to our expertise and determination, we're not going to fall.
                 </p>
             </article>
         </section>
@@ -255,28 +326,20 @@
                             </a>
                             <hr />
                             <br />
-                            <p class="justified">
-                                Dignissim enim sit amet venenatis urna cursus. Ultrices vitae
-                                auctor eu augue ut lectus. Nec sagittis aliquam malesuada bibendum
-                                arcu. Cras pulvinar mattis nunc sed blandit libero. Id volutpat
-                                lacus laoreet non curabitur gravida. Feugiat pretium nibh ipsum
-                                consequat nisl vel pretium lectus. Suspendisse in est ante in nibh
-                                mauris cursus mattis. Scelerisque mauris pellentesque pulvinar
-                                pellentesque habitant morbi. Donec adipiscing tristique risus nec
-                                feugiat in. Nec sagittis aliquam malesuada bibendum arcu vitae
-                                elementum. Purus in massa tempor nec feugiat nisl pretium fusce.
-                                Risus in hendrerit gravida rutrum quisque non tellus orci.
-                                Sagittis eu volutpat odio facilisis mauris sit.
+                            <p class="justified increased_line_height">
+                                Andy has over 8 years of experience in space rocket design.
+                                Andy was a researcher at SpaceX from 2007 to 2015.
+                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
                             </p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-alex-karabeta.jpg" />
+                        <img src="assets/alessandro_carabetta_profile_pic_cropped.png" />
                         <figcaption>
                             <strong>
-                                Alex Karabeta
+                                Alexander Karabeta
                             </strong><br />
                             <em>
                                 CEO/Founder
@@ -289,21 +352,10 @@
                             <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
                             </a><br />
                             <hr /><br>
-                            <p class="justified">
-                                Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Aliquam
-                                vestibulum morbi blandit cursus risus at ultrices. Sed faucibus
-                                turpis in eu. Erat pellentesque adipiscing commodo elit at. Vitae
-                                congue eu consequat ac felis donec et odio pellentesque. Commodo
-                                sed egestas egestas fringilla phasellus faucibus. Varius duis at
-                                consectetur lorem donec massa sapien faucibus. Congue nisi vitae
-                                suscipit tellus. Sit amet cursus sit amet. Tincidunt ornare massa
-                                eget egestas purus viverra accumsan in nisl. Ac feugiat sed lectus
-                                vestibulum mattis ullamcorper velit sed. A iaculis at erat
-                                pellentesque adipiscing commodo elit at imperdiet. Arcu non
-                                sodales neque sodales ut etiam. Suspendisse potenti nullam ac
-                                tortor vitae purus faucibus. Nulla aliquet porttitor lacus luctus
-                                accumsan tortor posuere ac ut. Nam aliquam sem et tortor consequat
-                                id.
+                            <p class="justified increased_line_height">
+                                Alex is a senior engineer at Icarus and an expert in life support. Previously, he worked
+                                at SpaceX for four years as a researcher at the Dragon project. He has a PhD in Biology
+                                from UCLA and was a postdoctoral fellow at Cornell.
                             </p>
                         </figcaption>
                     </figure>
@@ -326,26 +378,18 @@
                             <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
                             </a><br />
                             <hr /><br>
-                            <p class="justified">
-                                Semper viverra nam libero justo laoreet sit amet cursus. Quisque
-                                sagittis purus sit amet volutpat consequat mauris nunc. Duis at
-                                tellus at urna condimentum mattis. Neque ornare aenean euismod
-                                elementum nisi quis eleifend quam adipiscing. Facilisis mauris sit
-                                amet massa vitae tortor condimentum. Pellentesque id nibh tortor
-                                id aliquet lectus proin nibh nisl. Eget velit aliquet sagittis id
-                                consectetur purus ut. Egestas sed tempus urna et pharetra
-                                pharetra. Tempus egestas sed sed risus pretium quam vulputate
-                                dignissim. Tempus quam pellentesque nec nam aliquam sem et. Eget
-                                mi proin sed libero enim. Turpis egestas maecenas pharetra
-                                convallis posuere morbi leo urna molestie. Eget dolor morbi non
-                                arcu.
+                            <p class="justified increased_line_height">
+                                Simon leads the launch and storage team that is responsible for spaceships and rockets
+                                take off. He holds a degree in Electrical Engineering from Oxford and has a Masters
+                                degree in Computer Science from Harvard. He is also an adventurous outdoorsman and
+                                competitive go player.
                             </p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-eugene-von-paula.png" />
+                        <img src="assets/eugenio_di_paola_profile_pic_cropped.jpg" />
                         <figcaption>
                             <strong>
                                 Eugene Von Paula
@@ -353,36 +397,19 @@
                             <em>
                                 CEO/Founder
                             </em>
-                            <a class="envelope-anchor" 
-                                target="_blank" 
-                                rel="" 
-                                href="mailto:contact@starlinesmail.com">
+                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
                             </a>
-                            <a class="linkedin-anchor" 
-                                target="_blank" 
-                                rel=""
+                            <a class="linkedin-anchor" target="_blank" rel=""
                                 href="https://www.linkedin.com/in/andrew-atzaee">
                             </a>
-                            <a class="twitter-anchor" 
-                                target="_blank" 
-                                rel="" 
-                                href="https://twitter.com/andrew-atzaee">
+                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
                             </a><br>
                             <hr /><br>
-                            <p class="justified">
-                                Id semper risus in hendrerit gravida rutrum. Penatibus et magnis
-                                dis parturient montes nascetur ridiculus. Ultrices gravida dictum
-                                fusce ut placerat orci. Risus feugiat in ante metus dictum at.
-                                Adipiscing enim eu turpis egestas pretium aenean pharetra magna.
-                                Neque laoreet suspendisse interdum consectetur libero. Sit amet
-                                luctus venenatis lectus magna fringilla urna porttitor rhoncus. Et
-                                netus et malesuada fames ac. Euismod elementum nisi quis eleifend.
-                                Aenean et tortor at risus viverra adipiscing at. Sed lectus
-                                vestibulum mattis ullamcorper velit sed ullamcorper. Commodo quis
-                                imperdiet massa tincidunt. Consectetur purus ut faucibus pulvinar
-                                elementum integer enim neque. Pulvinar sapien et ligula
-                                ullamcorper malesuada proin. Mauris pharetra et ultrices neque
-                                ornare aenean. Vel facilisis volutpat est velit egestas.
+                            <p class="justified increased_line_height">
+                                Gene builds our datacenters, server infrastructure, and monitoring tools. He was a
+                                researcher at Munich Max Planck Institut and a postdoctoral fellow at University of Jena
+                                working on the CMS Experiment. Gene has a PhD in Physics from TUM and a Diplom in
+                                Physics Freie Universitat Berlin.
                             </p>
                         </figcaption>
                     </figure>
@@ -403,35 +430,20 @@
                             <em>
                                 CTO/Founder
                             </em><br />
-                            <a class="envelope-anchor" 
-                                target="_blank" 
-                                rel="" 
-                                ref="mailto:contact@starlinesmail.com">
+                            <a class="envelope-anchor" target="_blank" rel="" ref="mailto:contact@starlinesmail.com">
                             </a>
-                            <a class="linkedin-anchor" 
-                                target="_blank" 
-                                rel=""
+                            <a class="linkedin-anchor" target="_blank" rel=""
                                 href="https://www.linkedin.com/in/andrew-atzaee">
                             </a>
-                            <a class="twitter-anchor" 
-                                target="_blank" 
-                                rel="" 
-                                href="https://twitter.com/andrew-atzaee">
+                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
                             </a>
                             <hr />
                             <br />
-                            <p class="justified">
+                            <p class="justified increased_line_height">
                                 Dignissim enim sit amet venenatis urna cursus. Ultrices vitae
-                                auctor eu augue ut lectus. Nec sagittis aliquam malesuada bibendum
-                                arcu. Cras pulvinar mattis nunc sed blandit libero. Id volutpat
-                                lacus laoreet non curabitur gravida. Feugiat pretium nibh ipsum
-                                consequat nisl vel pretium lectus. Suspendisse in est ante in nibh
-                                mauris cursus mattis. Scelerisque mauris pellentesque pulvinar
-                                pellentesque habitant morbi. Donec adipiscing tristique risus nec
-                                feugiat in. Nec sagittis aliquam malesuada bibendum arcu vitae
-                                elementum. Purus in massa tempor nec feugiat nisl pretium fusce.
-                                Risus in hendrerit gravida rutrum quisque non tellus orci.
-                                Sagittis eu volutpat odio facilisis mauris sit.
+                                Andy has over 8 years of experience in rocket design.<br>
+                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
+                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
                             </p>
                         </figcaption>
                     </figure>
@@ -446,42 +458,23 @@
                             <em>
                                 CEO/Founder
                             </em>
-                            <a class="envelope-anchor" 
-                                target="_blank" 
-                                rel="" 
-                                href="mailto:contact@starlinesmail.com">
+                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
                             </a>
-                            <a class="linkedin-anchor" 
-                                target="_blank" 
-                                rel=""
+                            <a class="linkedin-anchor" target="_blank" rel=""
                                 href="https://www.linkedin.com/in/andrew-atzaee">
                             </a>
-                            <a class="twitter-anchor" 
-                                target="_blank" 
-                                rel="" 
-                                href="https://twitter.com/andrew-atzaee">
+                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
                             </a><br />
                             <hr /><br>
-                            <p class="justified">
-                                Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Aliquam
-                                vestibulum morbi blandit cursus risus at ultrices. Sed faucibus
-                                turpis in eu. Erat pellentesque adipiscing commodo elit at. Vitae
-                                congue eu consequat ac felis donec et odio pellentesque. Commodo
-                                sed egestas egestas fringilla phasellus faucibus. Varius duis at
-                                consectetur lorem donec massa sapien faucibus. Congue nisi vitae
-                                suscipit tellus. Sit amet cursus sit amet. Tincidunt ornare massa
-                                eget egestas purus viverra accumsan in nisl. Ac feugiat sed lectus
-                                vestibulum mattis ullamcorper velit sed. A iaculis at erat
-                                pellentesque adipiscing commodo elit at imperdiet. Arcu non
-                                sodales neque sodales ut etiam. Suspendisse potenti nullam ac
-                                tortor vitae purus faucibus. Nulla aliquet porttitor lacus luctus
-                                accumsan tortor posuere ac ut. Nam aliquam sem et tortor consequat
-                                id.
+                            <p class="justified increased_line_height">
+                                Andy has over 8 years of experience in rocket design.<br>
+                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
+                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
                             </p>
                         </figcaption>
                     </figure>
-                    <div class="column">
-                    </div>
+                </div>
+                <div class="column">
                     <figure class="card">
                         <figcaption>
                             <img src="img/profile-pic-simon-williams.png" />
@@ -499,29 +492,22 @@
                             <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
                             </a><br />
                             <hr /><br>
-                            <p>
-                                Semper viverra nam libero justo laoreet sit amet cursus. Quisque
-                                sagittis purus sit amet volutpat consequat mauris nunc. Duis at
-                                tellus at urna condimentum mattis. Neque ornare aenean euismod
-                                elementum nisi quis eleifend quam adipiscing. Facilisis mauris sit
-                                amet massa vitae tortor condimentum. Pellentesque id nibh tortor
-                                id aliquet lectus proin nibh nisl. Eget velit aliquet sagittis id
-                                consectetur purus ut. Egestas sed tempus urna et pharetra
-                                pharetra. Tempus egestas sed sed risus pretium quam vulputate
-                                dignissim. Tempus quam pellentesque nec nam aliquam sem et. Eget
-                                mi proin sed libero enim. Turpis egestas maecenas pharetra
-                                convallis posuere morbi leo urna molestie. Eget dolor morbi non
-                                arcu.
+                            <p class="justified increased_line_height">
+                                Andy has over 8 years of experience in rocket design.<br>
+                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
+                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
                             </p>
                         </figcaption>
                     </figure>
-                    <div class="column">
-                    </div>
+                </div>
+                <div class="column">
                     <figure class="card">
                         <img src="img/profile-pic-eugene-von-paula.png" />
                         <figcaption>
                             <strong>Eugene Von Paula</strong><br />
-                            <em>CEO/Founder</em><br>
+                            <em>
+                                CEO/Founder
+                            </em><br>
                             <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
                                 <img src="img/email-icon.svg">
                             </a>
@@ -533,20 +519,10 @@
                                 <img src="img/twitter-icon.svg">
                             </a><br>
                             <hr /><br>
-                            <p class="justified">
-                                Id semper risus in hendrerit gravida rutrum. Penatibus et magnis
-                                dis parturient montes nascetur ridiculus. Ultrices gravida dictum
-                                fusce ut placerat orci. Risus feugiat in ante metus dictum at.
-                                Adipiscing enim eu turpis egestas pretium aenean pharetra magna.
-                                Neque laoreet suspendisse interdum consectetur libero. Sit amet
-                                luctus venenatis lectus magna fringilla urna porttitor rhoncus. Et
-                                netus et malesuada fames ac. Euismod elementum nisi quis eleifend.
-                                Aenean et tortor at risus viverra adipiscing at. Sed lectus
-                                vestibulum mattis ullamcorper velit sed ullamcorper. Commodo quis
-                                imperdiet massa tincidunt. Consectetur purus ut faucibus pulvinar
-                                elementum integer enim neque. Pulvinar sapien et ligula
-                                ullamcorper malesuada proin. Mauris pharetra et ultrices neque
-                                ornare aenean. Vel facilisis volutpat est velit egestas.
+                            <p class="justified increased_line_height">
+                                Andy has over 8 years of experience in rocket design.<br>
+                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
+                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
                             </p>
                         </figcaption>
                     </figure>
@@ -555,26 +531,250 @@
         </section>
         <section id="about_section">
             <article id="about_article">
-                <p class="centered">
-                    Four ex SpaceX employees, disgruntled with the awful work culture
-                    created by Elon Musk, went on to found their own aerospace company.
-                    Many other joined and now we are a big reality that can work both
-                    with national space agencies and on its own.
-                </p>
-                <figure>
-                    <img src="img/starlines-headquarters.jpg" />
-                    <figcaption>
-                        Starlines Headquarters in Vergate sul Membro, Italy.
-                    </figcaption>
-                </figure>
+                <div class="column horizontally_centered vertically_centered increased_line_height">
+                    <p>
+                        Four ex SpaceX employees, dissatisfied by the awful work culture imposed by Elon Musk, went on
+                        to found their own aerospace company.
+                    </p>
+                    <p>
+                        Many other joined and now we are a big reality that can work both with national space agencies
+                        and on its own.
+                    </p>
+                    <p>
+                        We believe privacy and security are universal values which cross borders. Inclusion and
+                        diversity are core company values. Collectively, our team of experts from around the world speak
+                        English, French, German, Italian, Spanish, Czech, Macedonian, Chinese and Russian.
+                    </p>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="img/starlines-headquarters.jpg" />
+                        <figcaption class="horizontally_centered">
+                            Icarus Headquarters in Santa Monica, California.
+                        </figcaption>
+                    </figure>
+                </div>
             </article>
         </section>
     </main>
     <footer>
-        Footer comune a tutte le pagine
+        <article id="footer_article">
+            <div class="column">
+                <h2>
+                    Icarus
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            iOS App
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Android App
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Shop
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Press/Media Kit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Onion Site
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Icarus Status
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>
+                    Legal
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Imprint
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms &amp; Conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Transparency Report
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Report Abuse
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            GDPR Compliance
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2 class="h4">
+                    Company
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Team
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" hreflang="en">
+                            Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Donate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Open Source
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>
+                    Social
+                </h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Facebook
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>
+                                Twitter
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <span>
+                                Reddit
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <span>
+                                Instagram
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <span>
+                                Mastodon
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="#">
+                            <span>
+                                Feedback Forum
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="horizontally_centered">
+            <a href="#" hreflang="ca" lang="ca">Català</a>
+            |
+            <a href="#" hreflang="cs" lang="cs">Čeština</a>
+            |
+            <a href="#" hreflang="da" lang="da">Dansk</a>
+            |
+            <a href="#" hreflang="de" lang="de">Deutsch</a>
+            |
+            <a href="#" hreflang="el" lang="el">Ελληνικά</a>
+            |
+            <a href="#" hreflang="en" lang="en">English</a>
+            |
+            <a href="#" hreflang="es" lang="es">Español (España)</a>
+            |
+            <a href="#" hreflang="fr" lang="fr">Français</a>
+            |
+            <a href="#" hreflang="hr" lang="hr">Hrvatski</a>
+            |
+            <a href="#" hreflang="hu" lang="hu">Magyar</a>
+            |
+            <a href="#" hreflang="id" lang="id">Bahasa (Indonesia)</a>
+            |
+            <a href="#" hreflang="is" lang="is">íslenska</a>
+            |
+            <a href="#" hreflang="it" lang="it">Italiano</a>
+            |
+            <a href="#" hreflang="jp" lang="jp">日本語</a>
+            |
+            <a href="#" hreflang="kab" lang="kab">Taqbaylit</a>
+            |
+            <a href="#" hreflang="nl" lang="nl">Dutch</a>
+            |
+            <a href="#" hreflang="pl" lang="pl">Polski</a>
+            |
+            <a href="#" hreflang="pt_BR" lang="pt_BR">Português (Brasil)</a>
+            |
+            <a href="#" hreflang="pt" lang="pt">Português (Portugal)</a>
+            |
+            <a href="#" hreflang="ro" lang="ro">Română</a>
+            |
+            <a href="#" hreflang="ru" lang="ru">Русский</a>
+            |
+            <a href="#" hreflang="sv" lang="sv">Svenska</a>
+            |
+            <a href="#" hreflang="tr" lang="tr">Türkçe</a>
+            |
+            <a href="#" hreflang="ua" lang="ua">Українська</a>
+            |
+            <a zh-Hans" href="#" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+            |
+            <a zh-Hant" href="#" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+        </article>
     </footer>
 
-    <script src="script/gallery.js"></script>
     <script src="script/main.js"></script>
 </body>
 
