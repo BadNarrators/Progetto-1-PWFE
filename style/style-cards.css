@@ -29,6 +29,7 @@
     display: table;
     clear: both;
   }
+  
   .retired {
     margin-top:100px;
   }
@@ -41,7 +42,9 @@
       margin-bottom: 20px;
     }
   }
-  
+  .active{
+    overflow-x:hidden;
+  }
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

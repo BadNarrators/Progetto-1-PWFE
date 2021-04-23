@@ -13,7 +13,7 @@ body {
 
 .top-image {
   background-image: url("../img/blue-planet.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: auto;
   width: calc(100%+20px);
   margin: -10px;
@@ -239,7 +239,7 @@ body {
 @media only screen and (max-width: 650px) {
   
   .top-image {
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: auto 100%;
   }
   .container {
