@@ -18,8 +18,8 @@ body {
 }
 
 .top-image {
-  background: url('../img/blue-planet.jpg') no-repeat;
-  background-size: auto;
+  background: url('../img/blue-planet.jpg') no-repeat top;
+  background-size: contain;
   width: calc(100%+20px);
   margin: -10px;
   z-index: -1;
@@ -193,21 +193,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
-  background: transparent;
+  background-image: linear-gradient(#023c63, #b6e2ff);
 }
 
 .astronauts {
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
-  background-image: linear-gradient(#023c63, #b6e2ff);
 }
 
 .missions {
   display: flex;
   flex-wrap: wrap;
   padding: 2%;
-  background-color: #b6e2ff;
 }
 
 .card {
@@ -261,6 +259,12 @@ body {
 .form-container {
   width: fit-content;
   margin: 0 auto;
+}
+
+.form-submit {
+  padding: 10px;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 @media only screen and (max-width: 920px) {
