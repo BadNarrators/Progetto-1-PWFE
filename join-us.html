@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authors" content="Andrea Atzei, Alessandro Carabetta, Eugenio Di Paola, Simone Guglielmi" />
+    <meta name="description" content="Homepage" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Join Us</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/logo_mini.png" alt="logo" />
+          </a>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Astronauts</a></li>
+            <li><a href="#">Missions</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-container">
+          <span onclick="toggleNav(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </span>
+          <div class="sidebar-content" id="sidebar-content">
+            <div class="logo">
+              <img src="assets/logo.png" alt="Logo" />
+            </div>
+            <ul>
+              <li class="sidebar-item"><a href="index.html">Home</a></li>
+              <li class="sidebar-item"><a href="#">News</a></li>
+              <li class="sidebar-item"><a href="#">Astronauts</a></li>
+              <li class="sidebar-item"><a href="#">Missions</a></li>
+              <li class="sidebar-item"><a href="gallery.html">Gallery</a></li>
+              <li class="sidebar-item"><a href="#">Join Us</a></li>
+              <li class="sidebar-item"><a href="about-us.html">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="form-container">
+      <form action="" method="POST">
+        <fieldset>
+          <legend>Fill this form to join us</legend>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" minlength="4" maxlength="30" required />
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname" minlength="4" maxlength="30" required />
+          </div>
+          <div class="form-group">
+            <label for="Missions">Mission:</label>
+            <select name="missions" id="missions" required>
+              <option value="" selected hidden disabled>Select a mission</option>
+              <optgroup label="Earth">
+                <option value="Asthros">Asthros</option>
+                <option value="Surface Water and Ocean Topography">Surface Water and Ocean Topography</option>
+                <option value="NASA-ISRO Synthetic Aperture Radar">NASA-ISRO Synthetic Aperture Radar</option>
+                <option value="Multi-Angle Imager for Aerosols">Multi-Angle Imager for Aerosols</option>
+              </optgroup>
+              <optgroup label="Mars" disabled>
+                <option value="">No Missions Available</option>
+              </optgroup>
+              <optgroup label="Moon">
+                <option value="Lunar Flashlight">Lunar Flashlight</option>
+              </optgroup>
+              <optgroup label="Stars and Galaxies">
+                <option value="SPHEREx">SPHEREx</option>
+                <option value="Mid-Infrared Instrument">Mid-Infrared Instrument</option>
+              </optgroup>
+              <optgroup label="Asteroid and Comets">
+                <option value="Near Earth Asteroid Scout">Near Earth Asteroid Scout</option>
+              </optgroup>
+              <optgroup label="Venus" disabled>
+                <option value="">No Missions Available</option>
+              </optgroup>
+              <optgroup label="Exoplanets">
+                <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
+              </optgroup>
+              <optgroup label="Europa">
+                <option value="Europa Clipper">Europa Clipper</option>
+              </optgroup>
+              <optgroup label="Galaxies">
+                <option value="SPHEREx">SPHEREx</option>
+                <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
+              </optgroup>
+              <optgroup label="Interstellar Space" disabled>
+                <option value="">No Mission Available</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="18" max="65" />
+            <select name="gender" id="gender" required>
+              <option value="" selected hidden disabled>Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Non Binary">Non-Binary</option>
+            </select>
+            <select name="eye-color" id="eye-color">
+              <option value="" selected hidden disabled>Select an eye color</option>
+              <option value="Brown">Brown</option>
+              <option value="Blue">Blue</option>
+              <option value="Grey">Grey</option>
+              <option value="Green">Green</option>
+              <option value="Red">Red</option>
+              <option value="Black">Black</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" minlength="10" maxlength="10" required />
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" minlength="5" required />
+            <div class="form-submit">
+              <input type="submit" name="submit" id="submit" value="Join Us!" >
+              <input type="reset" name="reset" id="reset" value="Reset">
+            </div>
+          </div>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
