@@ -33,13 +33,13 @@ body {
   opacity: 0.8;
 }
 
-h3 {
-  padding-left: 1.5%;
-}
-
-h3:nth-of-type(2) {
+.section-title:nth-of-type(2) {
   position: relative;
   top: 125px;
+}
+
+.section-title {
+  padding: 0 0 0 1.5%;
 }
 
 .section-title {
