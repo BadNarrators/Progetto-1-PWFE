@@ -65,3 +65,13 @@
     border-radius: 100px;
   }
   
+
+/*footer*/
+.footer {
+  margin-top: auto;
+  background-color: #555;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
