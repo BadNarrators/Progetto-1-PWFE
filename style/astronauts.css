@@ -31,7 +31,8 @@
   }
   
   .retired {
-    margin-top:100px;
+    margin-top:150px;
+    opacity: 0.5;
   }
   
   /* Responsive columns */
@@ -42,9 +43,7 @@
       margin-bottom: 20px;
     }
   }
-  .active{
-    overflow-x:hidden;
-  }
+  
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -55,21 +54,14 @@
     background: linear-gradient(0deg, rgba(238,238,255,1) 0%, rgba(210,210,255,1) 55%, rgba(0,155,255,1) 100%);
     
   }
-  
+  .retired .card{
+    background: linear-gradient(0deg, rgba(238,238,255,1) 0%, rgba(210,210,255,1) 55%, rgb(231, 27, 4) 100%);
+  }
   .card img{
     width: 50%;
     float:left;
     margin-top: 20px;
     border:1px solid blue;
     border-radius: 100px;
-    
-  
-
   }
-  /*Astronauts
-This area should include a list of astronauts (at least 20). They should be grouped in two
-sections: active and retired. Each astronaut should include at least a name, code, bio,
-photo, age, nationality, years of experience and links to missions in which the astronaut
-has participated
-The astronauts page should be responsive, list in mobile view and cards on larger
-viewports*/
+  
