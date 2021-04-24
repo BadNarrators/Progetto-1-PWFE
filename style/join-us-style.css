@@ -1,0 +1,32 @@
+.form-container {
+  width: fit-content;
+  margin: 2.5% auto;
+  border: 1px solid black;
+}
+
+.form-container h3,
+h4 {
+  margin: 0.5px auto;
+  text-align: center;
+  color: #105372;
+}
+
+.form-container h4 {
+  font-style: italic;
+  color: #000;
+}
+
+.form-group {
+  padding: 0.65rem;
+  width: 100%;
+  text-align: center;
+}
+
+.form-submit {
+  text-align: center;
+  margin: auto auto 2.5% auto;
+}
+
+.red {
+  color: red;
+}
