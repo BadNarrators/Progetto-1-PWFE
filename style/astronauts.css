@@ -1,67 +1,76 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.retired {
+  margin-top: 150px;
+  opacity: 0.8;
+}
+
+h3 {
+  padding-left: 1.5%;
+}
+
+h3:nth-of-type(2) {
+  position: relative;
+  top: 125px;
+}
+
+.section-title {
+  color: rgba(0, 155, 255, 1);
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* Remove extra left and right margins, due to padding */
-   .row{
-    margin: 0 -5px;
-    margin-bottom:20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .retired {
-    margin-top:150px;
-    opacity: 0.5;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: right;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(238,238,255,1) 0%, rgba(210,210,255,1) 55%, rgba(0,155,255,1) 100%);
-    
-  }
-  .retired .card{
-    background: linear-gradient(0deg, rgba(238,238,255,1) 0%, rgba(210,210,255,1) 55%, rgb(231, 27, 4) 100%);
-  }
-  .card img{
-    width: 50%;
-    float:left;
-    margin-top: 20px;
-    border:1px solid blue;
-    border-radius: 100px;
-  }
-  
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(238, 238, 255, 1) 0%, rgba(210, 210, 255, 1) 55%, rgba(0, 155, 255, 1) 100%);
+}
+.retired .card {
+  background: linear-gradient(0deg, rgba(238, 238, 255, 1) 0%, rgba(210, 210, 255, 1) 55%, rgb(231, 27, 4) 100%);
+}
+.card img {
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  border: 1px solid blue;
+  border-radius: 100px;
+}
