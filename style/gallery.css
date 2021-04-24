@@ -106,6 +106,193 @@ img {
   .prev, .next,.text {font-size: 11px}
 }
 
+/* style navbar */
+.container {
+  width: 100%;
+  margin: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  z-index: 10;
+}
+
+.container .logo {
+  max-width: 6em;
+  margin-top: 5px;
+  padding: 0 10px;
+  overflow: hidden;
+  border: none;
+}
+
+.container .logo:hover {
+  opacity: 0.8;
+}
+
+.container .logo a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .logo img {
+  max-width: 100%;
+  max-height: inherit;
+}
+
+.container .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.container .navbar ul li {
+  border-right: 1px solid white;
+}
+
+.container .navbar ul li:first-child {
+  border-left: 1px solid white;
+}
+
+.container .navbar ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 5px;
+}
+
+.container .navbar ul li:hover {
+  cursor: pointer;
+  background-color: #684cbe;
+}
+
+.sidebar-container {
+  margin: 0;
+  margin-left: auto;
+  order: 2;
+  overflow: hidden;
+  z-index: 2;
+  margin-right: 4vw;
+  position: relative;
+}
+
+.sidebar-container .change {
+  transition: 0.5s;
+}
+
+.sidebar-container span {
+  display: none;
+  cursor: pointer; /* Just for testing  in desktp mode */
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sidebar-content {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(207, 207, 207, 1) 100%);
+  overflow-x: hidden;
+  padding-top: 15px;
+  transition: 0.5s;
+  overscroll-behavior: contain; /* This is useful to prevent from users scrolling down */
+}
+
+.sidebar-container .logo {
+  max-width: 55%;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+}
+
+.sidebar-content ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.sidebar-content ul .sidebar-item {
+  width: fit-content;
+}
+.sidebar-content ul .sidebar-item a {
+  text-decoration: none;
+  color: #684cbe;
+}
+
+.sidebar-content ul .sidebar-item:hover {
+  background-color: #c33764;
+}
 
 
 
+@media only screen and (max-width: 920px) {
+  
+  .container {
+    justify-content: space-between;
+  }
+  .container .logo {
+    flex: 1;
+  }
+
+  .container .navbar {
+    flex: 0;
+  }
+
+  .container .navbar ul {
+    display: none;
+  }
+
+  .sidebar-container span {
+    display: inline;
+  }
+
+  .sidebar-container .logo {
+    margin-top: 10vh;
+  }
+
+  .sidebar-content ul {
+    margin: 0 auto;
+    line-height: 5vh;
+    width: fit-content;
+  }
+
+  .sidebar-content .logo {
+    max-width: 25%;
+    max-height: 25%;
+  }
+
+ 
+}
