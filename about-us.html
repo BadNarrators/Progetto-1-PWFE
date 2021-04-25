@@ -17,7 +17,7 @@
             box-sizing: border-box;
             --header_background_color: chartreuse;
             --company_mission_section_background_color: #c23764;
-            --team_section_background_color: #202671;
+            /*--team_section_background_color: #202671;*/
             --card_background_color: #8c2773;
             --about_section_background_color: #c23764;
             --footer_background_color: #752675;
@@ -38,6 +38,7 @@
 
         body {
             padding:0;
+            background-image: url('img/about-us/about-us-body-wallpaper.jpg') no-repeat top;
         }
 
         hr{
@@ -51,8 +52,8 @@
         }
 
         .vertically_centered {
-            position: absolute;
-            top: 45%;
+            margin-top : 20%;
+            vertical-align: middle;
         }
 
         .increased_line_height {
@@ -187,18 +188,30 @@
             background-color: var(--about_section_background_color);
         }
 
+        #about_section article {
+            overflow: hidden;
+        }
+
+        #about_section #about_article .column{
+            display: block;
+            float: left;
+            width: 42.5%;
+        }
+
+        #about_section #about_article .column:nth-child(1) {
+            margin-right: 15%;
+        }
+
         #about_section #about_article h1 {
             width: 100%;
         }
 
-        #about_section #about_article p {
-            float: left;
-            width: 45%;
+        #about_section #about_article h1 {
+            vertical-align: middle;
         }
 
-        #about_section #about_article figure {
-            float: right;
-            width: 50%;
+        #about_section #about_article p {
+            width: 100%;
         }
 
         #about_section #about_article figure img {
@@ -405,14 +418,13 @@
                                 Klimt Westwood
                             </strong><br />
                             <em>
-                                CTO/Founder
+                                Management
                             </em><br />
                             <hr/>
                             <p class="justified increased_line_height">
-                                Dino is a mobile developer with many years of experience building complex applications. He is responsible for
-                                ProtonMail's mobile applications and for ensuring a good mobile user experience. Dino is based in our Skopje, Macedonia
-                                office.
-                            </p>
+                                Klimt is a repeat entrepreneur with over 20 years of experience in private equity fundraising, business development,
+                                sales, marcom and management in various industries. He is passionate in helping Proton reach its next levels.
+                                </p>
                         </figcaption>
                     </figure>
                 </div>
@@ -424,13 +436,11 @@
                                 Pat Breed
                             </strong><br />
                             <em>
-                                CEO/Founder
+                                Rocket Engineering
                             </em>
                             <hr/>
                             <p class="justified increased_line_height">
-                                Lorem ipsum dolor sit amet Samuele has a background in theoretical computer science. After 12 years at CERN building information systems for high
-                                energy physics he has landed at Proton to initially contribute to the backend team and in every other tool that could
-                                have improved the collaboration within Proton itself. Since November 2018 he's leading the ProtonVPN team.
+                                Pat has a background in naval engineering. After 12 years in the Navy building systems for carriers he has landed at Icarus to initially contribute to hull designs. Since November 2018 he's leading the team.
                             </p>
                         </figcaption>
                     </figure>
@@ -443,12 +453,12 @@
                                 Nicholas Jackson
                             </strong><br />
                             <em>
-                                CTO/Founder
+                                Crew Support
                             </em>
                             <hr/>
                             <p class="justified increased_line_height">
-                                As Director of Customer Support, Violeta works closely with our developers to identify and understand customer issues
-                                and ensure the best possible user experience. She is an engineer with a degree in Informatics and is also a big fan of
+                                As Director of Crew Support, Nick works closely with our scientists and engineers to identify and understand astronauts issues
+                                and ensure the best possible experience. He is an engineer with a degree in Psychology and is also a big fan of
                                 science fiction and traveling.
                             </p>
                         </figcaption>
@@ -462,12 +472,12 @@
                                 Pat Alcino
                             </strong><br />
                             <em>
-                                CEO/Founder
+                                Management
                             </em><br>
                             <hr/>
                             <p class="justified increased_line_height">
-                                Seb leads our business operations, including sales, business development, and strategy. He holds a Bachelor’s degree in
-                                Economics, a Master’s in Marketing, and an MBA from the University of Chicago Booth. Before Proton, he was a strategy
+                                Seb leads our business operations, including contracts, business development, and strategy. He holds a Bachelor’s degree in
+                                Economics, a Master’s in Marketing, and an MBA from the University of Chicago Booth. Before Icarus, he was a strategy
                                 consultant, an entrepreneur, and a sales & marketing professional.
                             </p>
                         </figcaption>
@@ -477,23 +487,25 @@
         </section>
         <section id="about_section">
             <article id="about_article">
-                <div class="column horizontally_centered vertically_centered increased_line_height">
-                    <p>
-                        Four ex SpaceX employees, dissatisfied by the tyrannical work culture imposed by Elon Musk, went on to found their own aerospace company.
-                    </p>
-                    <p>
-                        Many others joined and now We are a big reality working both with national space agencies and on our own.
-                    </p>
-                    <p>
-                        We believe space flight and curiosity are values which cross borders.
-                    </p>
-                    <p>
-                        Inclusion and diversity are core company values.
-                    </p>
-                    <p>
-                        Collectively, our team of experts from around the world speak English, French, German, Italian,
-                        Spanish, Czech, Macedonian, Chinese and Russian.
-                    </p>
+                <div class="column ">
+                    <div id="content" class="horizontally_centered vertically_centered increased_line_height">
+                        <p>
+                            Four ex SpaceX employees, dissatisfied by the tyrannical work culture imposed by Elon Musk, went on to found their own aerospace company.
+                        </p>
+                        <p>
+                            Many others joined and now We are a big reality working both with national space agencies and on our own.
+                        </p>
+                        <p>
+                            We believe space flight and curiosity are values which cross borders.
+                        </p>
+                        <p>
+                            Inclusion and diversity are core company values.
+                        </p>
+                        <p>
+                            Collectively, our team of experts from around the world speak English, French, German, Italian,
+                            Spanish, Czech, Macedonian, Chinese and Russian.
+                        </p>
+                    </div>
                 </div>
                 <div class="column">
                     <figure>
