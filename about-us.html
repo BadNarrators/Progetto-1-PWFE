@@ -36,6 +36,16 @@
             text-justify: inter-word;
         }
 
+        body {
+            padding:0;
+        }
+
+        hr{
+            color:white;
+            margin-top: 3%;
+            margin-bottom: 3%
+        }
+
         .horizontally_centered {
             text-align: center;
         }
@@ -128,8 +138,12 @@
             background-color: var(--header_background_color);
         }
 
-        */ #company_mission_section {
+        #company_mission_section {
             background-color: var(--company_mission_section_background_color);
+        }
+
+        #company_mission_section h1{
+            margin-bottom: 1%;
         }
 
         #team_section {
@@ -169,19 +183,9 @@
             width: 100%;
         }
 
-        #team_section #management_article .column .card a img {
-            width: 10%;
-        }
-
         #about_section {
             background-color: var(--about_section_background_color);
         }
-
-        /*
-                #about_section {
-                    width: 50%;
-                }
-                */
 
         #about_section #about_article h1 {
             width: 100%;
@@ -201,12 +205,12 @@
             width: 100%;
         }
 
-        footer {
-            /*clear: both;*/
+        #footer {
+            clear: both;
             background-color: var(--footer_background_color);
         }
 
-        footer .column {
+        #footer .column {
             width: calc(100%/4);
             float: left;
         }
@@ -240,12 +244,13 @@
             </div>
             <div class="navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Astronauts</a></li>
-                    <li><a href="#">Missions</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="astronauts.html">Astronauts</a></li>
+                    <li><a href="missions.html">Missions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="join-us.html">Join Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
                 </ul>
             </div>
             <div class="sidebar-container">
@@ -280,11 +285,13 @@
                     Our company derives its name from Icarus, a legendary figure of the ancient Greek mythos.
                 </p>
                 <p>
-                    Trapped by the king of Crete in a labyrinth designed by his own father Daedalus, he built
-                    wings made out of wood, feathers and wax and flew away from his imprisonment.
+                    Trapped by the king of Crete in a labyrinth designed by his own father Daedalus, he wanted to escape,
                 </p>
                 <p>
-                    His father warned him not to defy the Gods, he did not listen: blinded by the joy of flight, he
+                    so he built wings made out of wood, feathers and wax and flew away.
+                </p>
+                <p>
+                    His father had warned him not to defy the Gods, he did not listen: blinded by the joy of flight, he
                     drew too close to the sun.
                 </p>
                 <p>
@@ -316,19 +323,11 @@
                             <em>
                                 CTO/Founder
                             </em><br />
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a>
-                            <hr />
-                            <br />
+                            <hr/>
                             <p class="justified increased_line_height">
-                                Andy has over eight years of experience in space rocket design.
-                                Andy was a researcher at SpaceX from 2007 to 2015.
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Andy has over eight years of experience in space rocket design.<br>
+                                Andy was a researcher at SpaceX from 2007 to 2015.<br>
+                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -343,18 +342,11 @@
                             <em>
                                 CEO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr/>
                             <p class="justified increased_line_height">
-                                Alex is a senior engineer at Icarus and an expert in life support.
-                                Previously, he worked at SpaceX for four years as a researcher at the Dragon project.
-                                He has a PhD in Biology from UCLA and was a postdoctoral fellow at Cornell.
+                                Alex is a senior engineer at Icarus and an expert in life support.<br>
+                                Previously, he worked at SpaceX for four years as a researcher at the Dragon project.<br>
+                                He has a PhD in Biology from UCLA and was a postdoctoral fellow at Cornell.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -369,21 +361,13 @@
                             <em>
                                 CTO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr/>
                             <p class="justified increased_line_height">
                                 Simon leads the launch and mission control team that is responsible for spaceships and
-                                rockets
-                                take off.
+                                rockets take off. <br>
                                 He holds a degree in Electrical Engineering from Oxford and has a Masters degree in
-                                Computer Science from Harvard.
-                                He worked at SpaceX for ten years.
+                                Computer Science from Harvard. <br>
+                                He worked at SpaceX for ten years.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -398,19 +382,11 @@
                             <em>
                                 CEO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br>
-                            <hr /><br>
+                            <hr/>
                             <p class="justified increased_line_height">
-                                Gene builds our datacenters, server infrastructure, and monitoring tools.
-                                He was a researcher at Munich Max Planck Institut and a postdoctoral fellow at
-                                University of Jena.
-                                Gene worked at SpaceX as well for a few years.
+                                Gene builds our datacenters, server infrastructure, and monitoring tools.<br>
+                                He was a researcher at Munich Max Planck Institut and a postdoctoral fellow at University of Jena.<br>
+                                Gene worked at SpaceX as well for a few years.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -423,54 +399,38 @@
                 </h1>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-andrew-atzaee.jpg" /><br />
+                        <img src="img/about-us/portraits/portrait-clint-eastwood.jpg" /><br />
                         <figcaption>
                             <strong>
-                                Dr. Andrew Atzaee
+                                Klimt Westwood
                             </strong><br />
                             <em>
                                 CTO/Founder
                             </em><br />
-                            <a class="envelope-anchor" target="_blank" rel="" ref="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a>
-                            <hr />
-                            <br />
+                            <hr/>
                             <p class="justified increased_line_height">
-                                Dignissim enim sit amet venenatis urna cursus. Ultrices vitae
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Dino is a mobile developer with many years of experience building complex applications. He is responsible for
+                                ProtonMail's mobile applications and for ensuring a good mobile user experience. Dino is based in our Skopje, Macedonia
+                                office.
                             </p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-alex-karabeta.jpg" />
+                        <img src="img/about-us/portraits/portrait-brad-pitt.jpg" />
                         <figcaption>
                             <strong>
-                                Alex Karabeta
+                                Pat Breed
                             </strong><br />
                             <em>
                                 CEO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr/>
                             <p class="justified increased_line_height">
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Lorem ipsum dolor sit amet Samuele has a background in theoretical computer science. After 12 years at CERN building information systems for high
+                                energy physics he has landed at Proton to initially contribute to the backend team and in every other tool that could
+                                have improved the collaboration within Proton itself. Since November 2018 he's leading the ProtonVPN team.
                             </p>
                         </figcaption>
                     </figure>
@@ -478,52 +438,37 @@
                 <div class="column">
                     <figure class="card">
                         <figcaption>
-                            <img src="img/profile-pic-simon-williams.png" />
+                            <img src="img/about-us/portraits/portrait-jack-nicholson.jpg" />
                             <strong>
-                                Simon Williams
+                                Nicholas Jackson
                             </strong><br />
                             <em>
                                 CTO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr/>
                             <p class="justified increased_line_height">
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                As Director of Customer Support, Violeta works closely with our developers to identify and understand customer issues
+                                and ensure the best possible user experience. She is an engineer with a degree in Informatics and is also a big fan of
+                                science fiction and traveling.
                             </p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-eugene-von-paula.png" />
+                        <img src="img/about-us/portraits/portrait-al-pacino.jpg" />
                         <figcaption>
-                            <strong>Eugene Von Paula</strong><br />
+                            <strong>
+                                Pat Alcino
+                            </strong><br />
                             <em>
                                 CEO/Founder
                             </em><br>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                                <img src="img/email-icon.svg">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                                <img src="img/linkedin-icon.svg">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                                <img src="img/twitter-icon.svg">
-                            </a><br>
-                            <hr /><br>
+                            <hr/>
                             <p class="justified increased_line_height">
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Seb leads our business operations, including sales, business development, and strategy. He holds a Bachelor’s degree in
+                                Economics, a Master’s in Marketing, and an MBA from the University of Chicago Booth. Before Proton, he was a strategy
+                                consultant, an entrepreneur, and a sales & marketing professional.
                             </p>
                         </figcaption>
                     </figure>
@@ -534,13 +479,10 @@
             <article id="about_article">
                 <div class="column horizontally_centered vertically_centered increased_line_height">
                     <p>
-                        Four ex SpaceX employees, dissatisfied by the tyrannical work culture imposed by Elon Musk, went
-                        on
-                        to found their own aerospace company.
+                        Four ex SpaceX employees, dissatisfied by the tyrannical work culture imposed by Elon Musk, went on to found their own aerospace company.
                     </p>
                     <p>
-                        Many other joined and now We are a big reality working both with national space agencies
-                        and on our own.
+                        Many others joined and now We are a big reality working both with national space agencies and on our own.
                     </p>
                     <p>
                         We believe space flight and curiosity are values which cross borders.
@@ -564,7 +506,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <article id="footer_article">
             <div class="column">
                 <h2>
