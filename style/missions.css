@@ -248,6 +248,9 @@
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+#myBtn {
+  padding: 15px;
+}
 /*This area should include a list of missions (at least 20). They should be grouped in three
 sections: past, current and future missions. Each mission should include at least a name,
 code, destination, image, equipment, crew.
