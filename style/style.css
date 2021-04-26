@@ -21,14 +21,6 @@ body {
   background-color: #113B65;
 }
 
-.top-image {
-  background: url('../img/blue-planet.jpg') no-repeat top;
-  background-size: contain;
-  width: calc(100%+20px);
-  margin: -10px;
-  z-index: -1;
-}
-
 .container {
   width: 100%;
   margin: -10px;
