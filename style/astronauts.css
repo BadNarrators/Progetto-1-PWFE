@@ -43,7 +43,8 @@ body {
 }
 
 .section-title {
-  color: rgba(0, 155, 255, 1);
+  color: #111133;
+  font-size: x-large;
 }
 
 /* Responsive columns */
