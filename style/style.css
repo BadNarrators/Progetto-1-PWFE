@@ -13,8 +13,14 @@ html {
 body {
   margin: 0 auto;
   padding: 10px;
-  background-color: #b6e2ff;
   overflow-x: hidden;
+  background-size: 100% auto;
+  background-image: url('../img/blue-planet.jpg');
+  width: calc(100%+20px);
+  margin: -10px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-color: #113B65;
 }
 
 .top-image {
