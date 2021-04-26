@@ -12,13 +12,10 @@ html {
 
 body {
   margin: 0 auto;
-  padding: 10px;
   overflow-x: hidden;
   background-size: 100% auto;
   background-image: url('../img/blue-planet.jpg');
   background-image: url('../img/blue-planet.jpg'), linear-gradient(#0E1F30, #113B65, #b6e2ff);
-  width: calc(100%+20px);
-  margin: -10px;
   z-index: -1;
   background-repeat: no-repeat;
   background-color: #113B65;
