@@ -129,6 +129,10 @@ button:focus {
     resize: none;
     height: 200px;
   }
+  
+  .form-container {
+    margin: 5% 5%;
+  }
 }
 .gradient-border {
   --borderWidth: 4px;
