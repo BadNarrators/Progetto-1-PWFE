@@ -56,6 +56,30 @@ body {
   }
 }
 
+.pagetitle{
+  font-size: 60px;
+  text-align: center;
+}
+.pagelinks{
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 3px solid black;
+  width: 50%;
+  padding-bottom: 20px;
+}
+.pagelinks a {
+  padding: 10px;
+  text-decoration: none;
+  color: #41a9d9;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
+}
+.pagelinks a:hover{
+  cursor: pointer;
+  color: #684cbe;
+}
+
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
