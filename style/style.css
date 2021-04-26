@@ -256,17 +256,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.form-container {
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.form-submit {
-  padding: 10px;
-  margin: 0 auto;
-  width: fit-content;
-}
-
 @media only screen and (max-width: 920px) {
   .top-image {
     background-repeat: repeat;

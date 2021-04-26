@@ -1,90 +1,76 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-   .row{
-    margin: 0 -5px;
-    margin-bottom:20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .retired {
-    margin-top:50px;
-    opacity: 0.5;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: right;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(238,238,255,1) 0%, rgba(210,210,255,1) 55%, rgba(0,155,255,1) 100%);
-    
-  }
-  .retired .card{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/backast.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .card img{
-    width: 50%;
-    float:left;
-    margin-top: 20px;
-    border:1px solid blue;
-    border-radius: 100px;
-  }
-  h1{
-    text-align: center;
-    color:rgb(167, 8, 8);
-  }
-  .card{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/backast.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
-  }
+  box-sizing: border-box;
+}
 
-/*footer*/
-.footer {
-  margin-top: auto;
-  background-color: #555;
-  padding: 20px;
-  text-align: center;
-  color: #ffffff;
+body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.retired {
+  margin-top: 150px;
+  opacity: 0.8;
+}
+
+.section-title:nth-of-type(2) {
+  position: relative;
+  top: 125px;
+}
+
+.section-title {
+  padding: 0 0 0 1.5%;
+}
+
+.section-title {
+  color: rgba(0, 155, 255, 1);
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(238, 238, 255, 1) 0%, rgba(210, 210, 255, 1) 55%, rgba(0, 155, 255, 1) 100%);
+}
+.retired .card {
+  background: linear-gradient(0deg, rgba(238, 238, 255, 1) 0%, rgba(210, 210, 255, 1) 55%, rgb(231, 27, 4) 100%);
+}
+.card img {
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  border: 1px solid blue;
+  border-radius: 100px;
 }
