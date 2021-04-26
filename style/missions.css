@@ -1,154 +1,153 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.retired {
+  margin-top: 100px;
+  opacity: 0.5;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    width: 50%;
-    padding: 0 10px;
-    
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* Remove extra left and right margins, due to padding */
-   .row{
-    margin: 0 -5px;
-    margin-bottom:20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .retired {
-    margin-top:100px;
-    opacity: 0.5;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
+}
+.active {
+  overflow-x: hidden;
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: right;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  background: linear-gradient(
+    0deg,
+    rgba(238, 238, 255, 1) 0%,
+    rgba(210, 210, 255, 1) 55%,
+    rgba(0, 155, 255, 1) 100%
+  );
+}
 
-  .pagetitle{
-    font-size: 60px;
-  }
-  .pagelinks{
-    margin: auto;
-    text-align: center;
-    font-size: 30px;
-    border-bottom: 3px solid black;
-    width: 50%;
-    padding-bottom: 20px;
-  }
-  .pagelinks a {
-    padding: 10px;
-    text-decoration: none;
-    color: #41a9d9;
-    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+.card img {
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  border: 1px solid blue;
+  border-radius: 100px;
+}
+h1 {
+  text-align: center;
+}
 
-  }
-  .pagelinks a:hover{
-    cursor: pointer;
-    color: #684cbe;
-  }
-
-  .active{
-    overflow-x:hidden;
-  }
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: right;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    background: linear-gradient(0deg, rgba(238,238,255,1) 0%, rgba(210,210,255,1) 55%, rgba(0,155,255,1) 100%);
-    
-  }
-  
-  .card img{
-    width: 50%;
-    float:left;
-    margin-top: 20px;
-    border:1px solid blue;
-    border-radius: 100px;
-  }
-  h1{
-      text-align: center;
-  }
-
-  /*background mission*/
-  .one{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+/*background mission*/
+.one {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission1.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .two{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.two {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission2.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .three{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.three {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission3.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .four{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+.four {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission4.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .five{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.five {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission5.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .six{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+.six {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission6.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .seven{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.seven {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission7.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .eight{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
+.eight {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
     url("../img/mission8.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  
-
-
-  /*This area should include a list of missions (at least 20). They should be grouped in three
+/*This area should include a list of missions (at least 20). They should be grouped in three
 sections: past, current and future missions. Each mission should include at least a name,
 code, destination, image, equipment, crew.
 The crew should include links to the astronauts page and to the specific astronauts for
