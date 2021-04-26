@@ -3,234 +3,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>about-us</title>
-    <meta name="description" content="about-us-site-section" />
-    <meta name="author" content="group-3" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authors" content="Andrea Atzei, Alessandro Carabetta, Eugenio Di Paola, Simone Guglielmi" />
+    <meta name="description" content="About us page" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/about-us.css" />
     <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js">
-    </script>
-<![endif]-->
-    <style>
-        html {
-            box-sizing: border-box;
-            --header_background_color: chartreuse;
-            --company_mission_section_background_color: #c23764;
-            --team_section_background_color: #202671;
-            --card_background_color: #8c2773;
-            --about_section_background_color: #c23764;
-            --footer_background_color: #752675;
-        }
-
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-            padding: 0;
-            margin: 0;
-        }
-
-        .justified {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-
-        .horizontally_centered {
-            text-align: center;
-        }
-
-        .vertically_centered {
-            position: absolute;
-            top: 45%;
-        }
-
-        .increased_line_height {
-            line-height: 1.2;
-        }
-
-        .black_text {
-            color: black;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        header,
-        main,
-        footer {
-            width: 100%;
-            color: antiquewhite;
-        }
-
-        a:link {
-            color: antiquewhite;
-        }
-
-        /* visited link */
-        a:visited {
-            color: #c23764;
-        }
-
-        /* moused over */
-        a:hover {
-            color: orange;
-        }
-
-        /* selected with keyboard*/
-        a:focus {
-            color: bisque;
-        }
-
-        /* activated link */
-        a:active {
-            color: rgb(255, 0, 157);
-        }
-
-
-
-        section {
-            overflow: hidden;
-            width: 100%;
-        }
-
-        article {
-            position: relative;
-            width: 80%;
-            padding: 2%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            overflow: hidden;
-        }
-
-        /*
-                article:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-                */
-
-        article .card {
-            background-color: var(--card_background_color);
-            transition: 0.3s;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-        }
-
-        article .card:hover {
-            box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.7);
-        }
-
-        header {
-            background-color: var(--header_background_color);
-        }
-
-        */ #company_mission_section {
-            background-color: var(--company_mission_section_background_color);
-        }
-
-        #team_section {
-            background-color: var(--team_section_background_color);
-        }
-
-        #team_section p {
-            text-align: justify;
-            text-justify: inter-word;
-        }
-
-        #team_section #leadership_article h1,
-        #team_section #management_article h1 {
-            padding-top: 5%;
-            padding-bottom: 5%;
-        }
-
-        #team_section #leadership_article .column,
-        #team_section #management_article .column {
-            width: calc(100%/5);
-            float: left;
-        }
-
-        #team_section #leadership_article .column:nth-child(-n+4),
-        #team_section #management_article .column:nth-child(-n+4) {
-            margin-right: calc(20%/3);
-        }
-
-        #team_section #leadership_article .column .card,
-        #team_section #management_article .column .card {
-            width: 100%;
-            float: left;
-        }
-
-        #team_section #leadership_article .column .card img,
-        #team_section #management_article .column .card img {
-            width: 100%;
-        }
-
-        #team_section #management_article .column .card a img {
-            width: 10%;
-        }
-
-        #about_section {
-            background-color: var(--about_section_background_color);
-        }
-
-        /*
-                #about_section {
-                    width: 50%;
-                }
-                */
-
-        #about_section #about_article h1 {
-            width: 100%;
-        }
-
-        #about_section #about_article p {
-            float: left;
-            width: 45%;
-        }
-
-        #about_section #about_article figure {
-            float: right;
-            width: 50%;
-        }
-
-        #about_section #about_article figure img {
-            width: 100%;
-        }
-
-        footer {
-            /*clear: both;*/
-            background-color: var(--footer_background_color);
-        }
-
-        footer .column {
-            width: calc(100%/4);
-            float: left;
-        }
-
-        @media screen and (max-width: 600px) {
-
-            #team_section #leadership_article .column,
-            #team_section #management_article .column,
-            #about_section #about_article .column,
-            footer #footer_article .column {
-                width: 100%;
-                clear: both;
-                display: block;
-            }
-        }
-    </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+    <title>About us</title>
 </head>
 
 <body>
-    <!--
-    <header>
-        header comune a tutte le pagine
-    </header>
--->
     <nav>
         <div class="container">
             <div class="logo">
@@ -240,12 +26,41 @@
             </div>
             <div class="navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Astronauts</a></li>
-                    <li><a href="#">Missions</a></li>
-                    <li><a href="#">Join Us</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html">
+                            News
+                        </a>
+                    </li>
+                    <li>
+                        <a href="astronauts.html">
+                            Astronauts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="missions.html">
+                            Missions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a href="join-us.html">
+                            Join Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">
+                            About Us
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="sidebar-container">
@@ -259,12 +74,36 @@
                         <img src="assets/logo.png" alt="Logo" />
                     </div>
                     <ul>
-                        <li class="sidebar-item"><a href="#">Home</a></li>
-                        <li class="sidebar-item"><a href="#">News</a></li>
-                        <li class="sidebar-item"><a href="#">Astronauts</a></li>
-                        <li class="sidebar-item"><a href="#">Missions</a></li>
-                        <li class="sidebar-item"><a href="#">Join Us</a></li>
-                        <li class="sidebar-item"><a href="#">About Us</a></li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                News
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                Astronauts
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                Missions
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                Join Us
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -280,11 +119,14 @@
                     Our company derives its name from Icarus, a legendary figure of the ancient Greek mythos.
                 </p>
                 <p>
-                    Trapped by the king of Crete in a labyrinth designed by his own father Daedalus, he built
-                    wings made out of wood, feathers and wax and flew away from his imprisonment.
+                    Trapped by the king of Crete in a labyrinth designed by his own father Daedalus, he wanted to
+                    escape,
                 </p>
                 <p>
-                    His father warned him not to defy the Gods, he did not listen: blinded by the joy of flight, he
+                    so he built wings made out of wood, feathers and wax and flew away.
+                </p>
+                <p>
+                    His father had warned him not to defy the Gods, he did not listen: blinded by the joy of flight, he
                     drew too close to the sun.
                 </p>
                 <p>
@@ -316,19 +158,12 @@
                             <em>
                                 CTO/Founder
                             </em><br />
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a>
                             <hr />
-                            <br />
                             <p class="justified increased_line_height">
-                                Andy has over eight years of experience in space rocket design.
-                                Andy was a researcher at SpaceX from 2007 to 2015.
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Andy has over eight years of experience in space rocket design.<br>
+                                Andy was a researcher at SpaceX from 2007 to 2015.<br>
+                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from
+                                Caltech.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -343,18 +178,12 @@
                             <em>
                                 CEO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr />
                             <p class="justified increased_line_height">
-                                Alex is a senior engineer at Icarus and an expert in life support.
-                                Previously, he worked at SpaceX for four years as a researcher at the Dragon project.
-                                He has a PhD in Biology from UCLA and was a postdoctoral fellow at Cornell.
+                                Alex is a senior engineer at Icarus and an expert in life support.<br>
+                                Previously, he worked at SpaceX for four years as a researcher at the Dragon
+                                project.<br>
+                                He has a PhD in Biology from UCLA and was a postdoctoral fellow at Cornell.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -369,21 +198,13 @@
                             <em>
                                 CTO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr />
                             <p class="justified increased_line_height">
                                 Simon leads the launch and mission control team that is responsible for spaceships and
-                                rockets
-                                take off.
+                                rockets take off. <br>
                                 He holds a degree in Electrical Engineering from Oxford and has a Masters degree in
-                                Computer Science from Harvard.
-                                He worked at SpaceX for ten years.
+                                Computer Science from Harvard. <br>
+                                He worked at SpaceX for ten years.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -398,19 +219,12 @@
                             <em>
                                 CEO/Founder
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br>
-                            <hr /><br>
+                            <hr />
                             <p class="justified increased_line_height">
-                                Gene builds our datacenters, server infrastructure, and monitoring tools.
+                                Gene builds our datacenters, server infrastructure, and monitoring tools.<br>
                                 He was a researcher at Munich Max Planck Institut and a postdoctoral fellow at
-                                University of Jena.
-                                Gene worked at SpaceX as well for a few years.
+                                University of Jena.<br>
+                                Gene worked at SpaceX as well for a few years.<br>
                             </p>
                         </figcaption>
                     </figure>
@@ -423,54 +237,39 @@
                 </h1>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-andrew-atzaee.jpg" /><br />
+                        <img src="img/about-us/portraits/portrait-clint-eastwood.jpg" /><br />
                         <figcaption>
                             <strong>
-                                Dr. Andrew Atzaee
+                                Klimt Westwood
                             </strong><br />
                             <em>
-                                CTO/Founder
+                                Management
                             </em><br />
-                            <a class="envelope-anchor" target="_blank" rel="" ref="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a>
                             <hr />
-                            <br />
                             <p class="justified increased_line_height">
-                                Dignissim enim sit amet venenatis urna cursus. Ultrices vitae
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Klimt is a repeat entrepreneur with over 20 years of experience in private equity
+                                fundraising, business development,
+                                sales, marcom and management in various industries. He is passionate in helping Proton
+                                reach its next levels.
                             </p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-alex-karabeta.jpg" />
+                        <img src="img/about-us/portraits/portrait-brad-pitt.jpg" />
                         <figcaption>
                             <strong>
-                                Alex Karabeta
+                                Pat Breed
                             </strong><br />
                             <em>
-                                CEO/Founder
+                                Rocket Engineering
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr />
                             <p class="justified increased_line_height">
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Pat has a background in naval engineering. After 12 years in the Navy building systems
+                                for carriers he has landed at Icarus to initially contribute to hull designs. Since
+                                November 2018 he's leading the team.
                             </p>
                         </figcaption>
                     </figure>
@@ -478,52 +277,41 @@
                 <div class="column">
                     <figure class="card">
                         <figcaption>
-                            <img src="img/profile-pic-simon-williams.png" />
+                            <img src="img/about-us/portraits/portrait-jack-nicholson.jpg" />
                             <strong>
-                                Simon Williams
+                                Nicholas Jackson
                             </strong><br />
                             <em>
-                                CTO/Founder
+                                Crew Support
                             </em>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                            </a><br />
-                            <hr /><br>
+                            <hr />
                             <p class="justified increased_line_height">
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                As Director of Crew Support, Nick works closely with our scientists and engineers to
+                                identify and understand astronauts issues
+                                and ensure the best possible experience. He is an engineer with a degree in Psychology
+                                and is also a big fan of
+                                science fiction and traveling.
                             </p>
                         </figcaption>
                     </figure>
                 </div>
                 <div class="column">
                     <figure class="card">
-                        <img src="img/profile-pic-eugene-von-paula.png" />
+                        <img src="img/about-us/portraits/portrait-al-pacino.jpg" />
                         <figcaption>
-                            <strong>Eugene Von Paula</strong><br />
+                            <strong>
+                                Pat Alcino
+                            </strong><br />
                             <em>
-                                CEO/Founder
+                                Management
                             </em><br>
-                            <a class="envelope-anchor" target="_blank" rel="" href="mailto:contact@starlinesmail.com">
-                                <img src="img/email-icon.svg">
-                            </a>
-                            <a class="linkedin-anchor" target="_blank" rel=""
-                                href="https://www.linkedin.com/in/andrew-atzaee">
-                                <img src="img/linkedin-icon.svg">
-                            </a>
-                            <a class="twitter-anchor" target="_blank" rel="" href="https://twitter.com/andrew-atzaee">
-                                <img src="img/twitter-icon.svg">
-                            </a><br>
-                            <hr /><br>
+                            <hr />
                             <p class="justified increased_line_height">
-                                Andy has over 8 years of experience in rocket design.<br>
-                                Andy was a researcher at SpaceX from 2009 to 2015.<br>
-                                He has a PhD in Aerospace Engineering from MIT and a degree in Economics from Caltech.
+                                Patrick leads our business operations, including contracts, business development, and
+                                strategy. He holds a Bachelor’s degree in
+                                Economics, a Master’s in Marketing, and an MBA from the University of Chicago Booth.
+                                Before Icarus, he was a strategy
+                                consultant, an entrepreneur, and a sales & marketing professional.
                             </p>
                         </figcaption>
                     </figure>
@@ -532,26 +320,28 @@
         </section>
         <section id="about_section">
             <article id="about_article">
-                <div class="column horizontally_centered vertically_centered increased_line_height">
-                    <p>
-                        Four ex SpaceX employees, dissatisfied by the tyrannical work culture imposed by Elon Musk, went
-                        on
-                        to found their own aerospace company.
-                    </p>
-                    <p>
-                        Many other joined and now We are a big reality working both with national space agencies
-                        and on our own.
-                    </p>
-                    <p>
-                        We believe space flight and curiosity are values which cross borders.
-                    </p>
-                    <p>
-                        Inclusion and diversity are core company values.
-                    </p>
-                    <p>
-                        Collectively, our team of experts from around the world speak English, French, German, Italian,
-                        Spanish, Czech, Macedonian, Chinese and Russian.
-                    </p>
+                <div class="column ">
+                    <div id="content" class="horizontally_centered vertically_centered increased_line_height">
+                        <p>
+                            Four ex SpaceX employees, dissatisfied by the tyrannical work culture imposed by Elon Musk,
+                            went on to found their own aerospace company.
+                        </p>
+                        <p>
+                            Many others joined and now We are a big reality working both with national space agencies
+                            and on our own.
+                        </p>
+                        <p>
+                            We believe space flight and curiosity are values which cross borders.
+                        </p>
+                        <p>
+                            Inclusion and diversity are core company values.
+                        </p>
+                        <p>
+                            Collectively, our team of experts from around the world speak English, French, German,
+                            Italian,
+                            Spanish, Czech, Macedonian, Chinese and Russian.
+                        </p>
+                    </div>
                 </div>
                 <div class="column">
                     <figure>
@@ -564,7 +354,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <article id="footer_article">
             <div class="column">
                 <h2>
