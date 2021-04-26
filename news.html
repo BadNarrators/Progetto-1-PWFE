@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="authors" content="Andrea Atzei, Alessandro Carabetta, Eugenio Di Paola, Simone Guglielmi" />
+    <meta name="description" content="Missions page" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/missions.css" />
+    <title>Missions</title>
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <div class="container">
+        <div class="logo">
+            <a href="#"><img src="assets/definitive_mini_logo.png" alt="logo" /></a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="astronauts.html">Astronauts</a></li>
+                <li><a href="missions.html">Missions</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="join-us.html">Join Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-container">
+            <span id="button" onclick="toggleNav(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </span>
+            <div class="sidebar-content" id="sidebar-content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="Logo" />
+                </div>
+                <ul>
+                    <li class="sidebar-item"><a href="index.html">Home</a></li>
+                    <li class="sidebar-item"><a href="#">News</a></li>
+                    <li class="sidebar-item"><a href="#">Astronauts</a></li>
+                    <li class="sidebar-item"><a href="#">Missions</a></li>
+                    <li class="sidebar-item"><a href="#">Gallery</a></li>
+                    <li class="sidebar-item"><a href="#">Join Us</a></li>
+                    <li class="sidebar-item"><a href="#">About Us</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--CURRENT MISSIONS SECTION-->
+    
+    <script src="script/main.js"></script>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

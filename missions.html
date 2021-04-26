@@ -57,21 +57,43 @@
         <div class="row">
             <div class="column">
                 <div class="card one">
-                    <h3>MSL</h3>
-                    <p>Code: 4LS0</p>
-                    <p>Subject of study/Destination: Mars</p>
-                    <p>Description: the M(ars)S(cience)L(aboratory) mission's Curiosity rover, the most technologically
-                        advanced rover ever built, landed in Mars' Gale Crater the evening of August 5, 2019, PDT
-                        (morning of August 6 EDT), using a series of complicated landing maneuvers never before
-                        attempted.</p>
-                    <p>Crew:
-                    <ul>
-                        <a href="astronauts.html#alan-g-poindexter">Alan G. Poindexter</a>
-                        <a href="astronauts.html#clayton-anderson">Clayton Anderson</a>
-                        <a href="astronauts.html#dominic-a-antonelli">Dominic A. Antonelli</a>
-                        <a href="astronauts.html#douglas-h-wheelock">Douglas H. Wheelock</a>
-                    </ul>
-                    </p>
+                    <div class="popup" onclick="myFunction()">
+                        <div class="popuptext" id="myPopup">
+                            <h3>MSL</h3>
+                            <p>Code: 4LS0</p>
+                            <p>Subject of study/Destination: Mars</p>
+                            <p>Description: the M(ars)S(cience)L(aboratory) mission's Curiosity rover, the most
+                                technologically
+                                advanced rover ever built, landed in Mars' Gale Crater the evening of August 5, 2019,
+                                PDT
+                                (morning of August 6 EDT), using a series of complicated landing maneuvers never before
+                                attempted.</p>
+                            <p>Crew:
+                            <ul>
+                                <a href="astronauts.html#alan-g-poindexter">Alan G. Poindexter</a>
+                                <a href="astronauts.html#clayton-anderson">Clayton Anderson</a>
+                                <a href="astronauts.html#dominic-a-antonelli">Dominic A. Antonelli</a>
+                                <a href="astronauts.html#douglas-h-wheelock">Douglas H. Wheelock</a>
+                            </ul>
+                            </p>
+                        </div>
+                        <h3>MSL</h3>
+                        <p>Code: 4LS0</p>
+                        <p>Subject of study/Destination: Mars</p>
+                        <p>Description: the M(ars)S(cience)L(aboratory) mission's Curiosity rover, the most
+                            technologically
+                            advanced rover ever built, landed in Mars' Gale Crater the evening of August 5, 2019, PDT
+                            (morning of August 6 EDT), using a series of complicated landing maneuvers never before
+                            attempted.</p>
+                        <p>Crew:
+                        <ul>
+                            <a href="astronauts.html#alan-g-poindexter">Alan G. Poindexter</a>
+                            <a href="astronauts.html#clayton-anderson">Clayton Anderson</a>
+                            <a href="astronauts.html#dominic-a-antonelli">Dominic A. Antonelli</a>
+                            <a href="astronauts.html#douglas-h-wheelock">Douglas H. Wheelock</a>
+                        </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="column">
@@ -436,6 +458,13 @@
     <button id="myBtn" title="Go to top" onclick="toTop()">&#8593</button>
     <!-- End of button -->
     <script src="script/main.js"></script>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
