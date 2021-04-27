@@ -269,8 +269,12 @@ body {
   width: fit-content;
 }
 
-.pagelinks ul li:first-child {
+.pagelinks ul li {
   border-right: 1px solid white;
+}
+/*clear container-selector */
+.pagelinks ul li:last-child {
+  border-right: none;
 }
 
 .pagelinks a {
@@ -341,6 +345,9 @@ body {
 
   .card {
     flex: 1 55%;
+  }
+  .pagelinks{
+    display: none;
   }
 
   /* .card:nth-child(5n + 4),
