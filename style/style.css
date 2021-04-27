@@ -267,7 +267,7 @@ body {
 
 .pagelinks ul li {
   display: inline;
-  width: fit-content;
+  width: 33%;
 }
 
 .pagelinks ul li {
@@ -288,6 +288,13 @@ body {
 .pagelinks a:hover {
   cursor: pointer;
   color: #684cbe;
+}
+
+.see-all {
+  color: #5ED7EC;
+}
+.see-all:hover {
+  color: #aFD7FC;
 }
 
 .footer {
