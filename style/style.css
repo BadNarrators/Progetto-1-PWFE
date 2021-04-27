@@ -209,6 +209,7 @@ body {
   flex: 1 16%;
   border: 1px solid black;
   background-color: white;
+  background-image: radial-gradient(#FFFFFF, #AAAACC)
 }
 
 .card img {
