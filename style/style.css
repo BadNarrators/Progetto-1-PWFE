@@ -247,6 +247,44 @@ body {
   background-color: #023c63;
 }
 
+.pagetitle {
+  font-size: 60px;
+  text-align: center;
+}
+.pagelinks {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 3px solid black;
+  width: 45%;
+  padding-bottom: 20px;
+}
+
+.pagelinks ul {
+  list-style: none;
+}
+
+.pagelinks ul li {
+  display: inline;
+  width: fit-content;
+}
+
+.pagelinks ul li:first-child {
+  border-right: 1px solid white;
+}
+
+.pagelinks a {
+  padding: 20px;
+  text-decoration: none;
+  color: #41a9d9;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+.pagelinks a:hover {
+  cursor: pointer;
+  color: #684cbe;
+}
+
 .footer {
   margin-top: auto;
   background-color: #555;

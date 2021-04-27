@@ -56,29 +56,7 @@ body {
   }
 }
 
-.pagetitle{
-  font-size: 60px;
-  text-align: center;
-}
-.pagelinks{
-  margin: auto;
-  text-align: center;
-  font-size: 30px;
-  border-bottom: 3px solid black;
-  width: 40%;
-  padding-bottom: 20px;
-}
-.pagelinks a {
-  padding: 20px;
-  text-decoration: none;
-  color: #41a9d9;
-  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 
-}
-.pagelinks a:hover{
-  cursor: pointer;
-  color: #684cbe;
-}
 
 /* Style the counter cards */
 .card {
@@ -87,14 +65,19 @@ body {
   text-align: left;
   background-color: #f1f1f1;
   border-radius: 16px;
+<<<<<<< Updated upstream
   background-image:
     linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
     url("../img/backast.jpeg");
     background-size: cover;
   height: 620px;
   overflow: hidden;
+=======
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)), url('../img/backast.jpeg');
+  background-size: cover;
+  height: 600px;
+>>>>>>> Stashed changes
 }
-
 
 .card img {
   width: 50%;
@@ -105,7 +88,6 @@ body {
 }
 
 .retired {
-  
   opacity: 0.5;
 }
 
