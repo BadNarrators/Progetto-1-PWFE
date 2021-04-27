@@ -15,10 +15,10 @@ body {
   overflow-x: hidden;
   background-size: 100% auto;
   background-image: url('../img/blue-planet.jpg');
-  background-image: url('../img/blue-planet.jpg'), linear-gradient(#0E1F30, #113B65, #b6e2ff);
+  background-image: url('../img/blue-planet.jpg'), linear-gradient(#0e1f30, #113b65, #b6e2ff);
   z-index: -1;
   background-repeat: no-repeat;
-  background-color: #113B65;
+  background-color: #113b65;
 }
 
 .container {
@@ -218,8 +218,12 @@ body {
 .info-container {
   margin-top: auto;
   text-align: center;
-  border: 1px solid black;
   text-overflow: ellipsis;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
 }
 
 #myBtn {
@@ -298,13 +302,13 @@ body {
   }
 
   .card {
-    flex: 1 45%;
+    flex: 1 55%;
   }
 
-  .card:nth-child(5n + 4),
+  /* .card:nth-child(5n + 4),
   .card:nth-child(5n) {
     display: none;
-  }
+  } */
 
   #myBtn {
     padding: 15px;
