@@ -91,7 +91,8 @@ body {
     linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
     url("../img/backast.jpeg");
     background-size: cover;
-  height: 600px;
+  height: 620px;
+  overflow: hidden;
 }
 
 
@@ -106,4 +107,13 @@ body {
 .retired {
   
   opacity: 0.5;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #555;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
 }
