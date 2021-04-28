@@ -25,7 +25,7 @@ app.post('/insert', (req, res) => {
     weight: req.body.weight,
     biography: req.body.bio,
   };
-  console.log(item);
+  // console.log(item);
   db.connect((err, data) => {
     assert.strictEqual(null, err);
     data
