@@ -5,3 +5,6 @@ node_modules/
 # Enviroments
 
 .env
+
+# Other files and folders
+.DS_Store
