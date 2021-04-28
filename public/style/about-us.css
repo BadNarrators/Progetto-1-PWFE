@@ -23,8 +23,7 @@ html {
 
 body {
   padding: 0;
-  background-image: url("..public/assets/shared/blue-planet.jpg") no-repeat
-    top;
+  background-image: url("..public/assets/shared/blue-planet.jpg") no-repeat top;
 }
 
 hr {
@@ -48,6 +47,10 @@ hr {
 
 .black_text {
   color: black;
+}
+
+.container {
+  margin: 0;
 }
 
 ul {
@@ -101,14 +104,6 @@ article {
   overflow: hidden;
 }
 
-/*
-                article:after {
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-                */
-
 article .card {
   background-color: var(--card_background_color);
   transition: 0.3s;
@@ -126,7 +121,10 @@ header {
 
 #company_mission_section {
   background-color: #000a34;
-  background-image: radial-gradient(rgba(0, 0, 50, 1),rgba(200, 200, 255, 0.3));
+  background-image: radial-gradient(
+    rgba(0, 0, 50, 1),
+    rgba(200, 200, 255, 0.3)
+  );
 }
 
 #company_mission_section h1 {
@@ -172,7 +170,10 @@ header {
 
 #about_section {
   background-color: var(--about_section_background_color);
-  background-image: radial-gradient(rgba(0, 0, 50, 1),rgba(200, 200, 255, 0.3));
+  background-image: radial-gradient(
+    rgba(0, 0, 50, 1),
+    rgba(200, 200, 255, 0.3)
+  );
   font-size: large;
 }
 

@@ -14,8 +14,8 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   background-size: 100% auto;
-  background-image: url('../img/blue-planet.jpg');
-  background-image: url('../img/blue-planet.jpg'), linear-gradient(#0e1f30, #113b65, #b6e2ff);
+  background-image: url('../assets/shared/blue-planet.jpg');
+  background-image: url('../assets/shared/blue-planet.jpg'), linear-gradient(#0e1f30, #113b65, #b6e2ff);
   z-index: -1;
   background-repeat: no-repeat;
   background-color: #113b65;
