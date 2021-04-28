@@ -67,7 +67,7 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission1.jpeg");
+      url("../assets/news/news1.png");
     
   }
   .two {
@@ -76,7 +76,7 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission2.jpeg");
+      url("../assets/news/news2.jpeg");
     
   }
   .three {
@@ -85,7 +85,7 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission3.jpeg");
+      url("../assets/news/news3.jpeg");
     
   }
   
@@ -95,8 +95,8 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission4.jpeg");
-    
+      
+      url("../assets/news/news4.jpeg"); 
   }
   .five {
     background-image: linear-gradient(
@@ -104,8 +104,7 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission5.jpeg");
-    
+      url("../assets/news/news5.jpeg");;
   }
   .six {
     background-image: linear-gradient(
@@ -113,7 +112,7 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission6.jpeg");
+      url("../assets/news/news6.jpeg");
     
   }
   .seven {
@@ -122,7 +121,7 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission7.jpeg");
+      url("../assets/news/news7.jpeg");
     
   }
   
@@ -132,7 +131,7 @@
         rgba(245, 246, 252, 0.52),
         rgba(25, 49, 114, 0.73)
       ),
-      url("../assets/missions/backgrounds/mission8.jpeg");
+      url("../assets/news/news8.jpeg");
     
   }
   
