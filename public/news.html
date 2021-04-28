@@ -9,11 +9,14 @@
     <meta name="description" content="News page" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/missions.css" />
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
     <title>News</title>
 </head>
 
 <body>
-    <!--nav bar-->
+    <!-- nav bar -->
     <div class="container">
         <div class="logo">
             <a href="#"><img src="assets/shared/definitive_mini_logo.png" alt="logo" /></a>
@@ -26,6 +29,7 @@
                 <li><a href="missions.html">Missions</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="join-us.html">Join Us</a></li>
+                <li><a href="/getData">Candidates</a></li>
                 <li><a href="about-us.html">About Us</a></li>
             </ul>
         </div>
@@ -51,8 +55,9 @@
             </div>
         </div>
     </div>
+    <!-- end of nav bar -->
     <h1>News</h1>
-    <!--news content-->
+    <!-- news content -->
     <div class="row">
         <div class="column">
             <a id="icarus-opens-at-wall-street"></a>
@@ -159,10 +164,11 @@
             </div>
         </div>
     </div>
+    <!-- end of news content -->
     <a href="#">See older news</a>
-    <!-- Go to top button -->
+    <!-- go to top button -->
     <button id="myBtn" title="Go to top" onclick="toTop()">&#8593</button>
-    <!-- End of button -->
+    <!-- end of go top button -->
     <script src="script/totop.js"></script>
     <footer>
         <p>
