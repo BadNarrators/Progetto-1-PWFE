@@ -47,6 +47,7 @@ body {
   background-color: #f1f1f1;
   border-radius: 16px;
   height: 400px;
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .card img {
@@ -69,7 +70,6 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission1.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 .two {
   background-image: linear-gradient(
@@ -78,7 +78,6 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission2.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 .three {
   background-image: linear-gradient(
@@ -87,7 +86,6 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission3.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .four {
@@ -97,7 +95,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission4.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .five {
   background-image: linear-gradient(
@@ -106,7 +104,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission5.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .six {
@@ -116,7 +114,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission6.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .seven {
   background-image: linear-gradient(
@@ -125,7 +123,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission7.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .eight {
@@ -135,7 +133,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission8.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .nine {
   background-image: linear-gradient(
@@ -144,7 +142,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission9.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .ten {
   background-image: linear-gradient(
@@ -153,7 +151,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission10.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .eleven {
   background-image: linear-gradient(
@@ -162,7 +160,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission11.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .twelve {
   background-image: linear-gradient(
@@ -171,7 +169,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission12.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .thirteen {
   background-image: linear-gradient(
@@ -180,7 +178,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission13.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .fourteen {
   background-image: linear-gradient(
@@ -189,7 +187,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission14.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .fifteen {
   background-image: linear-gradient(
@@ -198,7 +196,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission15.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .sixteen {
@@ -208,7 +206,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission16.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .seventeen {
@@ -218,7 +216,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission17.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .eighteen {
   background-image: linear-gradient(
@@ -227,7 +225,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission18.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .nineteen {
   background-image: linear-gradient(
@@ -236,7 +234,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission19.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 .twenty {
   background-image: linear-gradient(
@@ -245,7 +243,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission20.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .twentyone {
@@ -255,7 +253,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission21.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .twentytwo {
@@ -265,7 +263,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission22.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .twentythree {
@@ -275,7 +273,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission23.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .twentyfour {
@@ -285,7 +283,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission24.png");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 .twentyfive {
@@ -295,7 +293,7 @@ h1 {
       rgba(25, 49, 114, 0.73)
     ),
     url("../assets/missions/backgrounds/mission25.jpeg");
-  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
 #myBtn {
