@@ -23,7 +23,7 @@ html {
 
 body {
   padding: 0;
-  background-image: url("img/about-us/about-us-body-wallpaper.jpg") no-repeat
+  background-image: url("..public/assets/shared/blue-planet.jpg") no-repeat
     top;
 }
 

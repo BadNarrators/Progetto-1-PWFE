@@ -1,244 +1,306 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    
-
-  }
-  
-  /* Float four columns side by side */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 0 10px;
-    
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-   .row{
-    margin: 0 -5px;
-    margin-bottom:20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
- 
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  .active{
-    overflow-x:hidden;
-  }
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: right;
-    background-color: #f1f1f1;
-    border-radius: 16px;
-    height: 400px;
-    
-  }
-  
-  .card img{
-    width: 50%;
-    float:left;
-    margin-top: 20px;
-    border:1px solid blue;
-    border-radius: 100px;
-  }
-  h1{
-    text-align: left;
-    margin:20px;
-  }
-  
-
-  /*background mission*/
-  .one{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission1.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  
+  box-sizing: border-box;
 }
-.two {
-    background-image: 
-      linear-gradient(to left,
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.active {
+  overflow-x: hidden;
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: right;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  height: 400px;
+}
+
+.card img {
+  width: 50%;
+  float: left;
+  margin-top: 20px;
+  border: 1px solid blue;
+  border-radius: 100px;
+}
+h1 {
+  text-align: left;
+  margin: 20px;
+}
+
+/*background mission*/
+.one {
+  background-image: linear-gradient(
+      to left,
       rgba(245, 246, 252, 0.52),
       rgba(25, 49, 114, 0.73)
     ),
-    url("../img/mission2.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .three{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission3.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+    url("../assets/missions/backgrounds/mission1.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.two {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission2.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.three {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission3.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .four{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission4.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .five{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission5.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.four {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission4.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.five {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission5.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .six{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission6.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .seven{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission7.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.six {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission6.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.seven {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission7.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .eight{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission8.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .nine{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission9.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .ten{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission10.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .eleven{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission11.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .twelve{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission12.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .thirteen{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission13.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .fourteen{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission14.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .fifteen{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission15.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.eight {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission8.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.nine {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission9.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.ten {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission10.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.eleven {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission11.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.twelve {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission12.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.thirteen {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission13.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.fourteen {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission14.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.fifteen {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission15.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .sixteen{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission16.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.sixteen {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission16.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .seventeen{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission17.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .eighteen{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission18.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .nineteen{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission19.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-  .twenty{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission20.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.seventeen {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission17.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.eighteen {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission18.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.nineteen {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission19.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.twenty {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission20.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .twentyone{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission21.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.twentyone {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission21.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .twentytwo{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission22.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.twentytwo {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission22.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .twentythree{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission23.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.twentythree {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission23.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .twentyfour{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission24.png");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
+.twentyfour {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission24.png");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
-  .twentyfive{
-    background-image:
-    linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(25, 49, 114, 0.73)),
-    url("../img/mission25.jpeg");
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-
+.twentyfive {
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0.52),
+      rgba(25, 49, 114, 0.73)
+    ),
+    url("../assets/missions/backgrounds/mission25.jpeg");
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
 
 #myBtn {
   padding: 15px;
 }
-
 
 /*This area should include a list of missions (at least 20). They should be grouped in three
 sections: past, current and future missions. Each mission should include at least a name,

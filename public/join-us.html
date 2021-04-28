@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-EN">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,232 +10,220 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/join-us-style.css" />
     <title>Join Us</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="">
-      <nav>
-        <div class="container">
-          <div class="logo">
-            <a href="#">
-              <img src="assets/definitive_mini_logo.png" alt="logo" />
-            </a>
-          </div>
-          <div class="navbar">
-            <ul>
-              <li><a href="index.html"> Home </a></li>
-              <li><a href="news.html"> News </a></li>
-              <li><a href="astronauts.html"> Astronauts </a></li>
-              <li><a href="missions.html"> Missions </a></li>
-              <li><a href="gallery.html"> Gallery </a></li>
-              <li><a href="join-us.html"> Join Us </a></li>
-              <li><a href="about-us.html"> About Us </a></li>
-            </ul>
-          </div>
-          <div class="sidebar-container">
-            <span onclick="toggleNav(this)">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </span>
-            <div class="sidebar-content" id="sidebar-content">
-              <div class="logo">
-                <img src="assets/logo.png" alt="Logo" />
-              </div>
-              <ul>
-                <li class="sidebar-item"><a href="index.html">Home</a></li>
-                <li class="sidebar-item"><a href="#">News</a></li>
-                <li class="sidebar-item"><a href="#">Astronauts</a></li>
-                <li class="sidebar-item"><a href="#">Missions</a></li>
-                <li class="sidebar-item"><a href="gallery.html">Gallery</a></li>
-                <li class="sidebar-item"><a href="#">Join Us</a></li>
-                <li class="sidebar-item"><a href="about-us.html">About Us</a></li>
-              </ul>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/definitive_mini_logo.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="news.html"> News </a></li>
+                        <li><a href="astronauts.html"> Astronauts </a></li>
+                        <li><a href="missions.html"> Missions </a></li>
+                        <li><a href="gallery.html"> Gallery </a></li>
+                        <li><a href="join-us.html"> Join Us </a></li>
+                        <li><a href="about-us.html"> About Us </a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-container">
+                    <span onclick="toggleNav(this)">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </span>
+                    <div class="sidebar-content" id="sidebar-content">
+                        <div class="logo">
+                            <img src="assets/logo.png" alt="Logo" />
+                        </div>
+                        <ul>
+                            <li class="sidebar-item"><a href="index.html">Home</a></li>
+                            <li class="sidebar-item"><a href="news.html">News</a></li>
+                            <li class="sidebar-item"><a href="astronauts.html">Astronauts</a></li>
+                            <li class="sidebar-item"><a href="missions.html">Missions</a></li>
+                            <li class="sidebar-item"><a href="gallery.html">Gallery</a></li>
+                            <li class="sidebar-item"><a href="join-us">Join Us</a></li>
+                            <li class="sidebar-item"><a href="about-us">About Us</a> </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
-      <section class="form-container gradient-border">
-        <h3>Welcome, if you're interested in join our group, please fill this form</h3>
-        <h4>All fields are required (<span class="red">*</span>)</h4>
-        <form action="/insert" method="POST" id="joinus-form">
-          <div class="row">
-            <div class="col-25">
-              <label for="name">Name:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input type="text" name="name" id="name" minlength="4" maxlength="30" placeholder="Name..." required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="surname">Surname:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input
-                type="text"
-                name="surname"
-                id="surname"
-                minlength="4"
-                maxlength="30"
-                placeholder="Surname..."
-                required
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="Missions">Mission:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <select name="missions" id="missions" required>
-                <option value="" selected hidden disabled>Select a mission</option>
-                <optgroup label="Earth">
-                  <option value="Asthros">Asthros</option>
-                  <option value="Surface Water and Ocean Topography">Surface Water and Ocean Topography</option>
-                  <option value="NASA-ISRO Synthetic Aperture Radar">NASA-ISRO Synthetic Aperture Radar</option>
-                  <option value="Multi-Angle Imager for Aerosols">Multi-Angle Imager for Aerosols</option>
-                </optgroup>
-                <optgroup label="Mars" disabled>
-                  <option value="">No Missions Available</option>
-                </optgroup>
-                <optgroup label="Moon">
-                  <option value="Lunar Flashlight">Lunar Flashlight</option>
-                </optgroup>
-                <optgroup label="Stars and Galaxies">
-                  <option value="SPHEREx">SPHEREx</option>
-                  <option value="Mid-Infrared Instrument">Mid-Infrared Instrument</option>
-                </optgroup>
-                <optgroup label="Asteroid and Comets">
-                  <option value="Near Earth Asteroid Scout">Near Earth Asteroid Scout</option>
-                </optgroup>
-                <optgroup label="Venus" disabled>
-                  <option value="">No Missions Available</option>
-                </optgroup>
-                <optgroup label="Exoplanets">
-                  <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
-                </optgroup>
-                <optgroup label="Europa">
-                  <option value="Europa Clipper">Europa Clipper</option>
-                </optgroup>
-                <optgroup label="Galaxies">
-                  <option value="SPHEREx">SPHEREx</option>
-                  <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission</option>
-                </optgroup>
-                <optgroup label="Interstellar Space" disabled>
-                  <option value="">No Mission Available</option>
-                </optgroup>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="age">Age:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input type="number" name="age" id="age" min="18" max="65" placeholder="Age (Min 18, Max 65)..." required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="gender">Gender:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <select name="gender" id="gender" required>
-                <option value="" selected hidden disabled>Select a gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Non Binary">Non-Binary</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="eyeColor">Eye Color:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <select name="eyeColor" id="eyeColor" required>
-                <option value="" selected hidden disabled>Select an eye color</option>
-                <option value="Brown">Brown</option>
-                <option value="Blue">Blue</option>
-                <option value="Grey">Grey</option>
-                <option value="Green">Green</option>
-                <option value="Red">Red</option>
-                <option value="Black">Black</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="email">Email:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input type="email" name="email" id="email" placeholder="Email..." required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="password">Password:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input type="password" name="password" id="password" minlength="8" placeholder="Password..." required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="address">Address:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input type="text" name="address" id="address" minlength="5" placeholder="Address..." required />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="phone">Phone Number:<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                minlength="10"
-                maxlength="10"
-                placeholder="Phone Number..."
-                required
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="weight">Weight:(kg)<span class="red">*</span></label>
-            </div>
-            <div class="col-75">
-              <input
-                type="number"
-                name="weight"
-                id="weight"
-                min="55"
-                max="100"
-                placeholder="Weight (Min 55, Max 100)..."
-                required
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-25">
-              <label for="bio">Biography:</label>
-            </div>
-            <div class="col-75">
-              <textarea name="bio" id="bio" cols="30" rows="10" maxlength="255" placeholder="Biography..."></textarea>
-            </div>
-          </div>
-          <br />
-          <div class="row">
-            <input type="submit" name="submit" id="submit" value="Join Us" />
-            <input type="reset" name="reset" id="reset" value="Reset" />
-          </div>
-        </form>
-      </section>
+        </nav>
+        <section class="form-container gradient-border">
+            <h3>Welcome, if you're interested in join our group, please fill this form</h3>
+            <h4>All fields are required (<span class="red">*</span>)</h4>
+            <form action="/insert" method="POST" id="joinus-form">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="name" id="name" minlength="4" maxlength="30" placeholder="Name..."
+                            required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="surname">Surname:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="surname" id="surname" minlength="4" maxlength="30"
+                            placeholder="Surname..." required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Missions">Mission:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <select name="missions" id="missions" required>
+                            <option value="" selected hidden disabled>Select a mission</option>
+                            <optgroup label="Earth">
+                                <option value="Asthros">Asthros</option>
+                                <option value="Surface Water and Ocean Topography">Surface Water and Ocean Topography
+                                </option>
+                                <option value="NASA-ISRO Synthetic Aperture Radar">NASA-ISRO Synthetic Aperture Radar
+                                </option>
+                                <option value="Multi-Angle Imager for Aerosols">Multi-Angle Imager for Aerosols</option>
+                            </optgroup>
+                            <optgroup label="Mars" disabled>
+                                <option value="">No Missions Available</option>
+                            </optgroup>
+                            <optgroup label="Moon">
+                                <option value="Lunar Flashlight">Lunar Flashlight</option>
+                            </optgroup>
+                            <optgroup label="Stars and Galaxies">
+                                <option value="SPHEREx">SPHEREx</option>
+                                <option value="Mid-Infrared Instrument">Mid-Infrared Instrument</option>
+                            </optgroup>
+                            <optgroup label="Asteroid and Comets">
+                                <option value="Near Earth Asteroid Scout">Near Earth Asteroid Scout</option>
+                            </optgroup>
+                            <optgroup label="Venus" disabled>
+                                <option value="">No Missions Available</option>
+                            </optgroup>
+                            <optgroup label="Exoplanets">
+                                <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission
+                                </option>
+                            </optgroup>
+                            <optgroup label="Europa">
+                                <option value="Europa Clipper">Europa Clipper</option>
+                            </optgroup>
+                            <optgroup label="Galaxies">
+                                <option value="SPHEREx">SPHEREx</option>
+                                <option value="Exoplanets and Astrophysics Mission">Exoplanets and Astrophysics Mission
+                                </option>
+                            </optgroup>
+                            <optgroup label="Interstellar Space" disabled>
+                                <option value="">No Mission Available</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="age">Age:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" name="age" id="age" min="18" max="65" placeholder="Age (Min 18, Max 65)..."
+                            required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="gender">Gender:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <select name="gender" id="gender" required>
+                            <option value="" selected hidden disabled>Select a gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Non Binary">Non-Binary</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="eyeColor">Eye Color:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <select name="eyeColor" id="eyeColor" required>
+                            <option value="" selected hidden disabled>Select an eye color</option>
+                            <option value="Brown">Brown</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Grey">Grey</option>
+                            <option value="Green">Green</option>
+                            <option value="Red">Red</option>
+                            <option value="Black">Black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" id="email" placeholder="Email..." required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">Password:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="password" id="password" minlength="8" placeholder="Password..."
+                            required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address">Address:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="address" id="address" minlength="5" placeholder="Address..."
+                            required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Phone Number:<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" name="phone" id="phone" minlength="10" maxlength="10"
+                            placeholder="Phone Number..." required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="weight">Weight:(kg)<span class="red">*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" name="weight" id="weight" min="55" max="100"
+                            placeholder="Weight (Min 55, Max 100)..." required />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bio">Biography:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="bio" id="bio" cols="30" rows="10" maxlength="255"
+                            placeholder="Biography..."></textarea>
+                    </div>
+                </div>
+                <br />
+                <div class="row">
+                    <input type="submit" name="submit" id="submit" value="Join Us" />
+                    <input type="reset" name="reset" id="reset" value="Reset" />
+                </div>
+            </form>
+        </section>
     </div>
     <footer class="footer">
         <p>
@@ -246,5 +235,6 @@
         </p>
     </footer>
     <script src="script/main.js"></script>
-  </body>
+</body>
+
 </html>
