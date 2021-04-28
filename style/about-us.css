@@ -4,8 +4,8 @@ html {
   --company_mission_section_background_color: #c23764;
   /*--team_section_background_color: #202671;*/
   --card_background_color: #8c2773;
-  --about_section_background_color: #c23764;
-  --footer_background_color: #752675;
+  --about_section_background_color: #1e0056;
+  --footer_background_color: #001a44;
 }
 
 *,
@@ -113,6 +113,7 @@ article .card {
   background-color: var(--card_background_color);
   transition: 0.3s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  color: #000;
 }
 
 article .card:hover {
@@ -124,7 +125,8 @@ header {
 }
 
 #company_mission_section {
-  background-color: var(--company_mission_section_background_color);
+  background-color: #000a34;
+  background-image: radial-gradient(rgba(0, 0, 50, 1),rgba(200, 200, 255, 0.3));
 }
 
 #company_mission_section h1 {
@@ -170,6 +172,8 @@ header {
 
 #about_section {
   background-color: var(--about_section_background_color);
+  background-image: radial-gradient(rgba(0, 0, 50, 1),rgba(200, 200, 255, 0.3));
+  font-size: large;
 }
 
 #about_section article {

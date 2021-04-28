@@ -15,10 +15,10 @@ body {
   overflow-x: hidden;
   background-size: 100% auto;
   background-image: url('../img/blue-planet.jpg');
-  background-image: url('../img/blue-planet.jpg'), linear-gradient(#0E1F30, #113B65, #b6e2ff);
+  background-image: url('../img/blue-planet.jpg'), linear-gradient(#0e1f30, #113b65, #b6e2ff);
   z-index: -1;
   background-repeat: no-repeat;
-  background-color: #113B65;
+  background-color: #113b65;
 }
 
 .container {
@@ -209,6 +209,7 @@ body {
   flex: 1 16%;
   border: 1px solid black;
   background-color: white;
+  background-image: radial-gradient(#FFFFFF, #AAAACC)
 }
 
 .card img {
@@ -218,8 +219,12 @@ body {
 .info-container {
   margin-top: auto;
   text-align: center;
-  border: 1px solid black;
   text-overflow: ellipsis;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
 }
 
 #myBtn {
@@ -241,6 +246,55 @@ body {
 
 #myBtn:hover {
   background-color: #023c63;
+}
+
+.pagetitle {
+  font-size: 60px;
+  text-align: center;
+}
+.pagelinks {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 3px solid black;
+  width: 45%;
+  padding-bottom: 20px;
+}
+
+.pagelinks ul {
+  list-style: none;
+}
+
+.pagelinks ul li {
+  display: inline;
+  width: 33%;
+}
+
+.pagelinks ul li {
+  border-right: 1px solid white;
+}
+/*clear container-selector */
+.pagelinks ul li:last-child {
+  border-right: none;
+}
+
+.pagelinks a {
+  padding: 20px;
+  text-decoration: none;
+  color: #41a9d9;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+.pagelinks a:hover {
+  cursor: pointer;
+  color: #684cbe;
+}
+
+.see-all {
+  color: #5ED7EC;
+}
+.seeall:hover {
+  color: #aFD7FC;
 }
 
 .footer {
@@ -298,13 +352,16 @@ body {
   }
 
   .card {
-    flex: 1 45%;
+    flex: 1 55%;
   }
-
-  .card:nth-child(5n + 4),
-  .card:nth-child(5n) {
+  .pagelinks{
     display: none;
   }
+
+  /* .card:nth-child(5n + 4),
+  .card:nth-child(5n) {
+    display: none;
+  } */
 
   #myBtn {
     padding: 15px;

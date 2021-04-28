@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-EN">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,247 +12,231 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
     <title>Icarus</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <!--nav bar-->
     <nav>
-      <div class="container">
-        <div class="logo">
-          <a href="#">
-            <img src="assets/definitive_mini_logo.png" alt="logo" />
-          </a>
-        </div>
-        <div class="navbar">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#astro">Astronauts</a></li>
-            <li><a href="#missions">Missions</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="join-us.html">Join Us</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-          </ul>
-        </div>
-        <div class="sidebar-container">
-          <span onclick="toggleNav(this)">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </span>
-          <div class="sidebar-content" id="sidebar-content">
+        <div class="container">
             <div class="logo">
-              <img src="assets/logo.png" alt="Logo" />
+                <a href="#">
+                    <img src="assets/definitive_mini_logo.png" alt="logo" />
+                </a>
             </div>
-            <ul>
-              <li class="sidebar-item"><a href="index.html">Home</a></li>
-              <li class="sidebar-item"><a href="#">News</a></li>
-              <li class="sidebar-item"><a href="#">Astronauts</a></li>
-              <li class="sidebar-item"><a href="#">Missions</a></li>
-              <li class="sidebar-item"><a href="gallery.html">Gallery</a></li>
-              <li class="sidebar-item"><a href="join-us.html">Join Us</a></li>
-              <li class="sidebar-item"><a href="about-us.html">About Us</a></li>
-            </ul>
-          </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#astro">Astronauts</a></li>
+                    <li><a href="#missions">Missions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="join-us.html">Join Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-container">
+                <span onclick="toggleNav(this)">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </span>
+                <div class="sidebar-content" id="sidebar-content">
+                    <div class="logo">
+                        <img src="assets/logo.png" alt="Logo" />
+                    </div>
+                    <ul>
+                        <li class="sidebar-item"><a href="index.html">Home</a></li>
+                        <li class="sidebar-item"><a href="news.html">News</a></li>
+                        <li class="sidebar-item"><a href="astronauts.html">Astronauts</a></li>
+                        <li class="sidebar-item"><a href="missions.html">Missions</a></li>
+                        <li class="sidebar-item"><a href="gallery.html">Gallery</a></li>
+                        <li class="sidebar-item"><a href="join-us.html">Join Us</a></li>
+                        <li class="sidebar-item"><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
-      <div class="big-logo">
-        <img src="assets/logo.png" alt="logo-big" />
-      </div>
-      <span class="title" id="news">News</span>
-      <section class="news">
+    <div class="big-logo">
+        <img src="assets/logo.png" alt="big logo" />
+    </div>
+    <span class="title" id="news">News</span>
+    <a href="news.html" class="see-all">See all</a>
+    <section class="news">
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <h5>Icarus opens at Wall Street</h5>
+            <p>
+                Great success of Icarus on its first opening day at the Wall Street Stock Exchange, passing Tesla,
+                SpaceX
+                and Microsoft
+                on the recent wave of investor optimism in disrupting technologies.
+                Bitcoin keeps on rising nearing 100k $ per bitcoin...
+            </p>
+            <a href="news.html#icarus-opens-at-wall-street">&#8594</a>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="prova" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>Thank you Michel</h5>
+                <p>Michel Tognini, one of our most experienced astronauts has retired today. A veteran of NASA, he
+                    joined
+                    Icarus in his last working years. He will keep providing counseling as an advisory member in the
+                    Mission Control Board...</p>
+                <a href="news.html#thank-you-michel">&#8594</a>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Ieri nella giornata di lunedi un furto in casa, ciao ciao ciao</p>
-          </div>
+            <div class="info-container">
+                <h5>Far beyond the Sun</h5>
+                <p>Icarus revealed his new mission plan for the next decade and a massive austronauts recruiting
+                    campaign
+                    has started. If you want to become the next Neil Armstrong or Buzz Aldrin...</p>
+                <a href="news.html#far-beyond-the-sun">&#8594</a>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>Happy Birthday Alex</h5>
+                <p>Today is Alexander Karabeta's birthday. We wish a hundred more of these days to one of the founders
+                    of
+                    Icarus.
+                    A big party has obviosuly been thrown at our headquarters...</p>
+                    <a href="news.html#happy-birthday-alex">&#8594</a>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>Interview with President Biden</h5>
+                <p>Check out our interview with neo-elect president Biden and the plans of his administration for
+                    private space sector...</p>
+                <a href="news.html#interview-with-president-biden">&#8594</a>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>School tours at Icarus launch sites</h5>
+                <p>We're glad to announce that Icarus will open its launch sites to school visites between missions,
+                    hoping to inspire the next generation of pilots...</p>
+                    <a href="news.html#school-tours-at-icarus-launch-sites">&#8594</a>
+            </div>
         </div>
-      </section>
-      <!-- End of News-->
-      <span class="title" id="astro">Astronauts</span>
-      <!-- Astronauts -->
-      <section class="astronauts">
+    </section>
+    <!-- End of News-->
+    <span class="title" id="astro">Astronauts</span>
+    <a href="astronauts.html" class="see-all">See all</a>
+    <!-- Astronauts -->
+    <section class="astronauts">
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>Douglas H. Wheelock</h5>
+                <p>Douglas is an American astronaut, aeronautical engineer, test pilot, and a United
+                    States Air Force pilot. He served as Apollo Lunar Module pilot for Apollo 15, the fourth
+                    human lunar landing.
+                </p>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>Eric Boe</h5>
+                <p>Eric is a British-American astrophysicist and former NASA astronaut. He is a veteran of
+                    six space missions, and is the only NASA astronaut to have flown extended missions aboard
+                    both Mir and the International Space Station.</p>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Ieri nella giornata di lunedi un furto in casa, ciao ciao ciao</p>
-          </div>
+            <div class="info-container">
+                <h5>Ernst Messerschmid</h5>
+                <p>Ernst is a german physician, chemical engineer, and NASA astronaut. He became the first
+                    orthopedic surgeon in space during STS-129. He participated in 2 spacewalks during STS-129,
+                    accumulating 12hrs 19min of EVA time. Satcher holds two doctorates (Ph.D., M.D.) and has
+                    received numerous awards and honors as a surgeon and engineer.</p>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>James Irwin</h5>
+                <p>James is an American aeronautical engineer, United States Air Force pilot, test pilot,
+                    and NASA astronaut, who was the Command Module Pilot for the Apollo 14 mission.</p>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>Jerome Apt</h5>
+                <p>Jerome is a retired United States Air Force Colonel and a NASA astronaut. Ford has
+                    received a number of special honors and awards, some of which are the Air Force Meritorious
+                    Service Medal, Air Force Commendation Medal, Aerial Achievement Medal and the Armed Forces
+                    Expeditionary Medal.</p>
+            </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <div class="info-container">
+                <h5>Douglas H. Wheelock</h5>
+                <p>Douglas is an American astronaut, aeronautical engineer, test pilot, and a United
+                    States Air Force pilot. He served as Apollo Lunar Module pilot for Apollo 15, the fourth
+                    human lunar landing.</p>
+            </div>
         </div>
-      </section>
-      <!-- End of Astronauts -->
-      <span class="title" id="missions">Missions</span>
-      <!-- Missions -->
-      <section class="missions">
+    </section>
+    <!-- end of Astronauts -->
+    <span class="title" id="missions">Missions</span>
+    <a href="missions.html" class="see-all">See all</a>
+    <!-- Missions -->
+    <section class="missions">
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+            <a href="news.html">
+                <div class="info-container">
+                    <h5>Mars 2020</h5>
+                    <p>
+                        The Mars 2020 mission with its Perseverance rover is part of NASA's Mars Exploration
+                        Program, a long-term effort of robotic exploration of the Red Planet.
+                    </p>
+                    <a href="missions.html#mars-2020">&#8594</a>
+                </div>
+            </a>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+                <div class="info-container">
+                    <h5>NEOWISE</h5>
+                    <p>
+                        The NEOWISE mission uses a space telescope to hunt for asteroids and comets,
+                        including those that could pose a threat to Earth.
+                    </p>
+                    <a href="missions.html#mars-2020">&#8594</a>
+                </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Ieri nella giornata di lunedi un furto in casa, ciao ciao ciao</p>
-          </div>
+                <div class="info-container">
+                    <h5>ASTHROS</h5>
+                    <p>the A(strophysics)S(tratospheric)T(elescope
+                        for)H(igh)S(pectral)R(esolution)O(bservations at)S(ubmillimeter wavelengths) is a high-altitude
+                        balloon mission for studying astrophysical phenomena.</p>
+                        <a href="missions.html#mars-2020">&#8594</a>
+                </div>
         </div>
-
         <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
+                <div class="info-container">
+                    <h5>IISAR</h5>
+                    <p>
+                        Using advanced radar imaging that will provide an unprecedented, detailed view of
+                        Earth, the I(carus)I(SRO)S(ynthetic)A(perture)R(adar) satellite is designed to observe and take
+                        measurements of some of the planet's most processes.
+                    </p>
+                    <a href="missions.html#mars-2020">&#8594</a>
+                </div>
         </div>
-
-        <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="image-container">
-            <img src="assets/logo_mini.png" alt="Cia0" />
-          </div>
-          <div class="info-container">
-            <h5>La cagata del piccione</h5>
-            <p>Some text here</p>
-          </div>
-        </div>
-      </section>
-      <!-- End of Missions -->
+    </section>
+    <!-- End of Missions -->
     <footer>
-      <div class="footer">
-        <p>All rights reserved <em>Icarus</em>&reg;</p>
-      </div>
+        <div class="footer">
+            <p>
+                Disclaimer: this website is an educational project written with sole intent of learning
+                front-end web development. It has no other purpose other than the one stajust stated, especially it has
+                no commercial purpose.
+                no commercial purpose.
+                People and content (such as missions name and purpose) that appear
+                are derived from public material publicely available.
+                We don't iny wat make any illecit use of the content created
+            </p>
+        </div>
     </footer>
     <!-- Go to top button -->
     <button id="myBtn" title="Go to top" onclick="toTop()">&#8593</button>
@@ -260,5 +245,6 @@
     <script src="script/main.js"></script>
     <script src="script/totop.js"></script>
     <!-- End of Scripts -->
-  </body>
+</body>
+
 </html>

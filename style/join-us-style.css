@@ -1,6 +1,5 @@
 body {
   background-size: inherit;
-  background: url('../assets/space_background.jpg') no-repeat top;
 }
 
 .form-container {
@@ -10,7 +9,7 @@ body {
   background-color: #1e1b2c;
   padding: 1.5%;
   border-radius: 25px;
-  color: #ffffff;
+  color: #ffffff
 }
 
 .form-container h3,
@@ -22,7 +21,7 @@ h4 {
 
 .form-container h4 {
   font-style: italic;
-  color: white;
+  color: #aac;
 }
 
 .red {
@@ -117,12 +116,29 @@ button:focus {
   outline: none;
 }
 
+@media screen and (max-width: 844px) {
+  .col-25,
+  .col-75,
+  input[type='submit'],
+  input[type='reset'] {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  textarea {
+    resize: none;
+    height: 200px;
+  }
+  
+  .form-container {
+    margin: 5% 5%;
+  }
+}
 .gradient-border {
   --borderWidth: 4px;
-  background: #1d1f20;
+  background: #1D1F20;
   position: relative;
   border-radius: var(--borderWidth);
-  margin: 0 auto;
 }
 .gradient-border:after {
   content: '';
@@ -135,7 +151,7 @@ button:focus {
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
-  animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
 
@@ -151,6 +167,7 @@ button:focus {
   }
 }
 
+
 @keyframes animatedgradient {
   0% {
     background-position: 0% 50%;
@@ -160,24 +177,5 @@ button:focus {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-
-@media screen and (max-width: 844px) {
-  .col-25,
-  .col-75,
-  input[type='submit'],
-  input[type='reset'] {
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  textarea {
-    resize: none;
-    height: 200px;
-  }
-
-  .form-container {
-    margin: 5% auto;
   }
 }
