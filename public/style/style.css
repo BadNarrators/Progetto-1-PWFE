@@ -262,6 +262,13 @@ body {
   font-size: 60px;
   text-align: center;
 }
+.no-selection {
+  border-bottom: 3px solid black; 
+  padding-bottom: 10px; 
+  width: 50%; 
+  margin: auto; 
+  margin-bottom: 30px;
+}
 .pagelinks {
   margin: 0 auto;
   text-align: center;
