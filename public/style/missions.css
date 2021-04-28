@@ -1,3 +1,4 @@
+/* general settings */
 * {
   box-sizing: border-box;
 }
@@ -62,7 +63,7 @@ h1 {
   margin: 20px;
 }
 
-/*background mission*/
+/*background missions*/
 .one {
   background-image: linear-gradient(
       to left,
@@ -296,6 +297,7 @@ h1 {
   
 }
 
+/* go to top button */
 #myBtn {
   padding: 15px;
 }

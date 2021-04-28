@@ -1,19 +1,19 @@
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 body {
-  font-family: Verdana, sans-serif; 
-  margin:0;
-  background-image: linear-gradient(#0E1F30, #113B65, #113B65, #47b5ff);
-  background-color: #113B65;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  background-image: linear-gradient(#0e1f30, #113b65, #113b65, #47b5ff);
+  background-color: #113b65;
   background-size: 100vw 100vh;
 }
 .mySlides {
   display: none;
 }
 img {
-  vertical-align:middle;
-  width:100%;
+  vertical-align: middle;
+  width: 100%;
 }
 
 /* Slideshow container */
@@ -24,7 +24,8 @@ img {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -46,8 +47,9 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -61,7 +63,6 @@ img {
   text-align: center;
 }
 
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -74,7 +75,8 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -87,21 +89,33 @@ img {
 }
 
 @-webkit-keyframes fade {
-  from {opacity:0.4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity:0.4} 
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
 
-/* style navbar */
+/* Style nav bar */
 .container {
   width: 100%;
   margin: -10px;
@@ -187,6 +201,7 @@ img {
   cursor: pointer; /* Just for testing  in desktp mode */
 }
 
+/*hamburger menu*/
 .line1,
 .line2,
 .line3 {
@@ -212,6 +227,7 @@ img {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+/* Sidebar */
 .sidebar-content {
   width: 0;
   height: 100%;
@@ -219,7 +235,11 @@ img {
   z-index: -1;
   top: 0;
   right: 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(207, 207, 207, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(207, 207, 207, 1) 100%
+  );
   overflow-x: hidden;
   padding-top: 15px;
   transition: 0.5s;
@@ -251,10 +271,8 @@ img {
   background-color: #c33764;
 }
 
-
-
+/*Resposiveness*/
 @media only screen and (max-width: 920px) {
-  
   .container {
     justify-content: space-between;
   }
@@ -288,8 +306,4 @@ img {
     max-width: 25%;
     max-height: 25%;
   }
-
- 
 }
-
-

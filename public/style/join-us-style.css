@@ -95,7 +95,6 @@ input[type='reset']:hover {
 }
 
 /* Validation */
-
 input:valid,
 select:valid {
   border: 1px solid #45a049;
