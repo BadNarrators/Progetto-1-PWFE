@@ -1,11 +1,23 @@
-# FIRST THING TO DO
+# FIRST THING FIRST
 
-- pls type npm install in the terminal to install node modules dependencies
+To install node modules dependencies:
 
-# How to launch nodejs Server
+- open the VSCode terminal:
 
-type in the terminal npm start, easy.
+```
+Terminal > New Terminal > Choose folder
+```
+
+- type in the VSCode terminal :
+  
+```
+npm install 
+```
+
+# How to launch node.js Server
+
+Type in the terminal npm start, easy.
 
 # Open the local server 
 
-Yoy can reach the server at http://localhost:8000
+You can reach the server at http://localhost:8000
