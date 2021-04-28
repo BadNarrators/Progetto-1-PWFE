@@ -1,9 +1,9 @@
 html {
   box-sizing: border-box;
-  --header_background_color: chartreuse;
-  --company_mission_section_background_color: #c23764;
+  /*--header_background_color: chartreuse;*/
+  /*--company_mission_section_background_color: #c23764;*/
   /*--team_section_background_color: #202671;*/
-  --card_background_color: #8c2773;
+  /*--card_background_color: #8c2773;*/
   --about_section_background_color: #1e0056;
   --footer_background_color: #001a44;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 hr {
-  color: white;
+  color: antiquewhite;
   margin-top: 3%;
   margin-bottom: 3%;
 }
@@ -62,30 +62,6 @@ main,
 footer {
   width: 100%;
   color: antiquewhite;
-}
-
-a:link {
-  color: antiquewhite;
-}
-
-/* visited link */
-a:visited {
-  color: #c23764;
-}
-
-/* moused over */
-a:hover {
-  color: orange;
-}
-
-/* selected with keyboard*/
-a:focus {
-  color: bisque;
-}
-
-/* activated link */
-a:active {
-  color: rgb(255, 0, 157);
 }
 
 section {
@@ -161,11 +137,13 @@ header {
 #team_section #management_article .column .card {
   width: 100%;
   float: left;
+  border-radius: 20px;
 }
 
 #team_section #leadership_article .column .card img,
 #team_section #management_article .column .card img {
   width: 100%;
+  border-radius: 20px;
 }
 
 #about_section {
