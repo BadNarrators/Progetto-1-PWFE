@@ -2,6 +2,7 @@ body {
   background-size: inherit;
 }
 
+/* form container with round border */
 .form-container {
   width: fit-content;
   margin: 2.5% auto;
@@ -9,7 +10,7 @@ body {
   background-color: #1e1b2c;
   padding: 1.5%;
   border-radius: 25px;
-  color: #ffffff
+  color: #ffffff;
 }
 
 .form-container h3,
@@ -27,7 +28,7 @@ h4 {
 .red {
   color: red;
 }
-
+/*inputs with full width, 12px of padding and resize vertical */
 input[type='text'],
 input[type='number'],
 input[type='email'],
@@ -42,12 +43,13 @@ textarea {
   resize: vertical;
   max-height: 200px;
 }
-
+/* label next to inputs */
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
 }
 
+/* input submit style */
 input[type='submit'] {
   background-color: #4caf50;
   color: white;
@@ -57,7 +59,7 @@ input[type='submit'] {
   cursor: pointer;
   float: right;
 }
-
+/* input reset style */
 input[type='reset'] {
   background-color: red;
   color: white;
@@ -68,6 +70,7 @@ input[type='reset'] {
   float: right;
 }
 
+/* Input submit/reset change color on hover */
 input[type='submit']:hover {
   background-color: #45a049;
 }
@@ -76,18 +79,22 @@ input[type='reset']:hover {
   background-color: firebrick;
 }
 
+/* end of hovers */
+
+/* left column of the form with 25% of width */
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
 
+/* right column of the form with 75% of width */
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
-
+/* clear float */
 .row:after {
   content: '';
   display: table;
@@ -115,6 +122,7 @@ button:focus {
   outline: none;
 }
 
+/* responsivness - when screen is less than 844px make the two column stack on top of each other */
 @media screen and (max-width: 844px) {
   .col-25,
   .col-75,
@@ -128,14 +136,16 @@ button:focus {
     resize: none;
     height: 200px;
   }
-  
+
   .form-container {
     margin: 5% 5%;
   }
 }
+
+/* animated border */
 .gradient-border {
   --borderWidth: 4px;
-  background: #1D1F20;
+  background: #1d1f20;
   position: relative;
   border-radius: var(--borderWidth);
 }
@@ -150,7 +160,7 @@ button:focus {
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
-          animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
 
@@ -166,7 +176,6 @@ button:focus {
   }
 }
 
-
 @keyframes animatedgradient {
   0% {
     background-position: 0% 50%;
@@ -178,3 +187,5 @@ button:focus {
     background-position: 0% 50%;
   }
 }
+
+/* End of animated border */
