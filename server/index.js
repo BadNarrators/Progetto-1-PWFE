@@ -1,14 +1,12 @@
-// require express server and port
+// require express server, mongodb, assert and port
 const app = require('./server');
 const db = require('./db');
-const client = require('./db');
 const assert = require('assert');
 const PORT = app.get('port');
 
 // main page
-
 app.get('/', (req, res) => {
-  res.render('index.html');
+  res.sendFile('index.html');
 });
 
 // add data from join-us form to mongodb
