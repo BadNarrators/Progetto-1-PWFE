@@ -40,6 +40,24 @@ app.post('/insert', (req, res) => {
   res.redirect('/');
 });
 
+app.get('/getData', (req, res) => {
+  let result = [];
+  db.connect((err, data) => {
+    assert.strictEqual(null, err);
+    let findData = data.db('Icarus').collection('join-us').find();
+    findData.forEach(
+      (doc, error) => {
+        assert.strictEqual(error, null);
+        result.push(doc);
+      },
+      () => {
+        data.close();
+        res.render('visDati', { items: result });
+      }
+    );
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Listening to port: ${PORT}\nhttp://localhost:8000`);
 });
