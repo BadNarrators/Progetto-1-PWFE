@@ -1,9 +1,5 @@
 html {
   box-sizing: border-box;
-  /*--header_background_color: chartreuse;*/
-  /*--company_mission_section_background_color: #c23764;*/
-  /*--team_section_background_color: #202671;*/
-  /*--card_background_color: #8c2773;*/
   --about_section_background_color: #1e0056;
   --footer_background_color: #001a44;
   --smooth_vertices: 16px;
