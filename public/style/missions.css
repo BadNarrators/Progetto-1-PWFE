@@ -301,11 +301,3 @@ h1 {
 #myBtn {
   padding: 15px;
 }
-
-/*This area should include a list of missions (at least 20). They should be grouped in three
-sections: past, current and future missions. Each mission should include at least a name,
-code, destination, image, equipment, crew.
-The crew should include links to the astronauts page and to the specific astronauts for
-each mission
-The missions page should be responsive, list in mobile view and cards on larger
-viewports*/
