@@ -6,6 +6,7 @@ html {
   /*--card_background_color: #8c2773;*/
   --about_section_background_color: #1e0056;
   --footer_background_color: #001a44;
+  --smooth_vertices: 16px;
 }
 
 *,
@@ -137,13 +138,13 @@ header {
 #team_section #management_article .column .card {
   width: 100%;
   float: left;
-  border-radius: 20px;
+  border-radius: var(--smooth_vertices);
 }
 
 #team_section #leadership_article .column .card img,
 #team_section #management_article .column .card img {
   width: 100%;
-  border-radius: 20px;
+  border-radius: var(--smooth_vertices);
 }
 
 #about_section {
@@ -183,6 +184,7 @@ header {
 
 #about_section #about_article figure img {
   width: 100%;
+  border-radius: var(--smooth_vertices);
 }
 
 #footer {
