@@ -44,15 +44,16 @@ app.get('/getData', (req, res) => {
   let result = [];
   db.connect((err, data) => {
     assert.strictEqual(null, err);
-    let findData = data.db('Icarus').collection('join-us').find();
+    let findData = data.db('Icarus').collection('join-us').find({});
     findData.forEach(
       (doc, error) => {
-        assert.strictEqual(error, null);
+        assert.equal(null, error);
         result.push(doc);
+        //console.log(doc);
       },
       () => {
         data.close();
-        res.render('visDati', { items: result });
+        res.render('candidates', { items: result });
       }
     );
   });
