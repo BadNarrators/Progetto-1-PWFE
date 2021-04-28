@@ -5,6 +5,7 @@ const path = require('path');
 require('dotenv').config();
 const app = express();
 
+// bodyparser 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('../public'));

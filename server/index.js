@@ -4,12 +4,12 @@ const db = require('./db');
 const assert = require('assert');
 const PORT = app.get('port');
 
-// main page
+// response with the main page
 app.get('/', (req, res) => {
   res.sendFile('index.html');
 });
 
-// add data from join-us form to mongodb
+// Add data from join-us form to mongodb and redirect to Homepage when called the endpoint '/insert'
 app.post('/insert', (req, res) => {
   let item = {
     name: req.body.name,
@@ -25,7 +25,6 @@ app.post('/insert', (req, res) => {
     weight: req.body.weight,
     biography: req.body.bio,
   };
-  // console.log(item);
   db.connect((err, data) => {
     assert.strictEqual(null, err);
     data
@@ -40,6 +39,7 @@ app.post('/insert', (req, res) => {
   res.redirect('/');
 });
 
+// Retrieve data from MongoDB and send it to the view page when called the endpoint '/getData'.
 app.get('/getData', (req, res) => {
   let result = [];
   db.connect((err, data) => {
@@ -49,7 +49,6 @@ app.get('/getData', (req, res) => {
       (doc, error) => {
         assert.equal(null, error);
         result.push(doc);
-        //console.log(doc);
       },
       () => {
         res.render('candidates', { candidates: result });
@@ -58,6 +57,7 @@ app.get('/getData', (req, res) => {
   });
 });
 
+// Open the port
 app.listen(PORT, () => {
   console.log(`Listening to port: ${PORT}\nhttp://localhost:8000`);
 });

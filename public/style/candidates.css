@@ -1,34 +1,43 @@
+/* put a margin top of 1.5 rem and a margin left and right auto, so center the container. If necessary shows up the horizontal scrollbar */
 .table-container {
-  width: 100%;
   margin: 1.5rem auto;
   overflow-x: auto;
 }
 
+/* Table with 100% of width and collapse his borders */
 table {
   width: 100%;
+  border-collapse: collapse;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
+/* th with a background color and a border */
 th {
   background-color: deepskyblue;
-  padding: 5px;
-  margin: 8px;
+  border: 1px solid #ccc;
 }
 
+/* td with a background color */
 td {
   background-color: aliceblue;
 }
-
-table,
+/* td and th have text centered a padding of 6px and a border of 1px */
 td,
 th {
   text-align: center;
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+/* td have a padding of 1.5 rem */
+td {
+  padding: 1.5rem;
+}
+/* section have a padding of 2% and push down everything of 36.3 rem */
+section {
+  padding: 2%;
+  margin-bottom: 36.3rem;
 }
 
 .footer {
   margin-top: auto;
+  padding: 5px;
 }

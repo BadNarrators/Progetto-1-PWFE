@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-EN">
   <head>
+    <!-- Meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- End of Meta -->
     <title>View Candidates</title>
+    <!-- Links -->
     <link rel="stylesheet" href="../style/style.css" type="text/css" />
     <link rel="stylesheet" href="../style/candidates.css" />
+    <!-- End of Links -->
   </head>
   <body>
     <!-- Navbar -->
@@ -52,6 +56,8 @@
         </div>
       </div>
     </nav>
+    <!-- End of Navbar -->
+    <!-- Table -->
     <section>
       <div class="table-container">
         <table aria-describedby="Candidates Data">
@@ -86,10 +92,9 @@
               <td><%= data.phone %></td>
               <td><%= data.weight %></td>
               <td><%= data.biography %></td>
+              <% }) %> <% } else{ %>
             </tr>
           </tbody>
-
-          <% }) %> <% } else{ %>
           <tfoot>
             <tr>
               <td colspan="7">No Candidates Here, Try Later!</td>
@@ -99,15 +104,18 @@
         </table>
       </div>
     </section>
+    <!-- End of table -->
+    <!-- Footer -->
     <footer>
       <div class="footer">
         <p>
           Disclaimer: this website is an educational project written with sole intent of learning front-end web development.
-          It has no other purpose other than the one stajust stated, especially it has no commercial purpose. no commercial
-          purpose. People and content (such as missions name and purpose) that appear are derived from public material
-          publicely available. We don't iny wat make any illecit use of the content created
+          It has no other purpose other than the one stajust stated, especially it has no commercial purpose. People and
+          content (such as missions name and purpose) that appear are derived from public material publicely available. We
+          don't iny wat make any illecit use of the content created
         </p>
       </div>
     </footer>
   </body>
+  <!-- End of Footer -->
 </html>
