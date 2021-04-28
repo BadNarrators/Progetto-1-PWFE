@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-EN">
-
-<head>
+  <head>
     <!-- meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,140 +11,111 @@
     <link rel="stylesheet" href="../style/candidates.css" />
     <!-- end of links -->
     <title>View Candidates</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- nav bar -->
     <nav>
-        <div class="container">
-            <div class="logo">
-                <a href="#">
-                    <img src="assets/shared/definitive_mini_logo.png" alt="logo" />
-                </a>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#astro">Astronauts</a></li>
-                    <li><a href="#missions">Missions</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="join-us.html">Join Us</a></li>
-                    <li><a href="candidates.html">Candidates</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
-            </div>
-            <div class="sidebar-container">
-                <span onclick="toggleNav(this)">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </span>
-                <div class="sidebar-content" id="sidebar-content">
-                    <div class="logo">
-                        <img src="assets/shared/logo.png" alt="Logo" />
-                    </div>
-                    <ul>
-                        <li class="sidebar-item"><a href="index.html">Home</a></li>
-                        <li class="sidebar-item"><a href="news.html">News</a></li>
-                        <li class="sidebar-item"><a href="astronauts.html">Astronauts</a></li>
-                        <li class="sidebar-item"><a href="missions.html">Missions</a></li>
-                        <li class="sidebar-item"><a href="gallery.html">Gallery</a></li>
-                        <li class="sidebar-item"><a href="join-us.html">Join Us</a></li>
-                        <li class="sidebar-item"><a href="about-us.html">About Us</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/shared/definitive_mini_logo.png" alt="logo" />
+          </a>
         </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../astronauts.html">Astronauts</a></li>
+            <li><a href="../missions.html">Missions</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../join-us.html">Join Us</a></li>
+            <li><a href="candidates.html">Candidates</a></li>
+            <li><a href="../about-us.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-container">
+          <span onclick="toggleNav(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </span>
+          <div class="sidebar-content" id="sidebar-content">
+            <div class="logo">
+              <img src="assets/shared/logo.png" alt="Logo" />
+            </div>
+            <ul>
+              <li class="sidebar-item"><a href="index.html">Home</a></li>
+              <li class="sidebar-item"><a href="news.html">News</a></li>
+              <li class="sidebar-item"><a href="astronauts.html">Astronauts</a></li>
+              <li class="sidebar-item"><a href="missions.html">Missions</a></li>
+              <li class="sidebar-item"><a href="gallery.html">Gallery</a></li>
+              <li class="sidebar-item"><a href="join-us.html">Join Us</a></li>
+              <li class="sidebar-item"><a href="about-us.html">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
     <!-- end of nav bar -->
     <!-- table -->
     <section>
-        <div class="table-container">
-            <table aria-describedby="Candidates Data">
-                <thead>
-                    <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Surname</th>
-                        <th scope="col">Mission</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Gender</th>
-                        <th scope="col">Eye Color</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Password</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Weight(Kg)</th>
-                        <th scope="col">Biography</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% if(candidates.length!=0) { candidates.forEach(function(data) { %>
-                        <tr>
-                            <td>
-                                <%= data.name %>
-                            </td>
-                            <td>
-                                <%= data.surname %>
-                            </td>
-                            <td>
-                                <%= data.mission %>
-                            </td>
-                            <td>
-                                <%= data.age %>
-                            </td>
-                            <td>
-                                <%= data.gender %>
-                            </td>
-                            <td>
-                                <%= data.eye_color %>
-                            </td>
-                            <td>
-                                <%= data.email %>
-                            </td>
-                            <td>
-                                <%= data.psw %>
-                            </td>
-                            <td>
-                                <%= data.address %>
-                            </td>
-                            <td>
-                                <%= data.phone %>
-                            </td>
-                            <td>
-                                <%= data.weight %>
-                            </td>
-                            <td>
-                                <%= data.biography %>
-                            </td>
-                            <% }) %>
-                                <% } else{ %>
-                        </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="7">No Candidates Here, Try Later!</td>
-                    </tr>
-                </tfoot>
-                <% } %>
-            </table>
-        </div>
+      <div class="table-container">
+        <table aria-describedby="Candidates Data">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Surname</th>
+              <th scope="col">Mission</th>
+              <th scope="col">Age</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Eye Color</th>
+              <th scope="col">Email</th>
+              <th scope="col">Password</th>
+              <th scope="col">Address</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Weight(Kg)</th>
+              <th scope="col">Biography</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% if(candidates.length!=0) { candidates.forEach(function(data) { %>
+            <tr>
+              <td><%= data.name %></td>
+              <td><%= data.surname %></td>
+              <td><%= data.mission %></td>
+              <td><%= data.age %></td>
+              <td><%= data.gender %></td>
+              <td><%= data.eye_color %></td>
+              <td><%= data.email %></td>
+              <td><%= data.psw %></td>
+              <td><%= data.address %></td>
+              <td><%= data.phone %></td>
+              <td><%= data.weight %></td>
+              <td><%= data.biography %></td>
+              <% }) %> <% } else{ %>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="7">No Candidates Here, Try Later!</td>
+            </tr>
+          </tfoot>
+          <% } %>
+        </table>
+      </div>
     </section>
     <!-- end of table -->
     <!-- footer -->
     <footer>
-        <div class="footer">
-            <p>
-                Disclaimer: this website is an educational project written with sole intent of learning front-end web
-                development. It
-                serves no other purpose other than the one just stated, especially it has no commercial purpose. We
-                don't
-                take any
-                responsability for any illecit use of this content by third parties.
-            </p>
-        </div>
+      <div class="footer">
+        <p>
+          Disclaimer: this website is an educational project written with sole intent of learning front-end web development.
+          It serves no other purpose other than the one just stated, especially it has no commercial purpose. We don't take
+          any responsability for any illecit use of this content by third parties.
+        </p>
+      </div>
     </footer>
-</body>
-<!-- end of footer -->
-
+  </body>
+  <!-- end of footer -->
 </html>
