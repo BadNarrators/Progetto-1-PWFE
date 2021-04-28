@@ -1,0 +1,24 @@
+.table-container {
+  width: 100%;
+  margin: 1.5rem auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+table,
+td,
+th {
+  text-align: center;
+}
+
+.footer {
+  margin-top: auto;
+}

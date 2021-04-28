@@ -52,8 +52,7 @@ app.get('/getData', (req, res) => {
         //console.log(doc);
       },
       () => {
-        data.close();
-        res.render('candidates', { items: result });
+        res.render('candidates', { candidates: result });
       }
     );
   });
