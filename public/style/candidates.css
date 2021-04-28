@@ -13,6 +13,16 @@ body {
   flex-direction: column;
 }
 
+th {
+  background-color: deepskyblue;
+  padding: 5px;
+  margin: 8px;
+}
+
+td {
+  background-color: aliceblue;
+}
+
 table,
 td,
 th {
