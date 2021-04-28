@@ -1,0 +1,1 @@
+pls type npm install in the terminal to install node modules dependencies
