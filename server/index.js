@@ -33,7 +33,6 @@ app.post('/insert', (req, res) => {
       .insertOne(item, (error) => {
         assert.strictEqual(null, error);
         console.log('Item inserted correctly!');
-        data.close();
       });
   });
   res.redirect('/');
